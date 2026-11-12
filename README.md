@@ -2,9 +2,13 @@
 
 A World of Tanks statistics tracker for Windows, created by **Friend of Misery**. Analyzes local replays to show which maps and tanks you perform best with.
 
-## Screenshot
+## Screenshots
 
-![WoT Battle Analyzer overview with battle statistics and charts](screenshoots/Overview.png)
+| Overview | Tank statistics |
+| --- | --- |
+| [![Overview with battle statistics and charts](screenshoots/Overview.png)](screenshoots/Overview.png) | [![Tank shooting statistics](screenshoots/Tanks.png)](screenshoots/Tanks.png) |
+| **Battle history** | **Outgoing damage** |
+| [![Battle history with results and earnings](screenshoots/Battles.png)](screenshoots/Battles.png) | [![Outgoing damage by battle and opposing player](screenshoots/DMG_received.png)](screenshoots/DMG_received.png) |
 
 ## Features
 
