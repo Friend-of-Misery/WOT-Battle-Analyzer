@@ -10,6 +10,10 @@ A World of Tanks statistics tracker for Windows, created by **Friend of Misery**
 - Automatic replay import, local archive, and custom SQL queries.
 - Interface available in 13 languages.
 
+## Download
+
+Download the Windows executable or ZIP from [Releases](https://github.com/Friend-of-Misery/WOT-Battle-Analyzer/releases/latest).
+
 ## Getting started
 
 With Rust installed:
@@ -28,6 +32,8 @@ Statistics cover random battles from `.wotreplay` files. Missing final results a
 cargo test
 cargo build --release
 ```
+
+GitHub Actions tests and builds every push to `main`. To publish a release, push a tag matching the version in `Cargo.toml` (for example, `v0.6.3`). The release includes the Windows x64 executable, a ZIP, and SHA-256 checksums.
 
 Technical details: [Architecture](docs/architecture.md) (in German).
 

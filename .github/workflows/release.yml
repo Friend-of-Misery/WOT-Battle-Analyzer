@@ -1,0 +1,71 @@
+name: Windows build and release
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: windows-2022
+    timeout-minutes: 45
+    permissions:
+      contents: write
+    env:
+      WOT_BATTLE_ANALYZER_GITHUB_URL: https://github.com/Friend-of-Misery/WOT-Battle-Analyzer
+      CARGO_TERM_COLOR: always
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Install stable Rust
+        run: |
+          rustup toolchain install stable --profile minimal
+          rustup default stable
+
+      - name: Check release version
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: pwsh
+        run: |
+          $metadata = cargo metadata --no-deps --format-version 1 --locked | ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot read package metadata' }
+          $version = ($metadata.packages | Where-Object name -eq 'wot-battle-analyzer').version
+          if ($env:GITHUB_REF_NAME -cne "v$version") { throw "Tag must match Cargo.toml version: v$version" }
+
+      - name: Test
+        run: cargo test --locked
+
+      - name: Build Windows executable
+        run: cargo build --release --locked --bin wot-battle-analyzer
+
+      - name: Package release
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path release | Out-Null
+          Copy-Item target/release/wot-battle-analyzer.exe release/WoT-Battle-Analyzer.exe
+          Copy-Item README.md release/README.md
+          $archive = "WoT-Battle-Analyzer-$env:GITHUB_REF_NAME-windows-x64.zip"
+          Compress-Archive -Path release/* -DestinationPath $archive
+          $files = @('release/WoT-Battle-Analyzer.exe', $archive)
+          $lines = foreach ($file in $files) {
+            $hash = (Get-FileHash -LiteralPath $file -Algorithm SHA256).Hash.ToLowerInvariant()
+            "$hash  $(Split-Path -Leaf $file)"
+          }
+          $lines | Set-Content SHA256SUMS.txt -Encoding ascii
+
+      - name: Publish GitHub release
+        if: startsWith(github.ref, 'refs/tags/')
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create $env:GITHUB_REF_NAME --verify-tag --title "WoT Battle Analyzer $env:GITHUB_REF_NAME" --generate-notes "release/WoT-Battle-Analyzer.exe" "WoT-Battle-Analyzer-$env:GITHUB_REF_NAME-windows-x64.zip" SHA256SUMS.txt
+          if ($LASTEXITCODE -ne 0) { throw 'Release publication failed' }
