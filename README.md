@@ -2,6 +2,10 @@
 
 A World of Tanks statistics tracker for Windows, created by **Friend of Misery**. Analyzes local replays to show which maps and tanks you perform best with.
 
+## Screenshot
+
+![WoT Battle Analyzer overview with battle statistics and charts](screenshoots/Overview.png)
+
 ## Features
 
 - Overview of win rate, damage, assistance, and battle history.
