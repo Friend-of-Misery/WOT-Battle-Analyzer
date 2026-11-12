@@ -37,4 +37,10 @@ GitHub Actions tests and builds every push to `main`. To publish a release, push
 
 Technical details: [Architecture](docs/architecture.md) (in German).
 
+## License
+
+Copyright (C) 2026 Friend of Misery. Licensed under [GNU GPLv3](LICENSE) (GPL-3.0-only). Third-party components retain their own licenses.
+
+Inspired by [WoT Numbers](https://github.com/KIHestad/WotNumbers), an MIT-licensed project. This application is an independent Rust implementation.
+
 Independent project. World of Tanks is a trademark of Wargaming.

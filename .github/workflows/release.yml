@@ -52,6 +52,7 @@ jobs:
           New-Item -ItemType Directory -Path release | Out-Null
           Copy-Item target/release/wot-battle-analyzer.exe release/WoT-Battle-Analyzer.exe
           Copy-Item README.md release/README.md
+          Copy-Item LICENSE release/LICENSE
           $archive = "WoT-Battle-Analyzer-$env:GITHUB_REF_NAME-windows-x64.zip"
           Compress-Archive -Path release/* -DestinationPath $archive
           $files = @('release/WoT-Battle-Analyzer.exe', $archive)
