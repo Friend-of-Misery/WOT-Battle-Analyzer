@@ -1,34 +1,34 @@
 # WoT Battle Analyzer
 
-Ein Statistiktracker für World of Tanks unter Windows, erstellt von **Friend of Misery**. Wertet lokale Replays aus und zeigt, auf welchen Karten und mit welchen Panzern du erfolgreich spielst.
+A World of Tanks statistics tracker for Windows, created by **Friend of Misery**. Analyzes local replays to show which maps and tanks you perform best with.
 
-## Funktionen
+## Features
 
-- Übersicht mit Winrate, Schaden, Assist und Gefechtsverlauf.
-- Auswertungen nach Panzer, Klasse, Stufe, Karte und Zeitraum.
-- Gefechtsdetails, Credits-Bilanz, Schussdaten und Spielersuche.
-- Automatischer Replay-Import, lokales Archiv und eigene SQL-Abfragen.
-- Oberfläche in 13 Sprachen.
+- Overview of win rate, damage, assistance, and battle history.
+- Statistics by tank, class, tier, map, and date range.
+- Battle details, credit balance, shot statistics, and player search.
+- Automatic replay import, local archive, and custom SQL queries.
+- Interface available in 13 languages.
 
-## Starten
+## Getting started
 
-Mit installiertem Rust:
+With Rust installed:
 
 ```powershell
 cargo run --release
 ```
 
-Unter **Einstellungen** den Spiel- und Replay-Ordner auswählen und **Jetzt einlesen** starten. Im Spiel die Aufzeichnung aller Gefechte aktivieren.
+Select your game and replay folders under **Settings**, then start an import. Enable recording of all battles in the game settings.
 
-Die Auswertung nutzt Zufallsgefechte aus `.wotreplay`-Dateien. Fehlende Endergebnisse werden als unbekannt behandelt. Alle Daten bleiben lokal; ein Login ist nicht erforderlich.
+Statistics cover random battles from `.wotreplay` files. Missing final results are treated as unknown. All data stays on your computer; no login is required.
 
-## Entwicklung
+## Development
 
 ```powershell
 cargo test
 cargo build --release
 ```
 
-Technische Details: [Architektur](docs/architecture.md).
+Technical details: [Architecture](docs/architecture.md) (in German).
 
-Unabhängiges Projekt. World of Tanks ist eine Marke von Wargaming.
+Independent project. World of Tanks is a trademark of Wargaming.
