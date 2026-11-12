@@ -2,6 +2,12 @@
 
 A World of Tanks statistics tracker for Windows, created by **Friend of Misery**. Analyzes local replays to show which maps and tanks you perform best with.
 
+## Download for Windows
+
+**[Download WoT-Battle-Analyzer.exe](https://github.com/Friend-of-Misery/WOT-Battle-Analyzer/releases/latest/download/WoT-Battle-Analyzer.exe)** — Windows x64, no Rust installation required.
+
+[All releases and ZIP downloads](https://github.com/Friend-of-Misery/WOT-Battle-Analyzer/releases/latest)
+
 ## Screenshots
 
 | Overview | Tank statistics |
@@ -18,17 +24,9 @@ A World of Tanks statistics tracker for Windows, created by **Friend of Misery**
 - Automatic replay import, local archive, and custom SQL queries.
 - Interface available in 13 languages.
 
-## Download
-
-Download the Windows executable or ZIP from [Releases](https://github.com/Friend-of-Misery/WOT-Battle-Analyzer/releases/latest).
-
 ## Getting started
 
-With Rust installed:
-
-```powershell
-cargo run --release
-```
+Download and run `WoT-Battle-Analyzer.exe`.
 
 Select your game and replay folders under **Settings**, then start an import. Enable recording of all battles in the game settings.
 
