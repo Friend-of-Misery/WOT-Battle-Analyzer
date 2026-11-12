@@ -26,9 +26,11 @@ A World of Tanks statistics tracker for Windows, created by **Friend of Misery**
 
 ## Getting started
 
+**Required: Enable battle recording for all battles in the World of Tanks game settings.** The analyzer reads the resulting `.wotreplay` files; battles without a saved replay cannot be imported.
+
 Download and run `WoT-Battle-Analyzer.exe`.
 
-Select your game and replay folders under **Settings**, then start an import. Enable recording of all battles in the game settings.
+Select your game and replay folders under **Settings**, then start an import.
 
 Statistics cover random battles from `.wotreplay` files. Missing final results are treated as unknown. All data stays on your computer; no login is required.
 
