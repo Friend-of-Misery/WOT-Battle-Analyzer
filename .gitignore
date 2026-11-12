@@ -1,0 +1,15 @@
+/target/
+/data/
+*.db
+*.db-shm
+*.db-wal
+/backups/
+/dist/
+/import*.txt
+/research/python/
+/research/economy/*.pyc
+/research/economy/*-dis.txt
+/research/accuracy/*.pyc
+/research/accuracy/*-dis.txt
+/references/*.png
+

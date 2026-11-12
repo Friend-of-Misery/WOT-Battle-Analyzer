@@ -1,0 +1,4247 @@
+{
+  "Übersicht": {
+    "en": "Overview",
+    "es": "Resumen",
+    "pl": "Przegląd",
+    "fr": "Vue d'ensemble",
+    "cs": "Přehled",
+    "uk": "Огляд",
+    "ru": "Обзор",
+    "it": "Panoramica",
+    "tr": "Genel bakış",
+    "pt": "Visão geral",
+    "hu": "Áttekintés",
+    "ro": "Prezentare generală"
+  },
+  "Panzer": {
+    "en": "Tanks",
+    "es": "Tanques",
+    "pl": "Czołgi",
+    "fr": "Chars",
+    "cs": "Tanky",
+    "uk": "Танки",
+    "ru": "Танки",
+    "it": "Carri",
+    "tr": "Tanklar",
+    "pt": "Tanques",
+    "hu": "Harckocsik",
+    "ro": "Tancuri"
+  },
+  "Gefechte": {
+    "en": "Battles",
+    "es": "Batallas",
+    "pl": "Bitwy",
+    "fr": "Batailles",
+    "cs": "Bitvy",
+    "uk": "Бої",
+    "ru": "Бои",
+    "it": "Battaglie",
+    "tr": "Savaşlar",
+    "pt": "Batalhas",
+    "hu": "Csaták",
+    "ro": "Bătălii"
+  },
+  "Karten": {
+    "en": "Maps",
+    "es": "Mapas",
+    "pl": "Mapy",
+    "fr": "Cartes",
+    "cs": "Mapy",
+    "uk": "Мапи",
+    "ru": "Карты",
+    "it": "Mappe",
+    "tr": "Haritalar",
+    "pt": "Mapas",
+    "hu": "Pályák",
+    "ro": "Hărți"
+  },
+  "Verlauf": {
+    "en": "History",
+    "es": "Historial",
+    "pl": "Historia",
+    "fr": "Historique",
+    "cs": "Historie",
+    "uk": "Історія",
+    "ru": "История",
+    "it": "Cronologia",
+    "tr": "Geçmiş",
+    "pt": "Histórico",
+    "hu": "Előzmények",
+    "ro": "Istoric"
+  },
+  "Einstellungen": {
+    "en": "Settings",
+    "es": "Configuración",
+    "pl": "Ustawienia",
+    "fr": "Paramètres",
+    "cs": "Nastavení",
+    "uk": "Налаштування",
+    "ru": "Настройки",
+    "it": "Impostazioni",
+    "tr": "Ayarlar",
+    "pt": "Definições",
+    "hu": "Beállítások",
+    "ro": "Setări"
+  },
+  "Verdienst": {
+    "en": "Earnings",
+    "es": "Ganancias",
+    "pl": "Zarobki",
+    "fr": "Gains",
+    "cs": "Výdělky",
+    "uk": "Заробіток",
+    "ru": "Доходы",
+    "it": "Guadagni",
+    "tr": "Kazanç",
+    "pt": "Ganhos",
+    "hu": "Bevétel",
+    "ro": "Câștiguri"
+  },
+  "Replay-Archiv": {
+    "en": "Replay archive",
+    "es": "Archivo de repeticiones",
+    "pl": "Archiwum powtórek",
+    "fr": "Archives des replays",
+    "cs": "Archiv záznamů",
+    "uk": "Архів реплеїв",
+    "ru": "Архив реплеев",
+    "it": "Archivio replay",
+    "tr": "Tekrar arşivi",
+    "pt": "Arquivo de replays",
+    "hu": "Visszajátszás-archívum",
+    "ro": "Arhivă reluări"
+  },
+  "Schaden": {
+    "en": "Damage",
+    "es": "Daño",
+    "pl": "Uszkodzenia",
+    "fr": "Dégâts",
+    "cs": "Poškození",
+    "uk": "Шкода",
+    "ru": "Урон",
+    "it": "Danni",
+    "tr": "Hasar",
+    "pt": "Dano",
+    "hu": "Sebzés",
+    "ro": "Daune"
+  },
+  "Spielersuche": {
+    "en": "Player search",
+    "es": "Buscar jugadores",
+    "pl": "Wyszukiwanie graczy",
+    "fr": "Recherche de joueurs",
+    "cs": "Hledání hráčů",
+    "uk": "Пошук гравців",
+    "ru": "Поиск игроков",
+    "it": "Ricerca giocatori",
+    "tr": "Oyuncu arama",
+    "pt": "Pesquisa de jogadores",
+    "hu": "Játékoskeresés",
+    "ro": "Căutare jucători"
+  },
+  "Sprache": {
+    "en": "Language",
+    "es": "Idioma",
+    "pl": "Język",
+    "fr": "Langue",
+    "cs": "Jazyk",
+    "uk": "Мова",
+    "ru": "Язык",
+    "it": "Lingua",
+    "tr": "Dil",
+    "pt": "Idioma",
+    "hu": "Nyelv",
+    "ro": "Limbă"
+  },
+  "Spieler": {
+    "en": "Player",
+    "es": "Jugador",
+    "pl": "Gracz",
+    "fr": "Joueur",
+    "cs": "Hráč",
+    "uk": "Гравець",
+    "ru": "Игрок",
+    "it": "Giocatore",
+    "tr": "Oyuncu",
+    "pt": "Jogador",
+    "hu": "Játékos",
+    "ro": "Jucător"
+  },
+  "Spielername": {
+    "en": "Player name",
+    "es": "Nombre del jugador",
+    "pl": "Nazwa gracza",
+    "fr": "Nom du joueur",
+    "cs": "Jméno hráče",
+    "uk": "Ім'я гравця",
+    "ru": "Имя игрока",
+    "it": "Nome giocatore",
+    "tr": "Oyuncu adı",
+    "pt": "Nome do jogador",
+    "hu": "Játékosnév",
+    "ro": "Numele jucătorului"
+  },
+  "Datum": {
+    "en": "Date",
+    "es": "Fecha",
+    "pl": "Data",
+    "fr": "Date",
+    "cs": "Datum",
+    "uk": "Дата",
+    "ru": "Дата",
+    "it": "Data",
+    "tr": "Tarih",
+    "pt": "Data",
+    "hu": "Dátum",
+    "ro": "Dată"
+  },
+  "Karte": {
+    "en": "Map",
+    "es": "Mapa",
+    "pl": "Mapa",
+    "fr": "Carte",
+    "cs": "Mapa",
+    "uk": "Мапа",
+    "ru": "Карта",
+    "it": "Mappa",
+    "tr": "Harita",
+    "pt": "Mapa",
+    "hu": "Pálya",
+    "ro": "Hartă"
+  },
+  "Stufe": {
+    "en": "Tier",
+    "es": "Nivel",
+    "pl": "Poziom",
+    "fr": "Rang",
+    "cs": "Úroveň",
+    "uk": "Рівень",
+    "ru": "Уровень",
+    "it": "Livello",
+    "tr": "Seviye",
+    "pt": "Nível",
+    "hu": "Szint",
+    "ro": "Nivel"
+  },
+  "Klasse": {
+    "en": "Class",
+    "es": "Clase",
+    "pl": "Klasa",
+    "fr": "Classe",
+    "cs": "Třída",
+    "uk": "Клас",
+    "ru": "Класс",
+    "it": "Classe",
+    "tr": "Sınıf",
+    "pt": "Classe",
+    "hu": "Osztály",
+    "ro": "Clasă"
+  },
+  "Rolle": {
+    "en": "Role",
+    "es": "Rol",
+    "pl": "Rola",
+    "fr": "Rôle",
+    "cs": "Role",
+    "uk": "Роль",
+    "ru": "Роль",
+    "it": "Ruolo",
+    "tr": "Rol",
+    "pt": "Função",
+    "hu": "Szerep",
+    "ro": "Rol"
+  },
+  "Nation": {
+    "en": "Nation",
+    "es": "Nación",
+    "pl": "Nacja",
+    "fr": "Nation",
+    "cs": "Národ",
+    "uk": "Нація",
+    "ru": "Нация",
+    "it": "Nazione",
+    "tr": "Ülke",
+    "pt": "Nação",
+    "hu": "Nemzet",
+    "ro": "Națiune"
+  },
+  "Team": {
+    "en": "Team",
+    "es": "Equipo",
+    "pl": "Drużyna",
+    "fr": "Équipe",
+    "cs": "Tým",
+    "uk": "Команда",
+    "ru": "Команда",
+    "it": "Squadra",
+    "tr": "Takım",
+    "pt": "Equipe",
+    "hu": "Csapat",
+    "ro": "Echipă"
+  },
+  "Mitspieler": {
+    "en": "Teammate",
+    "es": "Compañero",
+    "pl": "Sojusznik",
+    "fr": "Allié",
+    "cs": "Spoluhráč",
+    "uk": "Союзник",
+    "ru": "Союзник",
+    "it": "Alleato",
+    "tr": "Takım arkadaşı",
+    "pt": "Aliado",
+    "hu": "Csapattárs",
+    "ro": "Coechipier"
+  },
+  "Gegner": {
+    "en": "Opponent",
+    "es": "Rival",
+    "pl": "Przeciwnik",
+    "fr": "Adversaire",
+    "cs": "Soupeř",
+    "uk": "Супротивник",
+    "ru": "Противник",
+    "it": "Avversario",
+    "tr": "Rakip",
+    "pt": "Adversário",
+    "hu": "Ellenfél",
+    "ro": "Adversar"
+  },
+  "Zusammen": {
+    "en": "Together",
+    "es": "Juntos",
+    "pl": "Razem",
+    "fr": "Ensemble",
+    "cs": "Společně",
+    "uk": "Разом",
+    "ru": "Вместе",
+    "it": "Insieme",
+    "tr": "Birlikte",
+    "pt": "Juntos",
+    "hu": "Együtt",
+    "ro": "Împreună"
+  },
+  "Gegeneinander": {
+    "en": "Against each other",
+    "es": "Enfrentados",
+    "pl": "Przeciwko sobie",
+    "fr": "L'un contre l'autre",
+    "cs": "Proti sobě",
+    "uk": "Один проти одного",
+    "ru": "Друг против друга",
+    "it": "Avversari",
+    "tr": "Birbirine karşı",
+    "pt": "Um contra o outro",
+    "hu": "Egymás ellen",
+    "ro": "Unul împotriva celuilalt"
+  },
+  "Alle Begegnungen": {
+    "en": "All encounters",
+    "es": "Todos los encuentros",
+    "pl": "Wszystkie spotkania",
+    "fr": "Toutes les rencontres",
+    "cs": "Všechna setkání",
+    "uk": "Усі зустрічі",
+    "ru": "Все встречи",
+    "it": "Tutti gli incontri",
+    "tr": "Tüm karşılaşmalar",
+    "pt": "Todos os encontros",
+    "hu": "Minden találkozás",
+    "ro": "Toate întâlnirile"
+  },
+  "Suchen": {
+    "en": "Search",
+    "es": "Buscar",
+    "pl": "Szukaj",
+    "fr": "Rechercher",
+    "cs": "Hledat",
+    "uk": "Пошук",
+    "ru": "Найти",
+    "it": "Cerca",
+    "tr": "Ara",
+    "pt": "Pesquisar",
+    "hu": "Keresés",
+    "ro": "Caută"
+  },
+  "Aktualisieren": {
+    "en": "Refresh",
+    "es": "Actualizar",
+    "pl": "Odśwież",
+    "fr": "Actualiser",
+    "cs": "Obnovit",
+    "uk": "Оновити",
+    "ru": "Обновить",
+    "it": "Aggiorna",
+    "tr": "Yenile",
+    "pt": "Atualizar",
+    "hu": "Frissítés",
+    "ro": "Actualizează"
+  },
+  "Zurücksetzen": {
+    "en": "Reset",
+    "es": "Restablecer",
+    "pl": "Resetuj",
+    "fr": "Réinitialiser",
+    "cs": "Obnovit výchozí",
+    "uk": "Скинути",
+    "ru": "Сбросить",
+    "it": "Ripristina",
+    "tr": "Sıfırla",
+    "pt": "Repor",
+    "hu": "Alaphelyzet",
+    "ro": "Resetează"
+  },
+  "Zurück": {
+    "en": "Back",
+    "es": "Atrás",
+    "pl": "Wstecz",
+    "fr": "Retour",
+    "cs": "Zpět",
+    "uk": "Назад",
+    "ru": "Назад",
+    "it": "Indietro",
+    "tr": "Geri",
+    "pt": "Voltar",
+    "hu": "Vissza",
+    "ro": "Înapoi"
+  },
+  "Weiter": {
+    "en": "Next",
+    "es": "Siguiente",
+    "pl": "Dalej",
+    "fr": "Suivant",
+    "cs": "Další",
+    "uk": "Далі",
+    "ru": "Далее",
+    "it": "Avanti",
+    "tr": "İleri",
+    "pt": "Seguinte",
+    "hu": "Tovább",
+    "ro": "Înainte"
+  },
+  "Alle": {
+    "en": "All",
+    "es": "Todos",
+    "pl": "Wszystkie",
+    "fr": "Tous",
+    "cs": "Vše",
+    "uk": "Усі",
+    "ru": "Все",
+    "it": "Tutti",
+    "tr": "Tümü",
+    "pt": "Todos",
+    "hu": "Összes",
+    "ro": "Toate"
+  },
+  "Alle Panzer": {
+    "en": "All tanks",
+    "es": "Todos los tanques",
+    "pl": "Wszystkie czołgi",
+    "fr": "Tous les chars",
+    "cs": "Všechny tanky",
+    "uk": "Усі танки",
+    "ru": "Все танки",
+    "it": "Tutti i carri",
+    "tr": "Tüm tanklar",
+    "pt": "Todos os tanques",
+    "hu": "Összes harckocsi",
+    "ro": "Toate tancurile"
+  },
+  "Alle Nationen": {
+    "en": "All nations",
+    "es": "Todas las naciones",
+    "pl": "Wszystkie nacje",
+    "fr": "Toutes les nations",
+    "cs": "Všechny národy",
+    "uk": "Усі нації",
+    "ru": "Все нации",
+    "it": "Tutte le nazioni",
+    "tr": "Tüm ülkeler",
+    "pt": "Todas as nações",
+    "hu": "Összes nemzet",
+    "ro": "Toate națiunile"
+  },
+  "Alle Klassen": {
+    "en": "All classes",
+    "es": "Todas las clases",
+    "pl": "Wszystkie klasy",
+    "fr": "Toutes les classes",
+    "cs": "Všechny třídy",
+    "uk": "Усі класи",
+    "ru": "Все классы",
+    "it": "Tutte le classi",
+    "tr": "Tüm sınıflar",
+    "pt": "Todas as classes",
+    "hu": "Összes osztály",
+    "ro": "Toate clasele"
+  },
+  "Alle Stufen": {
+    "en": "All tiers",
+    "es": "Todos los niveles",
+    "pl": "Wszystkie poziomy",
+    "fr": "Tous les rangs",
+    "cs": "Všechny úrovně",
+    "uk": "Усі рівні",
+    "ru": "Все уровни",
+    "it": "Tutti i livelli",
+    "tr": "Tüm seviyeler",
+    "pt": "Todos os níveis",
+    "hu": "Összes szint",
+    "ro": "Toate nivelurile"
+  },
+  "Alle Rollen": {
+    "en": "All roles",
+    "es": "Todos los roles",
+    "pl": "Wszystkie role",
+    "fr": "Tous les rôles",
+    "cs": "Všechny role",
+    "uk": "Усі ролі",
+    "ru": "Все роли",
+    "it": "Tutti i ruoli",
+    "tr": "Tüm roller",
+    "pt": "Todas as funções",
+    "hu": "Összes szerep",
+    "ro": "Toate rolurile"
+  },
+  "Eingehender Schaden": {
+    "en": "Incoming damage",
+    "es": "Daño recibido",
+    "pl": "Otrzymane uszkodzenia",
+    "fr": "Dégâts reçus",
+    "cs": "Obdržené poškození",
+    "uk": "Отримана шкода",
+    "ru": "Полученный урон",
+    "it": "Danni ricevuti",
+    "tr": "Alınan hasar",
+    "pt": "Dano recebido",
+    "hu": "Kapott sebzés",
+    "ro": "Daune primite"
+  },
+  "Ausgehender Schaden": {
+    "en": "Outgoing damage",
+    "es": "Daño causado",
+    "pl": "Zadane uszkodzenia",
+    "fr": "Dégâts infligés",
+    "cs": "Způsobené poškození",
+    "uk": "Завдана шкода",
+    "ru": "Нанесённый урон",
+    "it": "Danni inflitti",
+    "tr": "Verilen hasar",
+    "pt": "Dano causado",
+    "hu": "Okozott sebzés",
+    "ro": "Daune provocate"
+  },
+  "Gesamtschaden": {
+    "en": "Total damage",
+    "es": "Daño total",
+    "pl": "Łączne uszkodzenia",
+    "fr": "Dégâts totaux",
+    "cs": "Celkové poškození",
+    "uk": "Загальна шкода",
+    "ru": "Общий урон",
+    "it": "Danni totali",
+    "tr": "Toplam hasar",
+    "pt": "Dano total",
+    "hu": "Összes sebzés",
+    "ro": "Daune totale"
+  },
+  "Gesamtschaden Spieler": {
+    "en": "Player total damage",
+    "es": "Daño total del jugador",
+    "pl": "Łączne uszkodzenia gracza",
+    "fr": "Dégâts totaux du joueur",
+    "cs": "Celkové poškození hráče",
+    "uk": "Загальна шкода гравця",
+    "ru": "Общий урон игрока",
+    "it": "Danni totali del giocatore",
+    "tr": "Oyuncunun toplam hasarı",
+    "pt": "Dano total do jogador",
+    "hu": "Játékos összes sebzése",
+    "ro": "Daunele totale ale jucătorului"
+  },
+  "Schüsse": {
+    "en": "Shots",
+    "es": "Disparos",
+    "pl": "Strzały",
+    "fr": "Tirs",
+    "cs": "Výstřely",
+    "uk": "Постріли",
+    "ru": "Выстрелы",
+    "it": "Colpi sparati",
+    "tr": "Atışlar",
+    "pt": "Disparos",
+    "hu": "Lövések",
+    "ro": "Focuri trase"
+  },
+  "Treffer": {
+    "en": "Hits",
+    "es": "Impactos",
+    "pl": "Trafienia",
+    "fr": "Impacts",
+    "cs": "Zásahy",
+    "uk": "Влучання",
+    "ru": "Попадания",
+    "it": "Colpi a segno",
+    "tr": "İsabetler",
+    "pt": "Acertos",
+    "hu": "Találatok",
+    "ro": "Lovituri"
+  },
+  "Durchschläge": {
+    "en": "Penetrations",
+    "es": "Penetraciones",
+    "pl": "Przebicia",
+    "fr": "Pénétrations",
+    "cs": "Průstřely",
+    "uk": "Пробиття",
+    "ru": "Пробития",
+    "it": "Perforazioni",
+    "tr": "Delmeler",
+    "pt": "Penetrações",
+    "hu": "Átütések",
+    "ro": "Penetrări"
+  },
+  "Explosionstreffer": {
+    "en": "Explosion hits",
+    "es": "Impactos de explosión",
+    "pl": "Trafienia odłamkami",
+    "fr": "Impacts d'explosion",
+    "cs": "Zásahy výbuchem",
+    "uk": "Влучання вибухом",
+    "ru": "Попадания взрывом",
+    "it": "Colpi da esplosione",
+    "tr": "Patlama isabetleri",
+    "pt": "Acertos por explosão",
+    "hu": "Robbanási találatok",
+    "ro": "Lovituri prin explozie"
+  },
+  "Direkte Treffer": {
+    "en": "Direct hits",
+    "es": "Impactos directos",
+    "pl": "Bezpośrednie trafienia",
+    "fr": "Impacts directs",
+    "cs": "Přímé zásahy",
+    "uk": "Прямі влучання",
+    "ru": "Прямые попадания",
+    "it": "Colpi diretti",
+    "tr": "Doğrudan isabetler",
+    "pt": "Acertos diretos",
+    "hu": "Közvetlen találatok",
+    "ro": "Lovituri directe"
+  },
+  "Assist": {
+    "en": "Assistance",
+    "es": "Asistencia",
+    "pl": "Asysta",
+    "fr": "Assistance",
+    "cs": "Asistence",
+    "uk": "Допомога",
+    "ru": "Содействие",
+    "it": "Assistenza",
+    "tr": "Destek",
+    "pt": "Assistência",
+    "hu": "Támogatás",
+    "ro": "Asistență"
+  },
+  "Assist Aufklärung": {
+    "en": "Spotting assistance",
+    "es": "Asistencia por detección",
+    "pl": "Asysta przez wykrycie",
+    "fr": "Assistance par détection",
+    "cs": "Asistence odhalením",
+    "uk": "Допомога розвідкою",
+    "ru": "Содействие разведкой",
+    "it": "Assistenza avvistamento",
+    "tr": "Tespit desteği",
+    "pt": "Assistência por detecção",
+    "hu": "Felderítési támogatás",
+    "ro": "Asistență prin detectare"
+  },
+  "Assist Kette": {
+    "en": "Tracking assistance",
+    "es": "Asistencia por inmovilización",
+    "pl": "Asysta przez zerwanie gąsienic",
+    "fr": "Assistance par immobilisation",
+    "cs": "Asistence poškozením pásů",
+    "uk": "Допомога збиттям гусениць",
+    "ru": "Содействие сбитием гусениц",
+    "it": "Assistenza immobilizzazione",
+    "tr": "Palet desteği",
+    "pt": "Assistência por imobilização",
+    "hu": "Lánctalp-támogatás",
+    "ro": "Asistență prin imobilizare"
+  },
+  "Assist Betäubung": {
+    "en": "Stun assistance",
+    "es": "Asistencia por aturdimiento",
+    "pl": "Asysta przez ogłuszenie",
+    "fr": "Assistance par étourdissement",
+    "cs": "Asistence ochromením",
+    "uk": "Допомога оглушенням",
+    "ru": "Содействие оглушением",
+    "it": "Assistenza stordimento",
+    "tr": "Sersemletme desteği",
+    "pt": "Assistência por atordoamento",
+    "hu": "Kábítási támogatás",
+    "ro": "Asistență prin asomare"
+  },
+  "Munition": {
+    "en": "Ammunition",
+    "es": "Munición",
+    "pl": "Amunicja",
+    "fr": "Munitions",
+    "cs": "Munice",
+    "uk": "Боєприпаси",
+    "ru": "Боеприпасы",
+    "it": "Munizioni",
+    "tr": "Mühimmat",
+    "pt": "Munição",
+    "hu": "Lőszer",
+    "ro": "Muniție"
+  },
+  "Abschüsse": {
+    "en": "Kills",
+    "es": "Destrucciones",
+    "pl": "Zniszczenia",
+    "fr": "Destructions",
+    "cs": "Zničení",
+    "uk": "Знищення",
+    "ru": "Уничтожения",
+    "it": "Distruzioni",
+    "tr": "İmhalar",
+    "pt": "Destruições",
+    "hu": "Kilövések",
+    "ro": "Distrugeri"
+  },
+  "Sieg": {
+    "en": "Victory",
+    "es": "Victoria",
+    "pl": "Zwycięstwo",
+    "fr": "Victoire",
+    "cs": "Vítězství",
+    "uk": "Перемога",
+    "ru": "Победа",
+    "it": "Vittoria",
+    "tr": "Zafer",
+    "pt": "Vitória",
+    "hu": "Győzelem",
+    "ro": "Victorie"
+  },
+  "Niederlage": {
+    "en": "Defeat",
+    "es": "Derrota",
+    "pl": "Porażka",
+    "fr": "Défaite",
+    "cs": "Porážka",
+    "uk": "Поразка",
+    "ru": "Поражение",
+    "it": "Sconfitta",
+    "tr": "Yenilgi",
+    "pt": "Derrota",
+    "hu": "Vereség",
+    "ro": "Înfrângere"
+  },
+  "Unentschieden": {
+    "en": "Draw",
+    "es": "Empate",
+    "pl": "Remis",
+    "fr": "Égalité",
+    "cs": "Remíza",
+    "uk": "Нічия",
+    "ru": "Ничья",
+    "it": "Pareggio",
+    "tr": "Beraberlik",
+    "pt": "Empate",
+    "hu": "Döntetlen",
+    "ro": "Egalitate"
+  },
+  "Offen": {
+    "en": "Pending",
+    "es": "Pendiente",
+    "pl": "Oczekujące",
+    "fr": "En attente",
+    "cs": "Nevyhodnoceno",
+    "uk": "Без результату",
+    "ru": "Без результата",
+    "it": "In attesa",
+    "tr": "Beklemede",
+    "pt": "Pendente",
+    "hu": "Függőben",
+    "ro": "În așteptare"
+  },
+  "Unbekannt": {
+    "en": "Unknown",
+    "es": "Desconocido",
+    "pl": "Nieznane",
+    "fr": "Inconnu",
+    "cs": "Neznámé",
+    "uk": "Невідомо",
+    "ru": "Неизвестно",
+    "it": "Sconosciuto",
+    "tr": "Bilinmiyor",
+    "pt": "Desconhecido",
+    "hu": "Ismeretlen",
+    "ro": "Necunoscut"
+  },
+  "Ergebnis": {
+    "en": "Result",
+    "es": "Resultado",
+    "pl": "Wynik",
+    "fr": "Résultat",
+    "cs": "Výsledek",
+    "uk": "Результат",
+    "ru": "Результат",
+    "it": "Risultato",
+    "tr": "Sonuç",
+    "pt": "Resultado",
+    "hu": "Eredmény",
+    "ro": "Rezultat"
+  },
+  "Ergebnisse": {
+    "en": "Results",
+    "es": "Resultados",
+    "pl": "Wyniki",
+    "fr": "Résultats",
+    "cs": "Výsledky",
+    "uk": "Результати",
+    "ru": "Результаты",
+    "it": "Risultati",
+    "tr": "Sonuçlar",
+    "pt": "Resultados",
+    "hu": "Eredmények",
+    "ro": "Rezultate"
+  },
+  "Endergebnisse": {
+    "en": "Final results",
+    "es": "Resultados finales",
+    "pl": "Wyniki końcowe",
+    "fr": "Résultats finaux",
+    "cs": "Konečné výsledky",
+    "uk": "Підсумкові результати",
+    "ru": "Итоговые результаты",
+    "it": "Risultati finali",
+    "tr": "Nihai sonuçlar",
+    "pt": "Resultados finais",
+    "hu": "Végeredmények",
+    "ro": "Rezultate finale"
+  },
+  "Winrate": {
+    "en": "Win rate",
+    "es": "Victorias",
+    "pl": "Zwycięstwa",
+    "fr": "Taux de victoire",
+    "cs": "Úspěšnost",
+    "uk": "Відсоток перемог",
+    "ru": "Процент побед",
+    "it": "Vittorie",
+    "tr": "Galibiyet oranı",
+    "pt": "Taxa de vitórias",
+    "hu": "Győzelmi arány",
+    "ro": "Rată de victorii"
+  },
+  "Basis-XP": {
+    "en": "Base XP",
+    "es": "EXP base",
+    "pl": "Bazowe PD",
+    "fr": "EXP de base",
+    "cs": "Základní ZK",
+    "uk": "Базовий досвід",
+    "ru": "Базовый опыт",
+    "it": "Exp base",
+    "tr": "Temel DP",
+    "pt": "EXP base",
+    "hu": "Alap XP",
+    "ro": "XP de bază"
+  },
+  "Heute": {
+    "en": "Today",
+    "es": "Hoy",
+    "pl": "Dzisiaj",
+    "fr": "Aujourd'hui",
+    "cs": "Dnes",
+    "uk": "Сьогодні",
+    "ru": "Сегодня",
+    "it": "Oggi",
+    "tr": "Bugün",
+    "pt": "Hoje",
+    "hu": "Ma",
+    "ro": "Astăzi"
+  },
+  "Letzte Session": {
+    "en": "Last session",
+    "es": "Última sesión",
+    "pl": "Ostatnia sesja",
+    "fr": "Dernière session",
+    "cs": "Poslední relace",
+    "uk": "Остання сесія",
+    "ru": "Последняя сессия",
+    "it": "Ultima sessione",
+    "tr": "Son oturum",
+    "pt": "Última sessão",
+    "hu": "Utolsó munkamenet",
+    "ro": "Ultima sesiune"
+  },
+  "Letzte 7 Tage": {
+    "en": "Last 7 days",
+    "es": "Últimos 7 días",
+    "pl": "Ostatnie 7 dni",
+    "fr": "7 derniers jours",
+    "cs": "Posledních 7 dní",
+    "uk": "Останні 7 днів",
+    "ru": "Последние 7 дней",
+    "it": "Ultimi 7 giorni",
+    "tr": "Son 7 gün",
+    "pt": "Últimos 7 dias",
+    "hu": "Elmúlt 7 nap",
+    "ro": "Ultimele 7 zile"
+  },
+  "Letzte 30 Tage": {
+    "en": "Last 30 days",
+    "es": "Últimos 30 días",
+    "pl": "Ostatnie 30 dni",
+    "fr": "30 derniers jours",
+    "cs": "Posledních 30 dní",
+    "uk": "Останні 30 днів",
+    "ru": "Последние 30 дней",
+    "it": "Ultimi 30 giorni",
+    "tr": "Son 30 gün",
+    "pt": "Últimos 30 dias",
+    "hu": "Elmúlt 30 nap",
+    "ro": "Ultimele 30 de zile"
+  },
+  "Letzte 90 Tage": {
+    "en": "Last 90 days",
+    "es": "Últimos 90 días",
+    "pl": "Ostatnie 90 dni",
+    "fr": "90 derniers jours",
+    "cs": "Posledních 90 dní",
+    "uk": "Останні 90 днів",
+    "ru": "Последние 90 дней",
+    "it": "Ultimi 90 giorni",
+    "tr": "Son 90 gün",
+    "pt": "Últimos 90 dias",
+    "hu": "Elmúlt 90 nap",
+    "ro": "Ultimele 90 de zile"
+  },
+  "Gesamter Zeitraum": {
+    "en": "All time",
+    "es": "Todo el período",
+    "pl": "Cały okres",
+    "fr": "Toute la période",
+    "cs": "Celé období",
+    "uk": "Увесь період",
+    "ru": "Весь период",
+    "it": "Tutto il periodo",
+    "tr": "Tüm zamanlar",
+    "pt": "Todo o período",
+    "hu": "Teljes időszak",
+    "ro": "Întreaga perioadă"
+  },
+  "Jetzt einlesen": {
+    "en": "Import now",
+    "es": "Importar ahora",
+    "pl": "Importuj teraz",
+    "fr": "Importer maintenant",
+    "cs": "Načíst nyní",
+    "uk": "Імпортувати зараз",
+    "ru": "Импортировать сейчас",
+    "it": "Importa ora",
+    "tr": "Şimdi içe aktar",
+    "pt": "Importar agora",
+    "hu": "Importálás most",
+    "ro": "Importă acum"
+  },
+  "Lade Gefechte …": {
+    "en": "Loading battles …",
+    "es": "Cargando batallas …",
+    "pl": "Wczytywanie bitew …",
+    "fr": "Chargement des batailles …",
+    "cs": "Načítání bitev …",
+    "uk": "Завантаження боїв …",
+    "ru": "Загрузка боёв …",
+    "it": "Caricamento battaglie …",
+    "tr": "Savaşlar yükleniyor …",
+    "pt": "A carregar batalhas …",
+    "hu": "Csaták betöltése …",
+    "ro": "Se încarcă bătăliile …"
+  },
+  "Replay-Ordner": {
+    "en": "Replay folder",
+    "es": "Carpeta de repeticiones",
+    "pl": "Folder powtórek",
+    "fr": "Dossier des replays",
+    "cs": "Složka záznamů",
+    "uk": "Папка реплеїв",
+    "ru": "Папка реплеев",
+    "it": "Cartella replay",
+    "tr": "Tekrar klasörü",
+    "pt": "Pasta de replays",
+    "hu": "Visszajátszások mappája",
+    "ro": "Dosar reluări"
+  },
+  "WoT-Installationsordner": {
+    "en": "WoT installation folder",
+    "es": "Carpeta de instalación de WoT",
+    "pl": "Folder instalacji WoT",
+    "fr": "Dossier d'installation de WoT",
+    "cs": "Instalační složka WoT",
+    "uk": "Папка встановлення WoT",
+    "ru": "Папка установки WoT",
+    "it": "Cartella di installazione WoT",
+    "tr": "WoT kurulum klasörü",
+    "pt": "Pasta de instalação do WoT",
+    "hu": "WoT telepítési mappája",
+    "ro": "Dosar de instalare WoT"
+  },
+  "Datenquelle & Erfassung": {
+    "en": "Data source and import",
+    "es": "Origen e importación",
+    "pl": "Źródło danych i import",
+    "fr": "Source et importation",
+    "cs": "Zdroj dat a import",
+    "uk": "Джерело даних та імпорт",
+    "ru": "Источник данных и импорт",
+    "it": "Origine dati e importazione",
+    "tr": "Veri kaynağı ve içe aktarma",
+    "pt": "Fonte de dados e importação",
+    "hu": "Adatforrás és importálás",
+    "ro": "Sursă de date și import"
+  },
+  "Datenquelle prüfen und einlesen": {
+    "en": "Check source and import",
+    "es": "Comprobar e importar",
+    "pl": "Sprawdź źródło i importuj",
+    "fr": "Vérifier et importer",
+    "cs": "Ověřit zdroj a načíst",
+    "uk": "Перевірити та імпортувати",
+    "ru": "Проверить и импортировать",
+    "it": "Controlla e importa",
+    "tr": "Kaynağı kontrol et ve içe aktar",
+    "pt": "Verificar e importar",
+    "hu": "Forrás ellenőrzése és importálás",
+    "ro": "Verifică sursa și importă"
+  },
+  "Neue Replays automatisch alle 30 Sekunden einlesen": {
+    "en": "Import new replays automatically every 30 seconds",
+    "es": "Importar repeticiones cada 30 segundos",
+    "pl": "Importuj nowe powtórki co 30 sekund",
+    "fr": "Importer les replays toutes les 30 secondes",
+    "cs": "Načítat nové záznamy každých 30 sekund",
+    "uk": "Імпортувати нові реплеї кожні 30 секунд",
+    "ru": "Импортировать новые реплеи каждые 30 секунд",
+    "it": "Importa nuovi replay ogni 30 secondi",
+    "tr": "Yeni tekrarları 30 saniyede bir içe aktar",
+    "pt": "Importar novos replays a cada 30 segundos",
+    "hu": "Új visszajátszások importálása 30 másodpercenként",
+    "ro": "Importă reluări noi la fiecare 30 de secunde"
+  },
+  "SQL-Reiter für eigene Abfragen anzeigen": {
+    "en": "Show SQL tab for custom queries",
+    "es": "Mostrar pestaña SQL",
+    "pl": "Pokaż kartę SQL",
+    "fr": "Afficher l'onglet SQL",
+    "cs": "Zobrazit kartu SQL",
+    "uk": "Показувати вкладку SQL",
+    "ru": "Показывать вкладку SQL",
+    "it": "Mostra scheda SQL",
+    "tr": "SQL sekmesini göster",
+    "pt": "Mostrar separador SQL",
+    "hu": "SQL lap megjelenítése",
+    "ro": "Afișează fila SQL"
+  },
+  "Abfrage ausführen": {
+    "en": "Run query",
+    "es": "Ejecutar consulta",
+    "pl": "Wykonaj zapytanie",
+    "fr": "Exécuter la requête",
+    "cs": "Spustit dotaz",
+    "uk": "Виконати запит",
+    "ru": "Выполнить запрос",
+    "it": "Esegui query",
+    "tr": "Sorguyu çalıştır",
+    "pt": "Executar consulta",
+    "hu": "Lekérdezés futtatása",
+    "ro": "Execută interogarea"
+  },
+  "SQL-Abfragen": {
+    "en": "SQL queries",
+    "es": "Consultas SQL",
+    "pl": "Zapytania SQL",
+    "fr": "Requêtes SQL",
+    "cs": "SQL dotazy",
+    "uk": "SQL-запити",
+    "ru": "SQL-запросы",
+    "it": "Query SQL",
+    "tr": "SQL sorguları",
+    "pt": "Consultas SQL",
+    "hu": "SQL-lekérdezések",
+    "ro": "Interogări SQL"
+  },
+  "Schema aktualisieren": {
+    "en": "Refresh schema",
+    "es": "Actualizar esquema",
+    "pl": "Odśwież schemat",
+    "fr": "Actualiser le schéma",
+    "cs": "Obnovit schéma",
+    "uk": "Оновити схему",
+    "ru": "Обновить схему",
+    "it": "Aggiorna schema",
+    "tr": "Şemayı yenile",
+    "pt": "Atualizar esquema",
+    "hu": "Séma frissítése",
+    "ro": "Actualizează schema"
+  },
+  "Tabellen & Spaltendefinitionen": {
+    "en": "Tables and column definitions",
+    "es": "Tablas y columnas",
+    "pl": "Tabele i definicje kolumn",
+    "fr": "Tables et colonnes",
+    "cs": "Tabulky a definice sloupců",
+    "uk": "Таблиці та визначення стовпців",
+    "ru": "Таблицы и определения столбцов",
+    "it": "Tabelle e colonne",
+    "tr": "Tablolar ve sütun tanımları",
+    "pt": "Tabelas e colunas",
+    "hu": "Táblák és oszlopdefiníciók",
+    "ro": "Tabele și definiții de coloane"
+  },
+  "Schussdaten": {
+    "en": "Shooting statistics",
+    "es": "Estadísticas de disparo",
+    "pl": "Statystyki strzelania",
+    "fr": "Statistiques de tir",
+    "cs": "Statistiky střelby",
+    "uk": "Статистика стрільби",
+    "ru": "Статистика стрельбы",
+    "it": "Statistiche di tiro",
+    "tr": "Atış istatistikleri",
+    "pt": "Estatísticas de tiro",
+    "hu": "Lövési statisztikák",
+    "ro": "Statistici de tragere"
+  },
+  "Panzerfilter": {
+    "en": "Tank filter",
+    "es": "Filtro de tanques",
+    "pl": "Filtr czołgów",
+    "fr": "Filtre des chars",
+    "cs": "Filtr tanků",
+    "uk": "Фільтр танків",
+    "ru": "Фильтр танков",
+    "it": "Filtro carri",
+    "tr": "Tank filtresi",
+    "pt": "Filtro de tanques",
+    "hu": "Harckocsiszűrő",
+    "ro": "Filtru de tancuri"
+  },
+  "Panzerfilter leeren": {
+    "en": "Clear tank filter",
+    "es": "Limpiar filtro de tanques",
+    "pl": "Wyczyść filtr czołgów",
+    "fr": "Effacer le filtre des chars",
+    "cs": "Vymazat filtr tanků",
+    "uk": "Очистити фільтр танків",
+    "ru": "Очистить фильтр танков",
+    "it": "Cancella filtro carri",
+    "tr": "Tank filtresini temizle",
+    "pt": "Limpar filtro de tanques",
+    "hu": "Harckocsiszűrő törlése",
+    "ro": "Șterge filtrul de tancuri"
+  },
+  "Filter zurücksetzen": {
+    "en": "Reset filters",
+    "es": "Restablecer filtros",
+    "pl": "Resetuj filtry",
+    "fr": "Réinitialiser les filtres",
+    "cs": "Obnovit filtry",
+    "uk": "Скинути фільтри",
+    "ru": "Сбросить фильтры",
+    "it": "Ripristina filtri",
+    "tr": "Filtreleri sıfırla",
+    "pt": "Repor filtros",
+    "hu": "Szűrők alaphelyzetbe",
+    "ro": "Resetează filtrele"
+  },
+  "Panzer suchen …": {
+    "en": "Search tanks …",
+    "es": "Buscar tanques …",
+    "pl": "Szukaj czołgów …",
+    "fr": "Rechercher des chars …",
+    "cs": "Hledat tanky …",
+    "uk": "Шукати танки …",
+    "ru": "Поиск танков …",
+    "it": "Cerca carri …",
+    "tr": "Tank ara …",
+    "pt": "Pesquisar tanques …",
+    "hu": "Harckocsik keresése …",
+    "ro": "Caută tancuri …"
+  },
+  "Karte suchen …": {
+    "en": "Search maps …",
+    "es": "Buscar mapas …",
+    "pl": "Szukaj map …",
+    "fr": "Rechercher des cartes …",
+    "cs": "Hledat mapy …",
+    "uk": "Шукати мапи …",
+    "ru": "Поиск карт …",
+    "it": "Cerca mappe …",
+    "tr": "Harita ara …",
+    "pt": "Pesquisar mapas …",
+    "hu": "Pályák keresése …",
+    "ro": "Caută hărți …"
+  },
+  "Spalten": {
+    "en": "Columns",
+    "es": "Columnas",
+    "pl": "Kolumny",
+    "fr": "Colonnes",
+    "cs": "Sloupce",
+    "uk": "Стовпці",
+    "ru": "Столбцы",
+    "it": "Colonne",
+    "tr": "Sütunlar",
+    "pt": "Colunas",
+    "hu": "Oszlopok",
+    "ro": "Coloane"
+  },
+  "Leicht": {
+    "en": "Light",
+    "es": "Ligero",
+    "pl": "Lekki",
+    "fr": "Léger",
+    "cs": "Lehký",
+    "uk": "Легкий",
+    "ru": "Лёгкий",
+    "it": "Leggero",
+    "tr": "Hafif",
+    "pt": "Leve",
+    "hu": "Könnyű",
+    "ro": "Ușor"
+  },
+  "Mittel": {
+    "en": "Medium",
+    "es": "Medio",
+    "pl": "Średni",
+    "fr": "Moyen",
+    "cs": "Střední",
+    "uk": "Середній",
+    "ru": "Средний",
+    "it": "Medio",
+    "tr": "Orta",
+    "pt": "Médio",
+    "hu": "Közepes",
+    "ro": "Mediu"
+  },
+  "Schwer": {
+    "en": "Heavy",
+    "es": "Pesado",
+    "pl": "Ciężki",
+    "fr": "Lourd",
+    "cs": "Těžký",
+    "uk": "Важкий",
+    "ru": "Тяжёлый",
+    "it": "Pesante",
+    "tr": "Ağır",
+    "pt": "Pesado",
+    "hu": "Nehéz",
+    "ro": "Greu"
+  },
+  "Jagdpanzer": {
+    "en": "Tank destroyer",
+    "es": "Cazacarros",
+    "pl": "Niszczyciel czołgów",
+    "fr": "Chasseur de chars",
+    "cs": "Stíhač tanků",
+    "uk": "ПТ-САУ",
+    "ru": "ПТ-САУ",
+    "it": "Cacciacarri",
+    "tr": "Tank avcısı",
+    "pt": "Caça-tanques",
+    "hu": "Páncélvadász",
+    "ro": "Vânător de tancuri"
+  },
+  "Artillerie": {
+    "en": "Artillery",
+    "es": "Artillería",
+    "pl": "Artyleria",
+    "fr": "Artillerie",
+    "cs": "Dělostřelectvo",
+    "uk": "Артилерія",
+    "ru": "Артиллерия",
+    "it": "Artiglieria",
+    "tr": "Topçu",
+    "pt": "Artilharia",
+    "hu": "Tüzérség",
+    "ro": "Artilerie"
+  },
+  "Panzerklasse": {
+    "en": "Tank class",
+    "es": "Clase de tanque",
+    "pl": "Klasa czołgu",
+    "fr": "Classe de char",
+    "cs": "Třída tanku",
+    "uk": "Клас танка",
+    "ru": "Класс танка",
+    "it": "Classe carro",
+    "tr": "Tank sınıfı",
+    "pt": "Classe de tanque",
+    "hu": "Harckocsiosztály",
+    "ro": "Clasă de tanc"
+  },
+  "Fahrzeugrolle": {
+    "en": "Vehicle role",
+    "es": "Rol del vehículo",
+    "pl": "Rola pojazdu",
+    "fr": "Rôle du véhicule",
+    "cs": "Role vozidla",
+    "uk": "Роль техніки",
+    "ru": "Роль техники",
+    "it": "Ruolo veicolo",
+    "tr": "Araç rolü",
+    "pt": "Função do veículo",
+    "hu": "Járműszerep",
+    "ro": "Rolul vehiculului"
+  },
+  "Trefferquote": {
+    "en": "Hit rate",
+    "es": "Precisión",
+    "pl": "Celność",
+    "fr": "Précision",
+    "cs": "Přesnost",
+    "uk": "Влучність",
+    "ru": "Точность",
+    "it": "Precisione",
+    "tr": "İsabet oranı",
+    "pt": "Precisão",
+    "hu": "Találati arány",
+    "ro": "Precizie"
+  },
+  "Durchschläge / Treffer": {
+    "en": "Penetrations / hits",
+    "es": "Penetraciones / impactos",
+    "pl": "Przebicia / trafienia",
+    "fr": "Pénétrations / impacts",
+    "cs": "Průstřely / zásahy",
+    "uk": "Пробиття / влучання",
+    "ru": "Пробития / попадания",
+    "it": "Perforazioni / colpi",
+    "tr": "Delmeler / isabetler",
+    "pt": "Penetrações / acertos",
+    "hu": "Átütések / találatok",
+    "ro": "Penetrări / lovituri"
+  },
+  "Durchschläge / Schüsse": {
+    "en": "Penetrations / shots",
+    "es": "Penetraciones / disparos",
+    "pl": "Przebicia / strzały",
+    "fr": "Pénétrations / tirs",
+    "cs": "Průstřely / výstřely",
+    "uk": "Пробиття / постріли",
+    "ru": "Пробития / выстрелы",
+    "it": "Perforazioni / colpi sparati",
+    "tr": "Delmeler / atışlar",
+    "pt": "Penetrações / disparos",
+    "hu": "Átütések / lövések",
+    "ro": "Penetrări / focuri"
+  },
+  "Einnahmen": {
+    "en": "Income",
+    "es": "Ingresos",
+    "pl": "Przychody",
+    "fr": "Recettes",
+    "cs": "Příjmy",
+    "uk": "Надходження",
+    "ru": "Поступления",
+    "it": "Entrate",
+    "tr": "Gelir",
+    "pt": "Receitas",
+    "hu": "Bevétel",
+    "ro": "Venituri"
+  },
+  "Ausgaben": {
+    "en": "Expenses",
+    "es": "Gastos",
+    "pl": "Wydatki",
+    "fr": "Dépenses",
+    "cs": "Výdaje",
+    "uk": "Витрати",
+    "ru": "Расходы",
+    "it": "Spese",
+    "tr": "Giderler",
+    "pt": "Despesas",
+    "hu": "Kiadások",
+    "ro": "Cheltuieli"
+  },
+  "Netto": {
+    "en": "Net",
+    "es": "Neto",
+    "pl": "Netto",
+    "fr": "Net",
+    "cs": "Čistý výdělek",
+    "uk": "Чистий дохід",
+    "ru": "Чистый доход",
+    "it": "Netto",
+    "tr": "Net",
+    "pt": "Líquido",
+    "hu": "Nettó",
+    "ro": "Net"
+  },
+  "Reparatur": {
+    "en": "Repairs",
+    "es": "Reparaciones",
+    "pl": "Naprawy",
+    "fr": "Réparations",
+    "cs": "Opravy",
+    "uk": "Ремонт",
+    "ru": "Ремонт",
+    "it": "Riparazioni",
+    "tr": "Onarım",
+    "pt": "Reparações",
+    "hu": "Javítás",
+    "ro": "Reparații"
+  },
+  "Verbrauchsmaterial": {
+    "en": "Consumables",
+    "es": "Consumibles",
+    "pl": "Materiały eksploatacyjne",
+    "fr": "Consommables",
+    "cs": "Spotřební doplňky",
+    "uk": "Спорядження",
+    "ru": "Снаряжение",
+    "it": "Consumabili",
+    "tr": "Sarf malzemeleri",
+    "pt": "Consumíveis",
+    "hu": "Fogyóeszközök",
+    "ro": "Consumabile"
+  },
+  "Gold": {
+    "en": "Gold",
+    "es": "Oro",
+    "pl": "Złoto",
+    "fr": "Or",
+    "cs": "Zlato",
+    "uk": "Золото",
+    "ru": "Золото",
+    "it": "Oro",
+    "tr": "Altın",
+    "pt": "Ouro",
+    "hu": "Arany",
+    "ro": "Aur"
+  },
+  "Anleihen": {
+    "en": "Bonds",
+    "es": "Bonos",
+    "pl": "Obligacje",
+    "fr": "Obligations",
+    "cs": "Bony",
+    "uk": "Бони",
+    "ru": "Боны",
+    "it": "Titoli",
+    "tr": "Tahviller",
+    "pt": "Títulos",
+    "hu": "Kötvények",
+    "ro": "Obligațiuni"
+  },
+  "Basis": {
+    "en": "Base",
+    "es": "Base",
+    "pl": "Baza",
+    "fr": "Base",
+    "cs": "Základ",
+    "uk": "База",
+    "ru": "База",
+    "it": "Base",
+    "tr": "Temel",
+    "pt": "Base",
+    "hu": "Alap",
+    "ro": "Bază"
+  },
+  "Premium": {
+    "en": "Premium",
+    "es": "Premium",
+    "pl": "Premium",
+    "fr": "Premium",
+    "cs": "Prémiový",
+    "uk": "Преміум",
+    "ru": "Премиум",
+    "it": "Premium",
+    "tr": "Premium",
+    "pt": "Premium",
+    "hu": "Prémium",
+    "ro": "Premium"
+  },
+  "Persönliche Reserven": {
+    "en": "Personal reserves",
+    "es": "Reservas personales",
+    "pl": "Rezerwy osobiste",
+    "fr": "Réserves personnelles",
+    "cs": "Osobní zálohy",
+    "uk": "Особисті резерви",
+    "ru": "Личные резервы",
+    "it": "Riserve personali",
+    "tr": "Kişisel yedekler",
+    "pt": "Reservas pessoais",
+    "hu": "Személyes tartalékok",
+    "ro": "Rezerve personale"
+  },
+  "Clanreserven": {
+    "en": "Clan reserves",
+    "es": "Reservas del clan",
+    "pl": "Rezerwy klanowe",
+    "fr": "Réserves du clan",
+    "cs": "Klanové zálohy",
+    "uk": "Кланові резерви",
+    "ru": "Клановые резервы",
+    "it": "Riserve del clan",
+    "tr": "Klan yedekleri",
+    "pt": "Reservas do clã",
+    "hu": "Klántartalékok",
+    "ro": "Rezerve de clan"
+  },
+  "Aufgaben": {
+    "en": "Missions",
+    "es": "Misiones",
+    "pl": "Misje",
+    "fr": "Missions",
+    "cs": "Mise",
+    "uk": "Завдання",
+    "ru": "Задачи",
+    "it": "Missioni",
+    "tr": "Görevler",
+    "pt": "Missões",
+    "hu": "Küldetések",
+    "ro": "Misiuni"
+  },
+  "Sonstiges": {
+    "en": "Other",
+    "es": "Otros",
+    "pl": "Inne",
+    "fr": "Autres",
+    "cs": "Ostatní",
+    "uk": "Інше",
+    "ru": "Прочее",
+    "it": "Altro",
+    "tr": "Diğer",
+    "pt": "Outros",
+    "hu": "Egyéb",
+    "ro": "Altele"
+  },
+  "Gefechtsdetails": {
+    "en": "Battle details",
+    "es": "Detalles de batalla",
+    "pl": "Szczegóły bitwy",
+    "fr": "Détails de la bataille",
+    "cs": "Podrobnosti bitvy",
+    "uk": "Подробиці бою",
+    "ru": "Подробности боя",
+    "it": "Dettagli battaglia",
+    "tr": "Savaş ayrıntıları",
+    "pt": "Detalhes da batalha",
+    "hu": "Csatarészletek",
+    "ro": "Detalii bătălie"
+  },
+  "Gefechte öffnen": {
+    "en": "Open battles",
+    "es": "Abrir batallas",
+    "pl": "Otwórz bitwy",
+    "fr": "Ouvrir les batailles",
+    "cs": "Otevřít bitvy",
+    "uk": "Відкрити бої",
+    "ru": "Открыть бои",
+    "it": "Apri battaglie",
+    "tr": "Savaşları aç",
+    "pt": "Abrir batalhas",
+    "hu": "Csaták megnyitása",
+    "ro": "Deschide bătăliile"
+  },
+  "Tag": {
+    "en": "Day",
+    "es": "Día",
+    "pl": "Dzień",
+    "fr": "Jour",
+    "cs": "Den",
+    "uk": "День",
+    "ru": "День",
+    "it": "Giorno",
+    "tr": "Gün",
+    "pt": "Dia",
+    "hu": "Nap",
+    "ro": "Zi"
+  },
+  "Tageswerte": {
+    "en": "Daily statistics",
+    "es": "Estadísticas diarias",
+    "pl": "Statystyki dzienne",
+    "fr": "Statistiques quotidiennes",
+    "cs": "Denní statistiky",
+    "uk": "Денна статистика",
+    "ru": "Дневная статистика",
+    "it": "Statistiche giornaliere",
+    "tr": "Günlük istatistikler",
+    "pt": "Estatísticas diárias",
+    "hu": "Napi statisztikák",
+    "ro": "Statistici zilnice"
+  },
+  "Letzte Spieltage": {
+    "en": "Recent playing days",
+    "es": "Días jugados recientes",
+    "pl": "Ostatnie dni gry",
+    "fr": "Derniers jours de jeu",
+    "cs": "Poslední herní dny",
+    "uk": "Останні ігрові дні",
+    "ru": "Последние игровые дни",
+    "it": "Ultimi giorni di gioco",
+    "tr": "Son oynanan günler",
+    "pt": "Últimos dias de jogo",
+    "hu": "Legutóbbi játéknapok",
+    "ro": "Ultimele zile de joc"
+  },
+  "Zuletzt gespielt": {
+    "en": "Recently played",
+    "es": "Jugado recientemente",
+    "pl": "Ostatnio grane",
+    "fr": "Joué récemment",
+    "cs": "Naposledy hráno",
+    "uk": "Нещодавно зіграно",
+    "ru": "Недавно сыграно",
+    "it": "Giocati di recente",
+    "tr": "Son oynanan",
+    "pt": "Jogados recentemente",
+    "hu": "Legutóbb játszott",
+    "ro": "Jucate recent"
+  },
+  "Einnahmen & Kosten": {
+    "en": "Income and costs",
+    "es": "Ingresos y costes",
+    "pl": "Przychody i koszty",
+    "fr": "Recettes et coûts",
+    "cs": "Příjmy a náklady",
+    "uk": "Надходження та витрати",
+    "ru": "Доходы и затраты",
+    "it": "Entrate e costi",
+    "tr": "Gelir ve maliyetler",
+    "pt": "Receitas e custos",
+    "hu": "Bevétel és költségek",
+    "ro": "Venituri și costuri"
+  },
+  "Vergleichen nach": {
+    "en": "Compare by",
+    "es": "Comparar por",
+    "pl": "Porównaj według",
+    "fr": "Comparer selon",
+    "cs": "Porovnat podle",
+    "uk": "Порівняти за",
+    "ru": "Сравнить по",
+    "it": "Confronta per",
+    "tr": "Karşılaştırma ölçütü",
+    "pt": "Comparar por",
+    "hu": "Összehasonlítás",
+    "ro": "Compară după"
+  },
+  "Vergleichswert": {
+    "en": "Comparison value",
+    "es": "Valor comparativo",
+    "pl": "Wartość porównawcza",
+    "fr": "Valeur de comparaison",
+    "cs": "Srovnávací hodnota",
+    "uk": "Порівняльне значення",
+    "ru": "Значение сравнения",
+    "it": "Valore di confronto",
+    "tr": "Karşılaştırma değeri",
+    "pt": "Valor de comparação",
+    "hu": "Összehasonlítási érték",
+    "ro": "Valoare comparativă"
+  },
+  "Abrechnungen": {
+    "en": "Financial results",
+    "es": "Balances",
+    "pl": "Rozliczenia",
+    "fr": "Bilans",
+    "cs": "Vyúčtování",
+    "uk": "Розрахунки",
+    "ru": "Расчёты",
+    "it": "Rendiconti",
+    "tr": "Hesap dökümleri",
+    "pt": "Balanços",
+    "hu": "Elszámolások",
+    "ro": "Bilanțuri"
+  },
+  "Was die Werte bedeuten": {
+    "en": "What the values mean",
+    "es": "Significado de los valores",
+    "pl": "Znaczenie wartości",
+    "fr": "Signification des valeurs",
+    "cs": "Význam hodnot",
+    "uk": "Значення показників",
+    "ru": "Значение показателей",
+    "it": "Significato dei valori",
+    "tr": "Değerlerin anlamı",
+    "pt": "Significado dos valores",
+    "hu": "Az értékek jelentése",
+    "ro": "Semnificația valorilor"
+  },
+  "Dateiinformationen": {
+    "en": "File information",
+    "es": "Información del archivo",
+    "pl": "Informacje o pliku",
+    "fr": "Informations sur le fichier",
+    "cs": "Informace o souboru",
+    "uk": "Інформація про файл",
+    "ru": "Информация о файле",
+    "it": "Informazioni sul file",
+    "tr": "Dosya bilgileri",
+    "pt": "Informações do ficheiro",
+    "hu": "Fájlinformációk",
+    "ro": "Informații despre fișier"
+  },
+  "Eigene Werte": {
+    "en": "Your statistics",
+    "es": "Tus estadísticas",
+    "pl": "Twoje statystyki",
+    "fr": "Vos statistiques",
+    "cs": "Vaše statistiky",
+    "uk": "Ваша статистика",
+    "ru": "Ваша статистика",
+    "it": "Le tue statistiche",
+    "tr": "İstatistiklerin",
+    "pt": "As suas estatísticas",
+    "hu": "Saját statisztikák",
+    "ro": "Statisticile tale"
+  },
+  "Originaldaten": {
+    "en": "Raw data",
+    "es": "Datos originales",
+    "pl": "Dane źródłowe",
+    "fr": "Données brutes",
+    "cs": "Původní data",
+    "uk": "Початкові дані",
+    "ru": "Исходные данные",
+    "it": "Dati originali",
+    "tr": "Ham veriler",
+    "pt": "Dados originais",
+    "hu": "Nyers adatok",
+    "ro": "Date originale"
+  },
+  "Fahrzeuge": {
+    "en": "Vehicles",
+    "es": "Vehículos",
+    "pl": "Pojazdy",
+    "fr": "Véhicules",
+    "cs": "Vozidla",
+    "uk": "Техніка",
+    "ru": "Техника",
+    "it": "Veicoli",
+    "tr": "Araçlar",
+    "pt": "Veículos",
+    "hu": "Járművek",
+    "ro": "Vehicule"
+  },
+  "Erklärungen anzeigen": {
+    "en": "Show explanations",
+    "es": "Mostrar explicaciones",
+    "pl": "Pokaż objaśnienia",
+    "fr": "Afficher les explications",
+    "cs": "Zobrazit vysvětlení",
+    "uk": "Показувати пояснення",
+    "ru": "Показывать пояснения",
+    "it": "Mostra spiegazioni",
+    "tr": "Açıklamaları göster",
+    "pt": "Mostrar explicações",
+    "hu": "Magyarázatok megjelenítése",
+    "ro": "Afișează explicațiile"
+  },
+  "Technische Feldnamen": {
+    "en": "Technical field names",
+    "es": "Nombres técnicos de campos",
+    "pl": "Techniczne nazwy pól",
+    "fr": "Noms techniques des champs",
+    "cs": "Technické názvy polí",
+    "uk": "Технічні назви полів",
+    "ru": "Технические имена полей",
+    "it": "Nomi tecnici dei campi",
+    "tr": "Teknik alan adları",
+    "pt": "Nomes técnicos dos campos",
+    "hu": "Technikai mezőnevek",
+    "ro": "Nume tehnice de câmpuri"
+  },
+  "Erneut laden": {
+    "en": "Reload",
+    "es": "Recargar",
+    "pl": "Wczytaj ponownie",
+    "fr": "Recharger",
+    "cs": "Znovu načíst",
+    "uk": "Завантажити знову",
+    "ru": "Загрузить заново",
+    "it": "Ricarica",
+    "tr": "Yeniden yükle",
+    "pt": "Recarregar",
+    "hu": "Újratöltés",
+    "ro": "Reîncarcă"
+  },
+  "Suche leeren": {
+    "en": "Clear search",
+    "es": "Limpiar búsqueda",
+    "pl": "Wyczyść wyszukiwanie",
+    "fr": "Effacer la recherche",
+    "cs": "Vymazat hledání",
+    "uk": "Очистити пошук",
+    "ru": "Очистить поиск",
+    "it": "Cancella ricerca",
+    "tr": "Aramayı temizle",
+    "pt": "Limpar pesquisa",
+    "hu": "Keresés törlése",
+    "ro": "Șterge căutarea"
+  },
+  "Replays älter als 30 Tage suchen": {
+    "en": "Find replays older than 30 days",
+    "es": "Buscar repeticiones de más de 30 días",
+    "pl": "Znajdź powtórki starsze niż 30 dni",
+    "fr": "Chercher les replays de plus de 30 jours",
+    "cs": "Najít záznamy starší než 30 dní",
+    "uk": "Знайти реплеї старші за 30 днів",
+    "ru": "Найти реплеи старше 30 дней",
+    "it": "Cerca replay più vecchi di 30 giorni",
+    "tr": "30 günden eski tekrarları bul",
+    "pt": "Procurar replays com mais de 30 dias",
+    "hu": "30 napnál régebbi visszajátszások keresése",
+    "ro": "Caută reluări mai vechi de 30 de zile"
+  },
+  "Jetzt archivieren und Originaldateien löschen": {
+    "en": "Archive now and delete originals",
+    "es": "Archivar y eliminar originales",
+    "pl": "Archiwizuj i usuń oryginały",
+    "fr": "Archiver et supprimer les originaux",
+    "cs": "Archivovat a smazat originály",
+    "uk": "Архівувати та видалити оригінали",
+    "ru": "Архивировать и удалить оригиналы",
+    "it": "Archivia ed elimina gli originali",
+    "tr": "Arşivle ve orijinalleri sil",
+    "pt": "Arquivar e eliminar originais",
+    "hu": "Archiválás és az eredetik törlése",
+    "ro": "Arhivează și șterge originalele"
+  },
+  "Die aufgelisteten Originaldateien nach geprüfter Archivierung endgültig löschen": {
+    "en": "Permanently delete listed originals after verified archival",
+    "es": "Eliminar originales tras verificar el archivo",
+    "pl": "Trwale usuń oryginały po sprawdzeniu archiwum",
+    "fr": "Supprimer les originaux après vérification des archives",
+    "cs": "Trvale smazat originály po ověření archivu",
+    "uk": "Видалити оригінали після перевірки архіву",
+    "ru": "Удалить оригиналы после проверки архива",
+    "it": "Elimina gli originali dopo la verifica dell'archivio",
+    "tr": "Arşiv doğrulandıktan sonra orijinalleri kalıcı sil",
+    "pt": "Eliminar originais após verificar o arquivo",
+    "hu": "Eredetik végleges törlése az archívum ellenőrzése után",
+    "ro": "Șterge definitiv originalele după verificarea arhivei"
+  },
+  "Seite {} / {}": {
+    "en": "Page {} / {}",
+    "es": "Página {} / {}",
+    "pl": "Strona {} / {}",
+    "fr": "Page {} / {}",
+    "cs": "Strana {} / {}",
+    "uk": "Сторінка {} / {}",
+    "ru": "Страница {} / {}",
+    "it": "Pagina {} / {}",
+    "tr": "Sayfa {} / {}",
+    "pt": "Página {} / {}",
+    "hu": "Oldal {} / {}",
+    "ro": "Pagina {} / {}"
+  },
+  "{} Gefechte · {} Endergebnisse · {} offen": {
+    "en": "{} battles · {} final results · {} pending",
+    "es": "{} batallas · {} resultados finales · {} pendientes",
+    "pl": "{} bitew · {} wyników końcowych · {} oczekujących",
+    "fr": "{} batailles · {} résultats finaux · {} en attente",
+    "cs": "{} bitev · {} konečných výsledků · {} nevyhodnocených",
+    "uk": "{} боїв · {} результатів · {} без результату",
+    "ru": "{} боёв · {} результатов · {} без результата",
+    "it": "{} battaglie · {} risultati finali · {} in attesa",
+    "tr": "{} savaş · {} nihai sonuç · {} beklemede",
+    "pt": "{} batalhas · {} resultados finais · {} pendentes",
+    "hu": "{} csata · {} végeredmény · {} függőben",
+    "ro": "{} bătălii · {} rezultate finale · {} în așteptare"
+  },
+  "Account-ID unbekannt": {
+    "en": "Unknown account ID",
+    "es": "ID de cuenta desconocido",
+    "pl": "Nieznany identyfikator konta",
+    "fr": "Identifiant de compte inconnu",
+    "cs": "Neznámé ID účtu",
+    "uk": "Невідомий ID акаунта",
+    "ru": "Неизвестный ID аккаунта",
+    "it": "ID account sconosciuto",
+    "tr": "Hesap kimliği bilinmiyor",
+    "pt": "ID de conta desconhecido",
+    "hu": "Ismeretlen fiókazonosító",
+    "ro": "ID de cont necunoscut"
+  },
+  "Alias / angezeigt": {
+    "en": "Alias / displayed name",
+    "es": "Alias / nombre mostrado",
+    "pl": "Alias / wyświetlana nazwa",
+    "fr": "Alias / nom affiché",
+    "cs": "Alias / zobrazené jméno",
+    "uk": "Псевдонім / відображене ім'я",
+    "ru": "Псевдоним / отображаемое имя",
+    "it": "Alias / nome visualizzato",
+    "tr": "Takma ad / görünen ad",
+    "pt": "Pseudónimo / nome exibido",
+    "hu": "Álnév / megjelenített név",
+    "ro": "Alias / nume afișat"
+  },
+  "Name oder Account-ID …": {
+    "en": "Name or account ID …",
+    "es": "Nombre o ID de cuenta …",
+    "pl": "Nazwa lub ID konta …",
+    "fr": "Nom ou identifiant du compte …",
+    "cs": "Jméno nebo ID účtu …",
+    "uk": "Ім'я або ID акаунта …",
+    "ru": "Имя или ID аккаунта …",
+    "it": "Nome o ID account …",
+    "tr": "Ad veya hesap kimliği …",
+    "pt": "Nome ou ID de conta …",
+    "hu": "Név vagy fiókazonosító …",
+    "ro": "Nume sau ID de cont …"
+  },
+  "Gib einen Spielernamen, Alias oder eine Account-ID ein.": {
+    "en": "Enter a player name, alias or account ID.",
+    "es": "Introduce un nombre, alias o ID de cuenta.",
+    "pl": "Wpisz nazwę gracza, alias lub ID konta.",
+    "fr": "Saisissez un nom, un alias ou un identifiant de compte.",
+    "cs": "Zadejte jméno hráče, alias nebo ID účtu.",
+    "uk": "Введіть ім'я гравця, псевдонім або ID акаунта.",
+    "ru": "Введите имя игрока, псевдоним или ID аккаунта.",
+    "it": "Inserisci un nome, alias o ID account.",
+    "tr": "Oyuncu adı, takma ad veya hesap kimliği girin.",
+    "pt": "Introduza um nome, pseudónimo ou ID de conta.",
+    "hu": "Adj meg játékosnevet, álnevet vagy fiókazonosítót.",
+    "ro": "Introdu un nume, alias sau ID de cont."
+  },
+  "Schaden an ihm": {
+    "en": "Damage dealt to player",
+    "es": "Daño causado al jugador",
+    "pl": "Uszkodzenia zadane graczowi",
+    "fr": "Dégâts infligés au joueur",
+    "cs": "Poškození způsobené hráči",
+    "uk": "Шкода, завдана гравцю",
+    "ru": "Урон, нанесённый игроку",
+    "it": "Danni inflitti al giocatore",
+    "tr": "Oyuncuya verilen hasar",
+    "pt": "Dano causado ao jogador",
+    "hu": "Játékosnak okozott sebzés",
+    "ro": "Daune provocate jucătorului"
+  },
+  "Schaden von ihm": {
+    "en": "Damage received from player",
+    "es": "Daño recibido del jugador",
+    "pl": "Uszkodzenia od gracza",
+    "fr": "Dégâts reçus du joueur",
+    "cs": "Poškození od hráče",
+    "uk": "Шкода від гравця",
+    "ru": "Урон от игрока",
+    "it": "Danni ricevuti dal giocatore",
+    "tr": "Oyuncudan alınan hasar",
+    "pt": "Dano recebido do jogador",
+    "hu": "Játékostól kapott sebzés",
+    "ro": "Daune primite de la jucător"
+  },
+  "Keine passenden Einträge. Gegebenenfalls zuerst Jetzt einlesen ausführen.": {
+    "en": "No matches. Try Import now first.",
+    "es": "Sin resultados. Prueba Importar ahora.",
+    "pl": "Brak wyników. Najpierw użyj Importuj teraz.",
+    "fr": "Aucun résultat. Essayez d'abord Importer maintenant.",
+    "cs": "Žádné výsledky. Nejprve zkuste Načíst nyní.",
+    "uk": "Немає результатів. Спочатку імпортуйте реплеї.",
+    "ru": "Нет результатов. Сначала импортируйте реплеи.",
+    "it": "Nessun risultato. Prova prima Importa ora.",
+    "tr": "Sonuç yok. Önce Şimdi içe aktar seçeneğini deneyin.",
+    "pt": "Sem resultados. Experimente Importar agora.",
+    "hu": "Nincs találat. Előbb importálj.",
+    "ro": "Niciun rezultat. Încearcă mai întâi Importă acum."
+  },
+  "Nach dem Update einmal Jetzt einlesen ausführen.": {
+    "en": "After updating, click Import now once.",
+    "es": "Tras actualizar, pulsa Importar ahora.",
+    "pl": "Po aktualizacji kliknij Importuj teraz.",
+    "fr": "Après la mise à jour, cliquez sur Importer maintenant.",
+    "cs": "Po aktualizaci klikněte na Načíst nyní.",
+    "uk": "Після оновлення натисніть Імпортувати зараз.",
+    "ru": "После обновления нажмите Импортировать сейчас.",
+    "it": "Dopo l'aggiornamento premi Importa ora.",
+    "tr": "Güncellemeden sonra Şimdi içe aktar seçeneğine tıklayın.",
+    "pt": "Após atualizar, clique em Importar agora.",
+    "hu": "Frissítés után kattints az Importálás most gombra.",
+    "ro": "După actualizare, apasă Importă acum."
+  },
+  "Schüsse / Treffer / Durchschläge": {
+    "en": "Shots / hits / penetrations",
+    "es": "Disparos / impactos / penetraciones",
+    "pl": "Strzały / trafienia / przebicia",
+    "fr": "Tirs / impacts / pénétrations",
+    "cs": "Výstřely / zásahy / průstřely",
+    "uk": "Постріли / влучання / пробиття",
+    "ru": "Выстрелы / попадания / пробития",
+    "it": "Colpi sparati / a segno / perforanti",
+    "tr": "Atışlar / isabetler / delmeler",
+    "pt": "Disparos / acertos / penetrações",
+    "hu": "Lövések / találatok / átütések",
+    "ro": "Focuri / lovituri / penetrări"
+  },
+  "Schaden / erhalten": {
+    "en": "Damage / received",
+    "es": "Daño / recibido",
+    "pl": "Uszkodzenia / otrzymane",
+    "fr": "Dégâts / reçus",
+    "cs": "Poškození / obdržené",
+    "uk": "Шкода / отримана",
+    "ru": "Урон / полученный",
+    "it": "Danni / ricevuti",
+    "tr": "Hasar / alınan",
+    "pt": "Dano / recebido",
+    "hu": "Sebzés / kapott",
+    "ro": "Daune / primite"
+  },
+  "Panzer-Rangliste": {
+    "en": "Tank ranking",
+    "es": "Clasificación de tanques",
+    "pl": "Ranking czołgów",
+    "fr": "Classement des chars",
+    "cs": "Žebříček tanků",
+    "uk": "Рейтинг танків",
+    "ru": "Рейтинг танков",
+    "it": "Classifica carri",
+    "tr": "Tank sıralaması",
+    "pt": "Classificação de tanques",
+    "hu": "Harckocsirangsor",
+    "ro": "Clasament tancuri"
+  },
+  "Karten-Rangliste": {
+    "en": "Map ranking",
+    "es": "Clasificación de mapas",
+    "pl": "Ranking map",
+    "fr": "Classement des cartes",
+    "cs": "Žebříček map",
+    "uk": "Рейтинг мап",
+    "ru": "Рейтинг карт",
+    "it": "Classifica mappe",
+    "tr": "Harita sıralaması",
+    "pt": "Classificação de mapas",
+    "hu": "Pályarangsor",
+    "ro": "Clasament hărți"
+  },
+  "Karte × Klasse": {
+    "en": "Map × class",
+    "es": "Mapa × clase",
+    "pl": "Mapa × klasa",
+    "fr": "Carte × classe",
+    "cs": "Mapa × třída",
+    "uk": "Мапа × клас",
+    "ru": "Карта × класс",
+    "it": "Mappa × classe",
+    "tr": "Harita × sınıf",
+    "pt": "Mapa × classe",
+    "hu": "Pálya × osztály",
+    "ro": "Hartă × clasă"
+  },
+  "Gefechte nach Klasse": {
+    "en": "Battles by class",
+    "es": "Batallas por clase",
+    "pl": "Bitwy według klasy",
+    "fr": "Batailles par classe",
+    "cs": "Bitvy podle třídy",
+    "uk": "Бої за класом",
+    "ru": "Бои по классу",
+    "it": "Battaglie per classe",
+    "tr": "Sınıfa göre savaşlar",
+    "pt": "Batalhas por classe",
+    "hu": "Csaták osztályonként",
+    "ro": "Bătălii după clasă"
+  },
+  "Gefechte nach Stufe": {
+    "en": "Battles by tier",
+    "es": "Batallas por nivel",
+    "pl": "Bitwy według poziomu",
+    "fr": "Batailles par rang",
+    "cs": "Bitvy podle úrovně",
+    "uk": "Бої за рівнем",
+    "ru": "Бои по уровню",
+    "it": "Battaglie per livello",
+    "tr": "Seviyeye göre savaşlar",
+    "pt": "Batalhas por nível",
+    "hu": "Csaták szintenként",
+    "ro": "Bătălii după nivel"
+  },
+  "Mind. Endergebnisse": {
+    "en": "Min. final results",
+    "es": "Mín. resultados finales",
+    "pl": "Min. wyników końcowych",
+    "fr": "Résultats finaux min.",
+    "cs": "Min. konečných výsledků",
+    "uk": "Мін. результатів",
+    "ru": "Мин. результатов",
+    "it": "Risultati finali min.",
+    "tr": "En az nihai sonuç",
+    "pt": "Mín. resultados finais",
+    "hu": "Min. végeredmény",
+    "ro": "Min. rezultate finale"
+  },
+  "Mind. Abrechnungen": {
+    "en": "Min. financial results",
+    "es": "Mín. balances",
+    "pl": "Min. rozliczeń",
+    "fr": "Bilans min.",
+    "cs": "Min. vyúčtování",
+    "uk": "Мін. розрахунків",
+    "ru": "Мин. расчётов",
+    "it": "Rendiconti min.",
+    "tr": "En az hesap dökümü",
+    "pt": "Mín. balanços",
+    "hu": "Min. elszámolás",
+    "ro": "Min. bilanțuri"
+  },
+  "Credits brutto": {
+    "en": "Gross credits",
+    "es": "Créditos brutos",
+    "pl": "Kredyty brutto",
+    "fr": "Crédits bruts",
+    "cs": "Hrubé kredity",
+    "uk": "Валові кредити",
+    "ru": "Кредиты брутто",
+    "it": "Crediti lordi",
+    "tr": "Brüt kredi",
+    "pt": "Créditos brutos",
+    "hu": "Bruttó kredit",
+    "ro": "Credite brute"
+  },
+  "Credits netto": {
+    "en": "Net credits",
+    "es": "Créditos netos",
+    "pl": "Kredyty netto",
+    "fr": "Crédits nets",
+    "cs": "Čisté kredity",
+    "uk": "Чисті кредити",
+    "ru": "Кредиты нетто",
+    "it": "Crediti netti",
+    "tr": "Net kredi",
+    "pt": "Créditos líquidos",
+    "hu": "Nettó kredit",
+    "ro": "Credite nete"
+  },
+  "Netto gesamt": {
+    "en": "Total net",
+    "es": "Neto total",
+    "pl": "Łącznie netto",
+    "fr": "Net total",
+    "cs": "Čistý výdělek celkem",
+    "uk": "Чистий підсумок",
+    "ru": "Итого нетто",
+    "it": "Netto totale",
+    "tr": "Toplam net",
+    "pt": "Líquido total",
+    "hu": "Összes nettó",
+    "ro": "Total net"
+  },
+  "Netto ohne Aufgaben / Ereignisse": {
+    "en": "Net excluding missions / events",
+    "es": "Neto sin misiones / eventos",
+    "pl": "Netto bez misji / wydarzeń",
+    "fr": "Net hors missions / événements",
+    "cs": "Čistý výdělek bez misí / akcí",
+    "uk": "Чистий дохід без завдань / подій",
+    "ru": "Чистый доход без задач / событий",
+    "it": "Netto senza missioni / eventi",
+    "tr": "Görevler / etkinlikler hariç net",
+    "pt": "Líquido sem missões / eventos",
+    "hu": "Nettó küldetések / események nélkül",
+    "ro": "Net fără misiuni / evenimente"
+  },
+  "Netto ohne Aufgaben und Reserven": {
+    "en": "Net excluding missions and reserves",
+    "es": "Neto sin misiones ni reservas",
+    "pl": "Netto bez misji i rezerw",
+    "fr": "Net hors missions et réserves",
+    "cs": "Čistý výdělek bez misí a záloh",
+    "uk": "Чистий дохід без завдань і резервів",
+    "ru": "Чистый доход без задач и резервов",
+    "it": "Netto senza missioni e riserve",
+    "tr": "Görev ve yedekler hariç net",
+    "pt": "Líquido sem missões e reservas",
+    "hu": "Nettó küldetések és tartalékok nélkül",
+    "ro": "Net fără misiuni și rezerve"
+  },
+  "{} aktualisiert · {} unverändert · {} übersprungen": {
+    "en": "{} updated · {} unchanged · {} skipped",
+    "es": "{} actualizados · {} sin cambios · {} omitidos",
+    "pl": "{} zaktualizowano · {} bez zmian · {} pominięto",
+    "fr": "{} actualisés · {} inchangés · {} ignorés",
+    "cs": "{} aktualizováno · {} beze změny · {} přeskočeno",
+    "uk": "{} оновлено · {} без змін · {} пропущено",
+    "ru": "{} обновлено · {} без изменений · {} пропущено",
+    "it": "{} aggiornati · {} invariati · {} ignorati",
+    "tr": "{} güncellendi · {} değişmedi · {} atlandı",
+    "pt": "{} atualizados · {} inalterados · {} ignorados",
+    "hu": "{} frissítve · {} változatlan · {} kihagyva",
+    "ro": "{} actualizate · {} neschimbate · {} omise"
+  },
+  "{} Einträge · {} Gefechte · {} zusammen · {} gegeneinander": {
+    "en": "{} entries · {} battles · {} together · {} against each other",
+    "es": "{} entradas · {} batallas · {} juntos · {} enfrentados",
+    "pl": "{} wpisów · {} bitew · {} razem · {} przeciwko sobie",
+    "fr": "{} entrées · {} batailles · {} ensemble · {} opposées",
+    "cs": "{} záznamů · {} bitev · {} společně · {} proti sobě",
+    "uk": "{} записів · {} боїв · {} разом · {} один проти одного",
+    "ru": "{} записей · {} боёв · {} вместе · {} друг против друга",
+    "it": "{} voci · {} battaglie · {} insieme · {} avversari",
+    "tr": "{} kayıt · {} savaş · {} birlikte · {} karşı karşıya",
+    "pt": "{} entradas · {} batalhas · {} juntos · {} adversários",
+    "hu": "{} bejegyzés · {} csata · {} együtt · {} egymás ellen",
+    "ro": "{} înregistrări · {} bătălii · {} împreună · {} unul împotriva celuilalt"
+  },
+  "Favoriten": {
+    "en": "Favorites",
+    "es": "Favoritos",
+    "pl": "Ulubione",
+    "fr": "Favoris",
+    "cs": "Oblíbené",
+    "uk": "Улюблене",
+    "ru": "Избранное",
+    "it": "Preferiti",
+    "tr": "Favoriler",
+    "pt": "Favoritos",
+    "hu": "Kedvencek",
+    "ro": "Favorite"
+  },
+  "Datum / Details": {
+    "en": "Date / details",
+    "es": "Fecha / detalles",
+    "pl": "Data / szczegóły",
+    "fr": "Date / détails",
+    "cs": "Datum / podrobnosti",
+    "uk": "Дата / подробиці",
+    "ru": "Дата / подробности",
+    "it": "Data / dettagli",
+    "tr": "Tarih / ayrıntılar",
+    "pt": "Data / detalhes",
+    "hu": "Dátum / részletek",
+    "ro": "Dată / detalii"
+  },
+  "● Import aktiv": {
+    "en": "● Automatic import active",
+    "es": "● Importación activa",
+    "pl": "● Import aktywny",
+    "fr": "● Importation active",
+    "cs": "● Import aktivní",
+    "uk": "● Імпорт увімкнено",
+    "ru": "● Импорт включён",
+    "it": "● Importazione attiva",
+    "tr": "● İçe aktarma etkin",
+    "pt": "● Importação ativa",
+    "hu": "● Importálás aktív",
+    "ro": "● Import activ"
+  },
+  "● Importfehler": {
+    "en": "● Import error",
+    "es": "● Error de importación",
+    "pl": "● Błąd importu",
+    "fr": "● Erreur d'importation",
+    "cs": "● Chyba importu",
+    "uk": "● Помилка імпорту",
+    "ru": "● Ошибка импорта",
+    "it": "● Errore di importazione",
+    "tr": "● İçe aktarma hatası",
+    "pt": "● Erro de importação",
+    "hu": "● Importálási hiba",
+    "ro": "● Eroare de import"
+  },
+  "● Lese ein …": {
+    "en": "● Importing …",
+    "es": "● Importando …",
+    "pl": "● Importowanie …",
+    "fr": "● Importation …",
+    "cs": "● Načítání …",
+    "uk": "● Імпортування …",
+    "ru": "● Импортирование …",
+    "it": "● Importazione …",
+    "tr": "● İçe aktarılıyor …",
+    "pt": "● A importar …",
+    "hu": "● Importálás …",
+    "ro": "● Se importă …"
+  },
+  "● Pausiert": {
+    "en": "● Paused",
+    "es": "● En pausa",
+    "pl": "● Wstrzymano",
+    "fr": "● En pause",
+    "cs": "● Pozastaveno",
+    "uk": "● Призупинено",
+    "ru": "● Приостановлено",
+    "it": "● In pausa",
+    "tr": "● Duraklatıldı",
+    "pt": "● Em pausa",
+    "hu": "● Szüneteltetve",
+    "ro": "● În pauză"
+  },
+  "Replay-Ordner wird geprüft …": {
+    "en": "Checking replay folder …",
+    "es": "Comprobando repeticiones …",
+    "pl": "Sprawdzanie folderu powtórek …",
+    "fr": "Vérification des replays …",
+    "cs": "Kontrola složky záznamů …",
+    "uk": "Перевірка папки реплеїв …",
+    "ru": "Проверка папки реплеев …",
+    "it": "Controllo cartella replay …",
+    "tr": "Tekrar klasörü kontrol ediliyor …",
+    "pt": "A verificar pasta de replays …",
+    "hu": "Visszajátszások ellenőrzése …",
+    "ro": "Se verifică dosarul de reluări …"
+  },
+  "Spieler / Alias / ID": {
+    "en": "Player / alias / ID",
+    "es": "Jugador / alias / ID",
+    "pl": "Gracz / alias / ID",
+    "fr": "Joueur / alias / ID",
+    "cs": "Hráč / alias / ID",
+    "uk": "Гравець / псевдонім / ID",
+    "ru": "Игрок / псевдоним / ID",
+    "it": "Giocatore / alias / ID",
+    "tr": "Oyuncu / takma ad / kimlik",
+    "pt": "Jogador / pseudónimo / ID",
+    "hu": "Játékos / álnév / azonosító",
+    "ro": "Jucător / alias / ID"
+  },
+  "Spieler / Alias:": {
+    "en": "Player / alias:",
+    "es": "Jugador / alias:",
+    "pl": "Gracz / alias:",
+    "fr": "Joueur / alias :",
+    "cs": "Hráč / alias:",
+    "uk": "Гравець / псевдонім:",
+    "ru": "Игрок / псевдоним:",
+    "it": "Giocatore / alias:",
+    "tr": "Oyuncu / takma ad:",
+    "pt": "Jogador / pseudónimo:",
+    "hu": "Játékos / álnév:",
+    "ro": "Jucător / alias:"
+  },
+  "Deutschland": {
+    "en": "Germany",
+    "es": "Alemania",
+    "pl": "Niemcy",
+    "fr": "Allemagne",
+    "cs": "Německo",
+    "uk": "Німеччина",
+    "ru": "Германия",
+    "it": "Germania",
+    "tr": "Almanya",
+    "pt": "Alemanha",
+    "hu": "Németország",
+    "ro": "Germania"
+  },
+  "Großbritannien": {
+    "en": "United Kingdom",
+    "es": "Reino Unido",
+    "pl": "Wielka Brytania",
+    "fr": "Royaume-Uni",
+    "cs": "Velká Británie",
+    "uk": "Велика Британія",
+    "ru": "Великобритания",
+    "it": "Regno Unito",
+    "tr": "Birleşik Krallık",
+    "pt": "Reino Unido",
+    "hu": "Egyesült Királyság",
+    "ro": "Regatul Unit"
+  },
+  "Frankreich": {
+    "en": "France",
+    "es": "Francia",
+    "pl": "Francja",
+    "fr": "France",
+    "cs": "Francie",
+    "uk": "Франція",
+    "ru": "Франция",
+    "it": "Francia",
+    "tr": "Fransa",
+    "pt": "França",
+    "hu": "Franciaország",
+    "ro": "Franța"
+  },
+  "UdSSR": {
+    "en": "USSR",
+    "es": "URSS",
+    "pl": "ZSRR",
+    "fr": "URSS",
+    "cs": "SSSR",
+    "uk": "СРСР",
+    "ru": "СССР",
+    "it": "URSS",
+    "tr": "SSCB",
+    "pt": "URSS",
+    "hu": "Szovjetunió",
+    "ro": "URSS"
+  },
+  "China": {
+    "en": "China",
+    "es": "China",
+    "pl": "Chiny",
+    "fr": "Chine",
+    "cs": "Čína",
+    "uk": "Китай",
+    "ru": "Китай",
+    "it": "Cina",
+    "tr": "Çin",
+    "pt": "China",
+    "hu": "Kína",
+    "ro": "China"
+  },
+  "Japan": {
+    "en": "Japan",
+    "es": "Japón",
+    "pl": "Japonia",
+    "fr": "Japon",
+    "cs": "Japonsko",
+    "uk": "Японія",
+    "ru": "Япония",
+    "it": "Giappone",
+    "tr": "Japonya",
+    "pt": "Japão",
+    "hu": "Japán",
+    "ro": "Japonia"
+  },
+  "Tschechoslowakei": {
+    "en": "Czechoslovakia",
+    "es": "Checoslovaquia",
+    "pl": "Czechosłowacja",
+    "fr": "Tchécoslovaquie",
+    "cs": "Československo",
+    "uk": "Чехословаччина",
+    "ru": "Чехословакия",
+    "it": "Cecoslovacchia",
+    "tr": "Çekoslovakya",
+    "pt": "Checoslováquia",
+    "hu": "Csehszlovákia",
+    "ro": "Cehoslovacia"
+  },
+  "Polen": {
+    "en": "Poland",
+    "es": "Polonia",
+    "pl": "Polska",
+    "fr": "Pologne",
+    "cs": "Polsko",
+    "uk": "Польща",
+    "ru": "Польша",
+    "it": "Polonia",
+    "tr": "Polonya",
+    "pt": "Polónia",
+    "hu": "Lengyelország",
+    "ro": "Polonia"
+  },
+  "Schweden": {
+    "en": "Sweden",
+    "es": "Suecia",
+    "pl": "Szwecja",
+    "fr": "Suède",
+    "cs": "Švédsko",
+    "uk": "Швеція",
+    "ru": "Швеция",
+    "it": "Svezia",
+    "tr": "İsveç",
+    "pt": "Suécia",
+    "hu": "Svédország",
+    "ro": "Suedia"
+  },
+  "Italien": {
+    "en": "Italy",
+    "es": "Italia",
+    "pl": "Włochy",
+    "fr": "Italie",
+    "cs": "Itálie",
+    "uk": "Італія",
+    "ru": "Италия",
+    "it": "Italia",
+    "tr": "İtalya",
+    "pt": "Itália",
+    "hu": "Olaszország",
+    "ro": "Italia"
+  },
+  "Sturm": {
+    "en": "Assault",
+    "es": "Asalto",
+    "pl": "Szturm",
+    "fr": "Assaut",
+    "cs": "Útočný",
+    "uk": "Штурм",
+    "ru": "Штурм",
+    "it": "Assalto",
+    "tr": "Taarruz",
+    "pt": "Assalto",
+    "hu": "Roham",
+    "ro": "Asalt"
+  },
+  "Unterstützung": {
+    "en": "Support",
+    "es": "Apoyo",
+    "pl": "Wsparcie",
+    "fr": "Soutien",
+    "cs": "Podpora",
+    "uk": "Підтримка",
+    "ru": "Поддержка",
+    "it": "Supporto",
+    "tr": "Destek",
+    "pt": "Apoio",
+    "hu": "Támogatás",
+    "ro": "Sprijin"
+  },
+  "Mehrzweck": {
+    "en": "Versatile",
+    "es": "Polivalente",
+    "pl": "Wszechstronny",
+    "fr": "Polyvalent",
+    "cs": "Víceúčelový",
+    "uk": "Універсальний",
+    "ru": "Универсальный",
+    "it": "Versatile",
+    "tr": "Çok amaçlı",
+    "pt": "Versátil",
+    "hu": "Sokoldalú",
+    "ro": "Versatil"
+  },
+  "Durchbruch": {
+    "en": "Breakthrough",
+    "es": "Ruptura",
+    "pl": "Przełamanie",
+    "fr": "Percée",
+    "cs": "Průlomový",
+    "uk": "Прорив",
+    "ru": "Прорыв",
+    "it": "Sfondamento",
+    "tr": "Yarma",
+    "pt": "Rutura",
+    "hu": "Áttörés",
+    "ro": "Străpungere"
+  },
+  "Scharfschütze": {
+    "en": "Sniper",
+    "es": "Francotirador",
+    "pl": "Snajper",
+    "fr": "Tireur de précision",
+    "cs": "Odstřelovač",
+    "uk": "Снайпер",
+    "ru": "Снайпер",
+    "it": "Cecchino",
+    "tr": "Keskin nişancı",
+    "pt": "Precisão",
+    "hu": "Mesterlövész",
+    "ro": "Lunetist"
+  },
+  "Aufklärung": {
+    "en": "Scout",
+    "es": "Explorador",
+    "pl": "Zwiadowca",
+    "fr": "Éclaireur",
+    "cs": "Průzkumník",
+    "uk": "Розвідка",
+    "ru": "Разведка",
+    "it": "Ricognitore",
+    "tr": "Keşif",
+    "pt": "Explorador",
+    "hu": "Felderítő",
+    "ro": "Cercetaș"
+  },
+  "Nicht zugeordnet": {
+    "en": "Unassigned",
+    "es": "Sin asignar",
+    "pl": "Nieprzypisane",
+    "fr": "Non attribué",
+    "cs": "Nepřiřazeno",
+    "uk": "Не визначено",
+    "ru": "Не назначено",
+    "it": "Non assegnato",
+    "tr": "Atanmamış",
+    "pt": "Não atribuído",
+    "hu": "Nincs besorolva",
+    "ro": "Neatribuit"
+  },
+  "Erhaltener Schaden": {
+    "en": "Incoming damage",
+    "es": "Daño recibido",
+    "pl": "Otrzymane uszkodzenia",
+    "fr": "Dégâts reçus",
+    "cs": "Obdržené poškození",
+    "uk": "Отримана шкода",
+    "ru": "Полученный урон",
+    "it": "Danni ricevuti",
+    "tr": "Alınan hasar",
+    "pt": "Dano recebido",
+    "hu": "Kapott sebzés",
+    "ro": "Daune primite"
+  },
+  "Verursachter Schaden": {
+    "en": "Outgoing damage",
+    "es": "Daño causado",
+    "pl": "Zadane uszkodzenia",
+    "fr": "Dégâts infligés",
+    "cs": "Způsobené poškození",
+    "uk": "Завдана шкода",
+    "ru": "Нанесённый урон",
+    "it": "Danni inflitti",
+    "tr": "Verilen hasar",
+    "pt": "Dano causado",
+    "hu": "Okozott sebzés",
+    "ro": "Daune provocate"
+  },
+  "Abgegebene Schüsse": {
+    "en": "Shots",
+    "es": "Disparos",
+    "pl": "Strzały",
+    "fr": "Tirs",
+    "cs": "Výstřely",
+    "uk": "Постріли",
+    "ru": "Выстрелы",
+    "it": "Colpi sparati",
+    "tr": "Atışlar",
+    "pt": "Disparos",
+    "hu": "Lövések",
+    "ro": "Focuri trase"
+  },
+  "Direkte Gegnertreffer": {
+    "en": "Direct hits",
+    "es": "Impactos directos",
+    "pl": "Bezpośrednie trafienia",
+    "fr": "Impacts directs",
+    "cs": "Přímé zásahy",
+    "uk": "Прямі влучання",
+    "ru": "Прямые попадания",
+    "it": "Colpi diretti",
+    "tr": "Doğrudan isabetler",
+    "pt": "Acertos diretos",
+    "hu": "Közvetlen találatok",
+    "ro": "Lovituri directe"
+  },
+  "Durchschläge bei Gegnern": {
+    "en": "Penetrations",
+    "es": "Penetraciones",
+    "pl": "Przebicia",
+    "fr": "Pénétrations",
+    "cs": "Průstřely",
+    "uk": "Пробиття",
+    "ru": "Пробития",
+    "it": "Perforazioni",
+    "tr": "Delmeler",
+    "pt": "Penetrações",
+    "hu": "Átütések",
+    "ro": "Penetrări"
+  },
+  "Durchschläge/Treffer": {
+    "en": "Penetrations / hits",
+    "es": "Penetraciones / impactos",
+    "pl": "Przebicia / trafienia",
+    "fr": "Pénétrations / impacts",
+    "cs": "Průstřely / zásahy",
+    "uk": "Пробиття / влучання",
+    "ru": "Пробития / попадания",
+    "it": "Perforazioni / colpi",
+    "tr": "Delmeler / isabetler",
+    "pt": "Penetrações / acertos",
+    "hu": "Átütések / találatok",
+    "ro": "Penetrări / lovituri"
+  },
+  "Durchschlag/Treffer": {
+    "en": "Penetrations / hits",
+    "es": "Penetraciones / impactos",
+    "pl": "Przebicia / trafienia",
+    "fr": "Pénétrations / impacts",
+    "cs": "Průstřely / zásahy",
+    "uk": "Пробиття / влучання",
+    "ru": "Пробития / попадания",
+    "it": "Perforazioni / colpi",
+    "tr": "Delmeler / isabetler",
+    "pt": "Penetrações / acertos",
+    "hu": "Átütések / találatok",
+    "ro": "Penetrări / lovituri"
+  },
+  "Durchschläge/Schüsse": {
+    "en": "Penetrations / shots",
+    "es": "Penetraciones / disparos",
+    "pl": "Przebicia / strzały",
+    "fr": "Pénétrations / tirs",
+    "cs": "Průstřely / výstřely",
+    "uk": "Пробиття / постріли",
+    "ru": "Пробития / выстрелы",
+    "it": "Perforazioni / colpi sparati",
+    "tr": "Delmeler / atışlar",
+    "pt": "Penetrações / disparos",
+    "hu": "Átütések / lövések",
+    "ro": "Penetrări / focuri"
+  },
+  "Siegquote": {
+    "en": "Win rate",
+    "es": "Victorias",
+    "pl": "Zwycięstwa",
+    "fr": "Taux de victoire",
+    "cs": "Úspěšnost",
+    "uk": "Відсоток перемог",
+    "ru": "Процент побед",
+    "it": "Vittorie",
+    "tr": "Galibiyet oranı",
+    "pt": "Taxa de vitórias",
+    "hu": "Győzelmi arány",
+    "ro": "Rată de victorii"
+  },
+  "Assist durch Aufklärung": {
+    "en": "Spotting assistance",
+    "es": "Asistencia por detección",
+    "pl": "Asysta przez wykrycie",
+    "fr": "Assistance par détection",
+    "cs": "Asistence odhalením",
+    "uk": "Допомога розвідкою",
+    "ru": "Содействие разведкой",
+    "it": "Assistenza avvistamento",
+    "tr": "Tespit desteği",
+    "pt": "Assistência por detecção",
+    "hu": "Felderítési támogatás",
+    "ro": "Asistență prin detectare"
+  },
+  "Assist durch Ketten": {
+    "en": "Tracking assistance",
+    "es": "Asistencia por inmovilización",
+    "pl": "Asysta przez zerwanie gąsienic",
+    "fr": "Assistance par immobilisation",
+    "cs": "Asistence poškozením pásů",
+    "uk": "Допомога збиттям гусениць",
+    "ru": "Содействие сбитием гусениц",
+    "it": "Assistenza immobilizzazione",
+    "tr": "Palet desteği",
+    "pt": "Assistência por imobilização",
+    "hu": "Lánctalp-támogatás",
+    "ro": "Asistență prin imobilizare"
+  },
+  "Assist durch Betäubung": {
+    "en": "Stun assistance",
+    "es": "Asistencia por aturdimiento",
+    "pl": "Asysta przez ogłuszenie",
+    "fr": "Assistance par étourdissement",
+    "cs": "Asistence ochromením",
+    "uk": "Допомога оглушенням",
+    "ru": "Содействие оглушением",
+    "it": "Assistenza stordimento",
+    "tr": "Sersemletme desteği",
+    "pt": "Assistência por atordoamento",
+    "hu": "Kábítási támogatás",
+    "ro": "Asistență prin asomare"
+  },
+  "Tierstufe": {
+    "en": "Tier",
+    "es": "Nivel",
+    "pl": "Poziom",
+    "fr": "Rang",
+    "cs": "Úroveň",
+    "uk": "Рівень",
+    "ru": "Уровень",
+    "it": "Livello",
+    "tr": "Seviye",
+    "pt": "Nível",
+    "hu": "Szint",
+    "ro": "Nivel"
+  },
+  "Spielerbezogene Werte": {
+    "en": "Player",
+    "es": "Jugador",
+    "pl": "Gracz",
+    "fr": "Joueur",
+    "cs": "Hráč",
+    "uk": "Гравець",
+    "ru": "Игрок",
+    "it": "Giocatore",
+    "tr": "Oyuncu",
+    "pt": "Jogador",
+    "hu": "Játékos",
+    "ro": "Jucător"
+  },
+  "Spieler & Gefechte": {
+    "en": "Player search",
+    "es": "Buscar jugadores",
+    "pl": "Wyszukiwanie graczy",
+    "fr": "Recherche de joueurs",
+    "cs": "Hledání hráčů",
+    "uk": "Пошук гравців",
+    "ru": "Поиск игроков",
+    "it": "Ricerca giocatori",
+    "tr": "Oyuncu arama",
+    "pt": "Pesquisa de jogadores",
+    "hu": "Játékoskeresés",
+    "ro": "Căutare jucători"
+  },
+  "Replay-Archiv & Bereinigung": {
+    "en": "Replay archive",
+    "es": "Archivo de repeticiones",
+    "pl": "Archiwum powtórek",
+    "fr": "Archives des replays",
+    "cs": "Archiv záznamů",
+    "uk": "Архів реплеїв",
+    "ru": "Архив реплеев",
+    "it": "Archivio replay",
+    "tr": "Tekrar arşivi",
+    "pt": "Arquivo de replays",
+    "hu": "Visszajátszás-archívum",
+    "ro": "Arhivă reluări"
+  },
+  "Einnahmen brutto": {
+    "en": "Gross credits",
+    "es": "Créditos brutos",
+    "pl": "Kredyty brutto",
+    "fr": "Crédits bruts",
+    "cs": "Hrubé kredity",
+    "uk": "Валові кредити",
+    "ru": "Кредиты брутто",
+    "it": "Crediti lordi",
+    "tr": "Brüt kredi",
+    "pt": "Créditos brutos",
+    "hu": "Bruttó kredit",
+    "ro": "Credite brute"
+  },
+  "Bilanz": {
+    "en": "Net",
+    "es": "Neto",
+    "pl": "Netto",
+    "fr": "Net",
+    "cs": "Čistý výdělek",
+    "uk": "Чистий дохід",
+    "ru": "Чистый доход",
+    "it": "Netto",
+    "tr": "Net",
+    "pt": "Líquido",
+    "hu": "Nettó",
+    "ro": "Net"
+  },
+  "Persönliche Booster": {
+    "en": "Personal reserves",
+    "es": "Reservas personales",
+    "pl": "Rezerwy osobiste",
+    "fr": "Réserves personnelles",
+    "cs": "Osobní zálohy",
+    "uk": "Особисті резерви",
+    "ru": "Личные резервы",
+    "it": "Riserve personali",
+    "tr": "Kişisel yedekler",
+    "pt": "Reservas pessoais",
+    "hu": "Személyes tartalékok",
+    "ro": "Rezerve personale"
+  },
+  "Clan-/Kampfreserven": {
+    "en": "Clan reserves",
+    "es": "Reservas del clan",
+    "pl": "Rezerwy klanowe",
+    "fr": "Réserves du clan",
+    "cs": "Klanové zálohy",
+    "uk": "Кланові резерви",
+    "ru": "Клановые резервы",
+    "it": "Riserve del clan",
+    "tr": "Klan yedekleri",
+    "pt": "Reservas do clã",
+    "hu": "Klántartalékok",
+    "ro": "Rezerve de clan"
+  },
+  "Schaden, Treffer & Aufklärung": {
+    "en": "Shooting statistics",
+    "es": "Estadísticas de disparo",
+    "pl": "Statystyki strzelania",
+    "fr": "Statistiques de tir",
+    "cs": "Statistiky střelby",
+    "uk": "Статистика стрільби",
+    "ru": "Статистика стрельбы",
+    "it": "Statistiche di tiro",
+    "tr": "Atış istatistikleri",
+    "pt": "Estatísticas de tiro",
+    "hu": "Lövési statisztikák",
+    "ro": "Statistici de tragere"
+  },
+  "Trefferquote (Treffer / Schüsse)": {
+    "en": "Hit rate",
+    "es": "Precisión",
+    "pl": "Celność",
+    "fr": "Précision",
+    "cs": "Přesnost",
+    "uk": "Влучність",
+    "ru": "Точность",
+    "it": "Precisione",
+    "tr": "İsabet oranı",
+    "pt": "Precisão",
+    "hu": "Találati arány",
+    "ro": "Precizie"
+  },
+  "Sprengwirkungstreffer": {
+    "en": "Explosion hits",
+    "es": "Impactos de explosión",
+    "pl": "Trafienia odłamkami",
+    "fr": "Impacts d'explosion",
+    "cs": "Zásahy výbuchem",
+    "uk": "Влучання вибухом",
+    "ru": "Попадания взрывом",
+    "it": "Colpi da esplosione",
+    "tr": "Patlama isabetleri",
+    "pt": "Acertos por explosão",
+    "hu": "Robbanási találatok",
+    "ro": "Lovituri prin explozie"
+  },
+  "Sprengwirkungstreffer (separat)": {
+    "en": "Explosion hits",
+    "es": "Impactos de explosión",
+    "pl": "Trafienia odłamkami",
+    "fr": "Impacts d'explosion",
+    "cs": "Zásahy výbuchem",
+    "uk": "Влучання вибухом",
+    "ru": "Попадания взрывом",
+    "it": "Colpi da esplosione",
+    "tr": "Patlama isabetleri",
+    "pt": "Acertos por explosão",
+    "hu": "Robbanási találatok",
+    "ro": "Lovituri prin explozie"
+  },
+  "Gefechtsdatum anklicken für Details.": {
+    "en": "Battle details",
+    "es": "Detalles de batalla",
+    "pl": "Szczegóły bitwy",
+    "fr": "Détails de la bataille",
+    "cs": "Podrobnosti bitvy",
+    "uk": "Подробиці бою",
+    "ru": "Подробности боя",
+    "it": "Dettagli battaglia",
+    "tr": "Savaş ayrıntıları",
+    "pt": "Detalhes da batalha",
+    "hu": "Csatarészletek",
+    "ro": "Detalii bătălie"
+  },
+  "Alle Suchtreffer": {
+    "en": "All tanks",
+    "es": "Todos los tanques",
+    "pl": "Wszystkie czołgi",
+    "fr": "Tous les chars",
+    "cs": "Všechny tanky",
+    "uk": "Усі танки",
+    "ru": "Все танки",
+    "it": "Tutti i carri",
+    "tr": "Tüm tanklar",
+    "pt": "Todos os tanques",
+    "hu": "Összes harckocsi",
+    "ro": "Toate tancurile"
+  },
+  "Credits-Bilanz": {
+    "en": "Net",
+    "es": "Neto",
+    "pl": "Netto",
+    "fr": "Net",
+    "cs": "Čistý výdělek",
+    "uk": "Чистий дохід",
+    "ru": "Чистый доход",
+    "it": "Netto",
+    "tr": "Net",
+    "pt": "Líquido",
+    "hu": "Nettó",
+    "ro": "Net"
+  },
+  "Credits-Abrechnung": {
+    "en": "Financial results",
+    "es": "Balances",
+    "pl": "Rozliczenia",
+    "fr": "Bilans",
+    "cs": "Vyúčtování",
+    "uk": "Розрахунки",
+    "ru": "Расчёты",
+    "it": "Rendiconti",
+    "tr": "Hesap dökümleri",
+    "pt": "Balanços",
+    "hu": "Elszámolások",
+    "ro": "Bilanțuri"
+  },
+  "Basisverdienst": {
+    "en": "Base",
+    "es": "Base",
+    "pl": "Baza",
+    "fr": "Base",
+    "cs": "Základ",
+    "uk": "База",
+    "ru": "База",
+    "it": "Base",
+    "tr": "Temel",
+    "pt": "Base",
+    "hu": "Alap",
+    "ro": "Bază"
+  },
+  "Premiumbonus": {
+    "en": "Premium",
+    "es": "Premium",
+    "pl": "Premium",
+    "fr": "Premium",
+    "cs": "Prémiový",
+    "uk": "Преміум",
+    "ru": "Премиум",
+    "it": "Premium",
+    "tr": "Premium",
+    "pt": "Premium",
+    "hu": "Prémium",
+    "ro": "Premium"
+  },
+  "Aufgaben / Ereignisse": {
+    "en": "Missions",
+    "es": "Misiones",
+    "pl": "Misje",
+    "fr": "Missions",
+    "cs": "Mise",
+    "uk": "Завдання",
+    "ru": "Задачи",
+    "it": "Missioni",
+    "tr": "Görevler",
+    "pt": "Missões",
+    "hu": "Küldetések",
+    "ro": "Misiuni"
+  },
+  "Aufgaben & Ereignisse": {
+    "en": "Missions",
+    "es": "Misiones",
+    "pl": "Misje",
+    "fr": "Missions",
+    "cs": "Mise",
+    "uk": "Завдання",
+    "ru": "Задачи",
+    "it": "Missioni",
+    "tr": "Görevler",
+    "pt": "Missões",
+    "hu": "Küldetések",
+    "ro": "Misiuni"
+  },
+  "Abschüsse pro Gefecht": {
+    "en": "Kills",
+    "es": "Destrucciones",
+    "pl": "Zniszczenia",
+    "fr": "Destructions",
+    "cs": "Zničení",
+    "uk": "Знищення",
+    "ru": "Уничтожения",
+    "it": "Distruzioni",
+    "tr": "İmhalar",
+    "pt": "Destruições",
+    "hu": "Kilövések",
+    "ro": "Distrugeri"
+  },
+  "Ausgaben insgesamt": {
+    "en": "Expenses",
+    "es": "Gastos",
+    "pl": "Wydatki",
+    "fr": "Dépenses",
+    "cs": "Výdaje",
+    "uk": "Витрати",
+    "ru": "Расходы",
+    "it": "Spese",
+    "tr": "Giderler",
+    "pt": "Despesas",
+    "hu": "Kiadások",
+    "ro": "Cheltuieli"
+  },
+  "Brutto insgesamt": {
+    "en": "Gross credits",
+    "es": "Créditos brutos",
+    "pl": "Kredyty brutto",
+    "fr": "Crédits bruts",
+    "cs": "Hrubé kredity",
+    "uk": "Валові кредити",
+    "ru": "Кредиты брутто",
+    "it": "Crediti lordi",
+    "tr": "Brüt kredi",
+    "pt": "Créditos brutos",
+    "hu": "Bruttó kredit",
+    "ro": "Credite brute"
+  },
+  "Sonstige Boni / Korrekturen": {
+    "en": "Other",
+    "es": "Otros",
+    "pl": "Inne",
+    "fr": "Autres",
+    "cs": "Ostatní",
+    "uk": "Інше",
+    "ru": "Прочее",
+    "it": "Altro",
+    "tr": "Diğer",
+    "pt": "Outros",
+    "hu": "Egyéb",
+    "ro": "Altele"
+  },
+  "Einnahmen, Boni & Kosten": {
+    "en": "Income and costs",
+    "es": "Ingresos y costes",
+    "pl": "Przychody i koszty",
+    "fr": "Recettes et coûts",
+    "cs": "Příjmy a náklady",
+    "uk": "Надходження та витрати",
+    "ru": "Доходы и затраты",
+    "it": "Entrate e costi",
+    "tr": "Gelir ve maliyetler",
+    "pt": "Receitas e custos",
+    "hu": "Bevétel és költségek",
+    "ro": "Venituri și costuri"
+  },
+  "Einnahmen − Ausgaben": {
+    "en": "Net",
+    "es": "Neto",
+    "pl": "Netto",
+    "fr": "Net",
+    "cs": "Čistý výdělek",
+    "uk": "Чистий дохід",
+    "ru": "Чистый доход",
+    "it": "Netto",
+    "tr": "Net",
+    "pt": "Líquido",
+    "hu": "Nettó",
+    "ro": "Net"
+  },
+  "Endergebnis offen": {
+    "en": "Pending",
+    "es": "Pendiente",
+    "pl": "Oczekujące",
+    "fr": "En attente",
+    "cs": "Nevyhodnoceno",
+    "uk": "Без результату",
+    "ru": "Без результата",
+    "it": "In attesa",
+    "tr": "Beklemede",
+    "pt": "Pendente",
+    "hu": "Függőben",
+    "ro": "În așteptare"
+  },
+  "Erhalten": {
+    "en": "Incoming damage",
+    "es": "Daño recibido",
+    "pl": "Otrzymane uszkodzenia",
+    "fr": "Dégâts reçus",
+    "cs": "Obdržené poškození",
+    "uk": "Отримана шкода",
+    "ru": "Полученный урон",
+    "it": "Danni ricevuti",
+    "tr": "Alınan hasar",
+    "pt": "Dano recebido",
+    "hu": "Kapott sebzés",
+    "ro": "Daune primite"
+  },
+  "Panzer eingrenzen": {
+    "en": "Tank filter",
+    "es": "Filtro de tanques",
+    "pl": "Filtr czołgów",
+    "fr": "Filtre des chars",
+    "cs": "Filtr tanků",
+    "uk": "Фільтр танків",
+    "ru": "Фильтр танков",
+    "it": "Filtro carri",
+    "tr": "Tank filtresi",
+    "pt": "Filtro de tanques",
+    "hu": "Harckocsiszűrő",
+    "ro": "Filtru de tancuri"
+  },
+  "Leistung & Verdienst": {
+    "en": "Earnings",
+    "es": "Ganancias",
+    "pl": "Zarobki",
+    "fr": "Gains",
+    "cs": "Výdělky",
+    "uk": "Заробіток",
+    "ru": "Доходы",
+    "it": "Guadagni",
+    "tr": "Kazanç",
+    "pt": "Ganhos",
+    "hu": "Bevétel",
+    "ro": "Câștiguri"
+  },
+  "Durchschläge Σ": {
+    "en": "Penetrations Σ",
+    "es": "Penetraciones Σ",
+    "pl": "Przebicia Σ",
+    "fr": "Pénétrations Σ",
+    "cs": "Průstřely Σ",
+    "uk": "Пробиття Σ",
+    "ru": "Пробития Σ",
+    "it": "Perforazioni Σ",
+    "tr": "Delmeler Σ",
+    "pt": "Penetrações Σ",
+    "hu": "Átütések Σ",
+    "ro": "Penetrări Σ"
+  },
+  "Schüsse Σ": {
+    "en": "Shots Σ",
+    "es": "Disparos Σ",
+    "pl": "Strzały Σ",
+    "fr": "Tirs Σ",
+    "cs": "Výstřely Σ",
+    "uk": "Постріли Σ",
+    "ru": "Выстрелы Σ",
+    "it": "Colpi sparati Σ",
+    "tr": "Atışlar Σ",
+    "pt": "Disparos Σ",
+    "hu": "Lövések Σ",
+    "ro": "Focuri trase Σ"
+  },
+  "Treffer Σ": {
+    "en": "Hits Σ",
+    "es": "Impactos Σ",
+    "pl": "Trafienia Σ",
+    "fr": "Impacts Σ",
+    "cs": "Zásahy Σ",
+    "uk": "Влучання Σ",
+    "ru": "Попадания Σ",
+    "it": "Colpi a segno Σ",
+    "tr": "İsabetler Σ",
+    "pt": "Acertos Σ",
+    "hu": "Találatok Σ",
+    "ro": "Lovituri Σ"
+  },
+  "Ø Abschüsse": {
+    "en": "Ø Kills",
+    "es": "Ø Destrucciones",
+    "pl": "Ø Zniszczenia",
+    "fr": "Ø Destructions",
+    "cs": "Ø Zničení",
+    "uk": "Ø Знищення",
+    "ru": "Ø Уничтожения",
+    "it": "Ø Distruzioni",
+    "tr": "Ø İmhalar",
+    "pt": "Ø Destruições",
+    "hu": "Ø Kilövések",
+    "ro": "Ø Distrugeri"
+  },
+  "Ø Assist": {
+    "en": "Ø Assistance",
+    "es": "Ø Asistencia",
+    "pl": "Ø Asysta",
+    "fr": "Ø Assistance",
+    "cs": "Ø Asistence",
+    "uk": "Ø Допомога",
+    "ru": "Ø Содействие",
+    "it": "Ø Assistenza",
+    "tr": "Ø Destek",
+    "pt": "Ø Assistência",
+    "hu": "Ø Támogatás",
+    "ro": "Ø Asistență"
+  },
+  "Ø Aufgaben": {
+    "en": "Ø Missions",
+    "es": "Ø Misiones",
+    "pl": "Ø Misje",
+    "fr": "Ø Missions",
+    "cs": "Ø Mise",
+    "uk": "Ø Завдання",
+    "ru": "Ø Задачи",
+    "it": "Ø Missioni",
+    "tr": "Ø Görevler",
+    "pt": "Ø Missões",
+    "hu": "Ø Küldetések",
+    "ro": "Ø Misiuni"
+  },
+  "Ø Ausgaben": {
+    "en": "Ø Expenses",
+    "es": "Ø Gastos",
+    "pl": "Ø Wydatki",
+    "fr": "Ø Dépenses",
+    "cs": "Ø Výdaje",
+    "uk": "Ø Витрати",
+    "ru": "Ø Расходы",
+    "it": "Ø Spese",
+    "tr": "Ø Giderler",
+    "pt": "Ø Despesas",
+    "hu": "Ø Kiadások",
+    "ro": "Ø Cheltuieli"
+  },
+  "Ø Basis": {
+    "en": "Ø Base",
+    "es": "Ø Base",
+    "pl": "Ø Baza",
+    "fr": "Ø Base",
+    "cs": "Ø Základ",
+    "uk": "Ø База",
+    "ru": "Ø База",
+    "it": "Ø Base",
+    "tr": "Ø Temel",
+    "pt": "Ø Base",
+    "hu": "Ø Alap",
+    "ro": "Ø Bază"
+  },
+  "Ø Basis-XP": {
+    "en": "Ø Base XP",
+    "es": "Ø EXP base",
+    "pl": "Ø Bazowe PD",
+    "fr": "Ø EXP de base",
+    "cs": "Ø Základní ZK",
+    "uk": "Ø Базовий досвід",
+    "ru": "Ø Базовый опыт",
+    "it": "Ø Exp base",
+    "tr": "Ø Temel DP",
+    "pt": "Ø EXP base",
+    "hu": "Ø Alap XP",
+    "ro": "Ø XP de bază"
+  },
+  "Ø Clanreserven": {
+    "en": "Ø Clan reserves",
+    "es": "Ø Reservas del clan",
+    "pl": "Ø Rezerwy klanowe",
+    "fr": "Ø Réserves du clan",
+    "cs": "Ø Klanové zálohy",
+    "uk": "Ø Кланові резерви",
+    "ru": "Ø Клановые резервы",
+    "it": "Ø Riserve del clan",
+    "tr": "Ø Klan yedekleri",
+    "pt": "Ø Reservas do clã",
+    "hu": "Ø Klántartalékok",
+    "ro": "Ø Rezerve de clan"
+  },
+  "Ø Durchschläge": {
+    "en": "Ø Penetrations",
+    "es": "Ø Penetraciones",
+    "pl": "Ø Przebicia",
+    "fr": "Ø Pénétrations",
+    "cs": "Ø Průstřely",
+    "uk": "Ø Пробиття",
+    "ru": "Ø Пробития",
+    "it": "Ø Perforazioni",
+    "tr": "Ø Delmeler",
+    "pt": "Ø Penetrações",
+    "hu": "Ø Átütések",
+    "ro": "Ø Penetrări"
+  },
+  "Ø Munition": {
+    "en": "Ø Ammunition",
+    "es": "Ø Munición",
+    "pl": "Ø Amunicja",
+    "fr": "Ø Munitions",
+    "cs": "Ø Munice",
+    "uk": "Ø Боєприпаси",
+    "ru": "Ø Боеприпасы",
+    "it": "Ø Munizioni",
+    "tr": "Ø Mühimmat",
+    "pt": "Ø Munição",
+    "hu": "Ø Lőszer",
+    "ro": "Ø Muniție"
+  },
+  "Ø Netto": {
+    "en": "Ø Net",
+    "es": "Ø Neto",
+    "pl": "Ø Netto",
+    "fr": "Ø Net",
+    "cs": "Ø Čistý výdělek",
+    "uk": "Ø Чистий дохід",
+    "ru": "Ø Чистый доход",
+    "it": "Ø Netto",
+    "tr": "Ø Net",
+    "pt": "Ø Líquido",
+    "hu": "Ø Nettó",
+    "ro": "Ø Net"
+  },
+  "Ø Premium": {
+    "en": "Ø Premium",
+    "es": "Ø Premium",
+    "pl": "Ø Premium",
+    "fr": "Ø Premium",
+    "cs": "Ø Prémiový",
+    "uk": "Ø Преміум",
+    "ru": "Ø Премиум",
+    "it": "Ø Premium",
+    "tr": "Ø Premium",
+    "pt": "Ø Premium",
+    "hu": "Ø Prémium",
+    "ro": "Ø Premium"
+  },
+  "Ø Reparatur": {
+    "en": "Ø Repairs",
+    "es": "Ø Reparaciones",
+    "pl": "Ø Naprawy",
+    "fr": "Ø Réparations",
+    "cs": "Ø Opravy",
+    "uk": "Ø Ремонт",
+    "ru": "Ø Ремонт",
+    "it": "Ø Riparazioni",
+    "tr": "Ø Onarım",
+    "pt": "Ø Reparações",
+    "hu": "Ø Javítás",
+    "ro": "Ø Reparații"
+  },
+  "Ø Schaden": {
+    "en": "Ø Damage",
+    "es": "Ø Daño",
+    "pl": "Ø Uszkodzenia",
+    "fr": "Ø Dégâts",
+    "cs": "Ø Poškození",
+    "uk": "Ø Шкода",
+    "ru": "Ø Урон",
+    "it": "Ø Danni",
+    "tr": "Ø Hasar",
+    "pt": "Ø Dano",
+    "hu": "Ø Sebzés",
+    "ro": "Ø Daune"
+  },
+  "Ø Schüsse": {
+    "en": "Ø Shots",
+    "es": "Ø Disparos",
+    "pl": "Ø Strzały",
+    "fr": "Ø Tirs",
+    "cs": "Ø Výstřely",
+    "uk": "Ø Постріли",
+    "ru": "Ø Выстрелы",
+    "it": "Ø Colpi sparati",
+    "tr": "Ø Atışlar",
+    "pt": "Ø Disparos",
+    "hu": "Ø Lövések",
+    "ro": "Ø Focuri trase"
+  },
+  "Ø Sonstiges": {
+    "en": "Ø Other",
+    "es": "Ø Otros",
+    "pl": "Ø Inne",
+    "fr": "Ø Autres",
+    "cs": "Ø Ostatní",
+    "uk": "Ø Інше",
+    "ru": "Ø Прочее",
+    "it": "Ø Altro",
+    "tr": "Ø Diğer",
+    "pt": "Ø Outros",
+    "hu": "Ø Egyéb",
+    "ro": "Ø Altele"
+  },
+  "Ø Treffer": {
+    "en": "Ø Hits",
+    "es": "Ø Impactos",
+    "pl": "Ø Trafienia",
+    "fr": "Ø Impacts",
+    "cs": "Ø Zásahy",
+    "uk": "Ø Влучання",
+    "ru": "Ø Попадания",
+    "it": "Ø Colpi a segno",
+    "tr": "Ø İsabetler",
+    "pt": "Ø Acertos",
+    "hu": "Ø Találatok",
+    "ro": "Ø Lovituri"
+  },
+  "Ø persönliche Reserven": {
+    "en": "Average personal reserves",
+    "es": "Ø Reservas personales",
+    "pl": "Ø Rezerwy osobiste",
+    "fr": "Ø Réserves personnelles",
+    "cs": "Ø Osobní zálohy",
+    "uk": "Ø Особисті резерви",
+    "ru": "Ø Личные резервы",
+    "it": "Ø Riserve personali",
+    "tr": "Ø Kişisel yedekler",
+    "pt": "Ø Reservas pessoais",
+    "hu": "Ø Személyes tartalékok",
+    "ro": "Ø Rezerve personale"
+  },
+  "← Zurück": {
+    "en": "← Back",
+    "es": "← Atrás",
+    "pl": "← Wstecz",
+    "fr": "← Retour",
+    "cs": "← Zpět",
+    "uk": "← Назад",
+    "ru": "← Назад",
+    "it": "← Indietro",
+    "tr": "← Geri",
+    "pt": "← Voltar",
+    "hu": "← Vissza",
+    "ro": "← Înapoi"
+  },
+  "‹ Zurück": {
+    "en": "‹ Back",
+    "es": "‹ Atrás",
+    "pl": "‹ Wstecz",
+    "fr": "‹ Retour",
+    "cs": "‹ Zpět",
+    "uk": "‹ Назад",
+    "ru": "‹ Назад",
+    "it": "‹ Indietro",
+    "tr": "‹ Geri",
+    "pt": "‹ Voltar",
+    "hu": "‹ Vissza",
+    "ro": "‹ Înapoi"
+  },
+  "Weiter →": {
+    "en": "Next →",
+    "es": "Siguiente →",
+    "pl": "Dalej →",
+    "fr": "Suivant →",
+    "cs": "Další →",
+    "uk": "Далі →",
+    "ru": "Далее →",
+    "it": "Avanti →",
+    "tr": "İleri →",
+    "pt": "Seguinte →",
+    "hu": "Tovább →",
+    "ro": "Înainte →"
+  },
+  "Weiter ›": {
+    "en": "Next ›",
+    "es": "Siguiente ›",
+    "pl": "Dalej ›",
+    "fr": "Suivant ›",
+    "cs": "Další ›",
+    "uk": "Далі ›",
+    "ru": "Далее ›",
+    "it": "Avanti ›",
+    "tr": "İleri ›",
+    "pt": "Seguinte ›",
+    "hu": "Tovább ›",
+    "ro": "Înainte ›"
+  },
+  "★ Favoriten": {
+    "en": "★ Favorites",
+    "es": "★ Favoritos",
+    "pl": "★ Ulubione",
+    "fr": "★ Favoris",
+    "cs": "★ Oblíbené",
+    "uk": "★ Улюблене",
+    "ru": "★ Избранное",
+    "it": "★ Preferiti",
+    "tr": "★ Favoriler",
+    "pt": "★ Favoritos",
+    "hu": "★ Kedvencek",
+    "ro": "★ Favorite"
+  },
+  "/  LOKALE STATISTIK": {
+    "en": "  /  LOCAL STATISTICS"
+  },
+  " (auf 1.000 begrenzt)": {
+    "en": " (limited to 1,000)"
+  },
+  " … [gekürzt]": {
+    "en": " … [truncated]"
+  },
+  "({} Gefechte)": {
+    "en": "({} battles)"
+  },
+  "Abfrage unterbrochen. Bitte aktualisieren.": {
+    "en": "Query interrupted. Please refresh."
+  },
+  "Abfrage wurde unterbrochen.": {
+    "en": "The query was interrupted."
+  },
+  "Abrechnung unvollständig: fehlende Kosten werden nicht mit 0 angesetzt.": {
+    "en": "Incomplete financial result: missing costs are not treated as zero."
+  },
+  "Account-ID: {v} · Alle Begegnungen anzeigen": {
+    "en": "Account ID: {v} · Show all encounters"
+  },
+  "Account: {id}": {
+    "en": "Account ID: {id}",
+    "es": "undefined: {id}",
+    "pl": "undefined: {id}",
+    "fr": "undefined: {id}",
+    "cs": "undefined: {id}",
+    "uk": "undefined: {id}",
+    "ru": "undefined: {id}",
+    "it": "undefined: {id}",
+    "tr": "undefined: {id}",
+    "pt": "undefined: {id}",
+    "hu": "undefined: {id}",
+    "ro": "undefined: {id}"
+  },
+  "Alle Ansichten verwenden dieselben Filter.": {
+    "en": "These statistics views use the same filters."
+  },
+  "Alle Beträge in Credits · {} einberechnete Gefechte · {} Endergebnisse im aktuellen Filter": {
+    "en": "All amounts in credits · {} included battles · {} final results in the current filter"
+  },
+  "Alle weiteren Werte findest du unter „Eigene Werte“.": {
+    "en": "All other statistics are available under Your statistics."
+  },
+  "Allgemeines Gefechtsergebnis": {
+    "en": "Overall battle result"
+  },
+  "Archivierung und Bereinigung laufen … App bitte geöffnet lassen.": {
+    "en": "Archiving and cleanup in progress … Please keep the app open."
+  },
+  "Ausgewertet": {
+    "en": "Evaluated"
+  },
+  "Auszeichnungen": {
+    "en": "Awards"
+  },
+  "Auszeichnungen im Gefecht": {
+    "en": "Battle awards"
+  },
+  "Auszeichnungen, Aufgaben & Fortschritt": {
+    "en": "Awards, missions and progress"
+  },
+  "Basen & besondere Ziele": {
+    "en": "Bases and special objectives"
+  },
+  "Basisverdienst laut Replay": {
+    "en": "Base income recorded in the replay"
+  },
+  "Battle-Pass-Punkte": {
+    "en": "Battle Pass points"
+  },
+  "Begegnungen mit einzelnen Gegnern": {
+    "en": "Encounters with individual opponents"
+  },
+  "Bereinigung fehlgeschlagen: {error:#}": {
+    "en": "Cleanup failed: {error:#}"
+  },
+  "Bereinigung unterbrochen. Nicht gelöschte Dateien bleiben erhalten.": {
+    "en": "Cleanup interrupted. Files not deleted remain intact."
+  },
+  "Besatzungserfahrung": {
+    "en": "Crew experience"
+  },
+  "Binärer Gefechtsverlauf – Rohdaten, noch nicht vollständig entschlüsselt": {
+    "en": "Binary battle stream — raw data, not fully decoded"
+  },
+  "Bis zum Ende verfolgt": {
+    "en": "Watched until the end"
+  },
+  "Boni sind bereits in den Einnahmen enthalten.": {
+    "en": "Bonuses are already included in income."
+  },
+  "Boni sind in den Einnahmen bereits enthalten.": {
+    "en": "Bonuses are already included in income."
+  },
+  "Credits vor Aufgabenbonus": {
+    "en": "Credits before mission bonus"
+  },
+  "Credits-Zwischensumme": {
+    "en": "Credits subtotal"
+  },
+  "Datenbank: {}": {
+    "en": "Database: {}"
+  },
+  "Die Daten stammen aus lokalen Replays; Panzerklassen und Stufen aus dem installierten Client.": {
+    "en": "Data comes from local replays; vehicle classes and tiers come from the installed client."
+  },
+  "Durch Panzerung geblockt": {
+    "en": "Blocked by armor"
+  },
+  "Eigene Ergebnisdaten": {
+    "en": "Your battle results"
+  },
+  "Eigene Ergebnisdaten – alle Werte erklärt": {
+    "en": "Your battle results — explanations of all values"
+  },
+  "Einstellungen konnten nicht geladen werden: {e:#}": {
+    "en": "Could not load settings: {e:#}"
+  },
+  "Einstellungen: {}": {
+    "en": "Settings: {}"
+  },
+  "Endergebnis fehlt. Dieses Gefecht zählt nicht in Winrate und Durchschnitte.": {
+    "en": "Final result missing. This battle is excluded from win rate and averages."
+  },
+  "Enthaltene Boni / Kosten · gesamt": {
+    "en": "Included bonuses / costs · total"
+  },
+  "Erfahrung & Kontoboni": {
+    "en": "Experience and account bonuses"
+  },
+  "Erfahrung gesamt": {
+    "en": "Total experience"
+  },
+  "Eroberungspunkte": {
+    "en": "Capture points"
+  },
+  "Fahrstrecke (Originaleinheit)": {
+    "en": "Distance travelled (original unit)"
+  },
+  "Fahrzeugkennung": {
+    "en": "Vehicle identifier"
+  },
+  "Fahrzeugreparatur": {
+    "en": "Vehicle repairs"
+  },
+  "Fahrzeugwerte · Datensatz {dataset}": {
+    "en": "Vehicle statistics · record {dataset}"
+  },
+  "Favoriten, Filter, Ansicht und sichtbare Spalten werden automatisch gespeichert.": {
+    "en": "Favorites, filters, view and visible columns are saved automatically."
+  },
+  "Feldname, Wert oder Bedeutung …": {
+    "en": "Field name, value or meaning …"
+  },
+  "Food, Medikit, Reparaturset, Feuerlöscher: Kosten nur als Gesamtsumme bekannt.": {
+    "en": "Food, first aid kit, repair kit and extinguisher: only their total cost is known."
+  },
+  "Freie Erfahrung": {
+    "en": "Free experience"
+  },
+  "Für die Credits-Abrechnung dieses Gefechts fehlen Replay-Daten.": {
+    "en": "Replay data is missing for this battle's financial result."
+  },
+  "Für die gewählte Vergleichskennzahl bekannte Abrechnungen / Endergebnisse": {
+    "en": "Financial / final results with a known selected comparison metric"
+  },
+  "Für diese Kennzahl fehlen Endergebnisse im gewählten Zeitraum.": {
+    "en": "No final results for this metric in the selected period."
+  },
+  "Für dieses Gefecht liegt noch keine Credits-Abrechnung vor.": {
+    "en": "No financial result available for this battle yet."
+  },
+  "Gefecht & Teilnehmer": {
+    "en": "Battle and participants"
+  },
+  "Gefechte und einzelne Abrechnungen öffnen": {
+    "en": "Open battles and individual financial results"
+  },
+  "Gefechtsbeginn, Karte, Server und Teilnehmer": {
+    "en": "Battle start, map, server and participants"
+  },
+  "Gefechtsdauer": {
+    "en": "Battle duration"
+  },
+  "Gefechtszeit": {
+    "en": "Battle time"
+  },
+  "Gesamt": {
+    "en": "Total"
+  },
+  "Geschützmarkierungen": {
+    "en": "Marks of Excellence"
+  },
+  "Gleitender Schadenswert": {
+    "en": "Moving damage average"
+  },
+  "Import fehlgeschlagen: {e:#}": {
+    "en": "Import failed: {e:#}"
+  },
+  "Import wurde unterbrochen. Erneut einlesen oder Datenquelle prüfen.": {
+    "en": "Import interrupted. Retry or check the data source."
+  },
+  "Interner Reparaturwert": {
+    "en": "Internal repair value"
+  },
+  "JSON kopieren": {
+    "en": "Copy JSON"
+  },
+  "JSON-Block {index}": {
+    "en": "JSON block {index}"
+  },
+  "Ja (true)": {
+    "en": "Yes (true)"
+  },
+  "Kampagnenfortschritt": {
+    "en": "Campaign progress"
+  },
+  "Kartenkennung": {
+    "en": "Map identifier"
+  },
+  "Keine Gefechte für diese Filter. Zeitraum, Favoriten und Datenquelle prüfen.": {
+    "en": "No battles match these filters. Check the period, favorites and data source."
+  },
+  "Keine passenden Panzer": {
+    "en": "No matching tanks"
+  },
+  "Keine persönlichen Ergebnisdaten in diesem Replay vorhanden.": {
+    "en": "No personal battle results in this replay."
+  },
+  "Laden unterbrochen. Details schließen und erneut öffnen.": {
+    "en": "Loading interrupted. Close and reopen the details."
+  },
+  "Leere Zeichenfolge (\"\")": {
+    "en": "Empty string (\"\")"
+  },
+  "Maximale Lebenspunkte": {
+    "en": "Maximum hit points"
+  },
+  "Mehrfachauswahl möglich. Innerhalb einer Gruppe gilt „oder“, zwischen Gruppen „und“.": {
+    "en": "Multiple selections allowed. Options within a group use OR; different groups use AND."
+  },
+  "Meisterschaftsabzeichen": {
+    "en": "Mastery badge"
+  },
+  "Munitionsauffüllung": {
+    "en": "Ammunition resupply"
+  },
+  "Nach Winrate sortiert. Wähle eine Klasse oder einen Panzer, um deine passenden Karten zu finden.": {
+    "en": "Sorted by win rate. Select a class or tank to find your strongest maps."
+  },
+  "Nein (false)": {
+    "en": "No (false)"
+  },
+  "Nicht übermittelt (null)": {
+    "en": "Not provided (null)"
+  },
+  "Noch keine Karte erreicht die Mindestzahl. Minimum senken oder Filter erweitern.": {
+    "en": "No map meets the minimum count. Lower the minimum or broaden the filters."
+  },
+  "Nur lesende Abfragen mit Ergebnisspalten sind erlaubt.": {
+    "en": "Only read-only queries with result columns are allowed."
+  },
+  "Premiumkonto-Bonus": {
+    "en": "Premium account bonus"
+  },
+  "Premiumstatus": {
+    "en": "Premium status"
+  },
+  "Quelle: {}": {
+    "en": "Source: {}"
+  },
+  "Replay-Ordner: {}": {
+    "en": "Replay folder: {}"
+  },
+  "Replays älter als 30 Tage löschen": {
+    "en": "Delete replays older than 30 days"
+  },
+  "Rollen stammen aus dem aktuellen WoT-Client. Panzer ohne Rollenangabe: „Nicht zugeordnet“.": {
+    "en": "Roles come from the current WoT client. Vehicles without a role are marked Unassigned."
+  },
+  "Scan-Sitzung unterbrochen": {
+    "en": "Scan session interrupted"
+  },
+  "Schussdaten aus {} Gefechten:": {
+    "en": "Shooting statistics from {} battles:"
+  },
+  "Seite (ab 0)": {
+    "en": "Page (starting at 0)"
+  },
+  "Seite {} / {} · {} Gefechte": {
+    "en": "Page {} / {} · {} battles"
+  },
+  "Separat: {} Gold, {} Anleihen ausgegeben; nicht in Credits umgerechnet.": {
+    "en": "Separately: {} gold and {} bonds spent; not converted to credits."
+  },
+  "Siegerteam": {
+    "en": "Winning team"
+  },
+  "Speichern fehlgeschlagen: {e:#}": {
+    "en": "Save failed: {e:#}"
+  },
+  "Stand {time}": {
+    "en": "Updated {time}"
+  },
+  "Stufe ": {
+    "en": "Tier "
+  },
+  "Stufe {}": {
+    "en": "Tier {}",
+    "es": "Nivel {}",
+    "pl": "Poziom {}",
+    "fr": "Rang {}",
+    "cs": "Úroveň {}",
+    "uk": "Рівень {}",
+    "ru": "Уровень {}",
+    "it": "Livello {}",
+    "tr": "Seviye {}",
+    "pt": "Nível {}",
+    "hu": "Szint {}",
+    "ro": "Nivel {}"
+  },
+  "Suchabfrage übernehmen": {
+    "en": "Use search query"
+  },
+  "Suche fehlgeschlagen: {error:#}": {
+    "en": "Search failed: {error:#}"
+  },
+  "Tages-/Erstsiegfaktor": {
+    "en": "Daily / first victory multiplier"
+  },
+  "Tagesaufgaben / Missionen / Ereignisse": {
+    "en": "Daily tasks / missions / events"
+  },
+  "Tier {tier}": {
+    "en": "Tier {tier}",
+    "es": "Nivel {tier}",
+    "pl": "Poziom {tier}",
+    "fr": "Rang {tier}",
+    "cs": "Úroveň {tier}",
+    "uk": "Рівень {tier}",
+    "ru": "Уровень {tier}",
+    "it": "Livello {tier}",
+    "tr": "Seviye {tier}",
+    "pt": "Nível {tier}",
+    "hu": "Szint {tier}",
+    "ro": "Nivel {tier}"
+  },
+  "Todesursache (Code)": {
+    "en": "Cause of death (code)"
+  },
+  "Treffer & Überleben": {
+    "en": "Hits and survival"
+  },
+  "Trefferquote {percentage:.1} %": {
+    "en": "Hit rate {percentage:.1} %"
+  },
+  "Trefferquote {} · Durchschläge/Treffer {}": {
+    "en": "Hit rate {} · Penetrations/hits {}"
+  },
+  "Verbleibende Lebenspunkte": {
+    "en": "Remaining hit points"
+  },
+  "Verbrauchsmaterial auffüllen": {
+    "en": "Resupply consumables"
+  },
+  "Vollständige Daten werden aus Replay oder Archiv geladen …": {
+    "en": "Loading complete data from replay or archive …"
+  },
+  "Vollständige Endergebnisse – eigene Daten, Teams und alle Teilnehmer": {
+    "en": "Complete final results — your statistics, teams and all participants"
+  },
+  "Vollständige Schussdaten / bekannte Endergebnisse": {
+    "en": "Complete shooting statistics / known final results"
+  },
+  "Vorzeitig verlassen": {
+    "en": "Left early"
+  },
+  "Zellen zeigen Wert und n = bekannte Endergebnisse. Weniger Daten als das Minimum: grau.": {
+    "en": "Cells show the value and n = known final results. Below the minimum count: gray."
+  },
+  "Zerstört durch (Kennung)": {
+    "en": "Destroyed by (identifier)"
+  },
+  "Zufallsgefechte aus deinen gespeicherten Replays – keine vollständige Kontostatistik.": {
+    "en": "Random battles from your saved replays — not your complete account statistics."
+  },
+  "Zum Beispiel T20, Strv 103 oder AMX. Groß-/Kleinschreibung und Leerzeichen spielen keine Rolle.": {
+    "en": "For example T20, Strv 103 or AMX. Case and spaces are ignored."
+  },
+  "Zurückgesetzte Eroberungspunkte": {
+    "en": "Defense points"
+  },
+  "Zusammenfassung & Credits-Abrechnung": {
+    "en": "Summary and credit accounting"
+  },
+  "Zusätzlicher JSON-Block {index}": {
+    "en": "Additional JSON block {index}"
+  },
+  "[BLOB: {} Bytes]": {
+    "en": "[BLOB: {} bytes]"
+  },
+  "von {} Seiten": {
+    "en": "of {} pages"
+  },
+  "{count} Gefechte · {known} Endergebnisse": {
+    "en": "{count} battles · {known} final results"
+  },
+  "{title}   ·   {} Werte": {
+    "en": "{title}   ·   {} values"
+  },
+  "{}   {}   {}   {}   {} Schaden": {
+    "en": "{}   {}   {}   {}   {} damage"
+  },
+  "{} Dateien · {:.1} MB Originaldateien (Archiv benötigt zusätzlichen Platz in der Datenbank)": {
+    "en": "{} files · {:.1} MB of original files (archive requires additional storage)"
+  },
+  "{} Dateien übersprungen": {
+    "en": "{} files skipped"
+  },
+  "{} JSON-Blöcke · {} Bytes Originaldatei · {} Bytes binärer Rest": {
+    "en": "{} JSON blocks · {} bytes in original file · {} bytes in binary stream"
+  },
+  "{} Replay-Dateien gefunden.": {
+    "en": "{} replay files found."
+  },
+  "{} Replays, {} ohne Endergebnis. Klassenmittel im Filter: {}": {
+    "en": "{} replays, {} without final results. Class average within filter: {}"
+  },
+  "{} Schüsse · {} Treffer · {} Durchschläge": {
+    "en": "{} shots · {} hits · {} penetrations"
+  },
+  "{} Zeilen{}": {
+    "en": "{} rows{}"
+  },
+  "{} bekannte Werte": {
+    "en": "{} known values"
+  },
+  "{} · {children} Einträge": {
+    "en": "{} · {children} entries"
+  },
+  "Ø Brutto": {
+    "en": "Average gross income"
+  },
+  "Ø ohne Aufgaben": {
+    "en": "Average excluding missions"
+  },
+  "Ø ohne Aufgaben/Reserven": {
+    "en": "Average excluding missions/reserves"
+  },
+  "Ø pro Gefecht": {
+    "en": "Average per battle"
+  },
+  "Überleben & Bewegung": {
+    "en": "Survival and movement"
+  },
+  "Überlebenszeit": {
+    "en": "Survival time"
+  },
+  "Summen je Gefecht und Gegenfahrzeug. Unbelegte Werte: –. Munitionstyp und eingehende Durchschläge/Explosionstreffer fehlen in den Ergebnisdetails. Explosionstreffer belegen allein keine HE-Munition.": {
+    "en": "Totals per battle and opposing vehicle. Unknown values: –. The results do not provide ammunition types or incoming penetration/explosion counts. Explosion hits alone do not identify HE ammunition."
+  },
+  "Nach Accountname, Alias oder Account-ID suchen. Die Account-ID verknüpft auch Begegnungen unter anderen Namen.": {
+    "en": "Search by account name, alias or account ID. The account ID links encounters under different names."
+  },
+  "Gesamtschaden, Schüsse, Treffer, Durchschläge und Assist stammen aus dem Abschlussbericht des jeweiligen Spielers. Fehlende Werte: –.": {
+    "en": "Total damage, shots, hits, penetrations and assistance come from each player's final battle results. Missing values: –."
+  },
+  "Ein Klick auf das Datum öffnet die Gefechtsdetails. Ein Klick auf einen Spieler zeigt nur diesen Account. Die Filter der anderen Reiter gelten hier nicht.": {
+    "en": "Click a date to open battle details or a player to select their account. Filters from other tabs do not apply here."
+  },
+  "Lesezugriff · erste Anweisung pro Ausführung · maximal 1.000 Zeilen · Zeitlimit 5 Sekunden. Ansichtsfilter gelten hier nicht.": {
+    "en": "Read-only · first statement per execution · maximum 1,000 rows · 5-second limit. View filters do not apply here."
+  },
+  "SELECT-Vorlage übernehmen": {
+    "en": "Use SELECT template"
+  },
+  "Fehlende Endergebnisse werden nicht als Niederlage oder 0 Schaden gezählt. In Listen bleiben sie als offen sichtbar.": {
+    "en": "Missing final results are not counted as losses or zero damage. Lists show them as pending."
+  },
+  "Letzte Session: deine jüngste Folge von Zufallsgefechten, getrennt durch eine Pause von mehr als 60 Minuten. Die Session bleibt beim Wechsel von Panzer oder Klasse gleich.": {
+    "en": "Last session: your most recent series of random battles, separated by a break of more than 60 minutes. Changing tank or class does not change the session."
+  },
+  "Grüne Winrate: mindestens 50 %. In der Kartenmatrix beziehen sich die Farben auf dein eigenes Klassenmittel im aktuellen Filter.": {
+    "en": "Green win rate: at least 50%. In the map matrix, colors are relative to your own class average within the current filters."
+  },
+  "Assist = Aufklärung + Kette + Betäubung. Verdienst zeigt Brutto, Ausgaben und Netto. Schaden/Erhalten ist das Verhältnis der Summen aus Gefechten mit beiden Werten.": {
+    "en": "Assistance = spotting + tracking + stun. Earnings show gross income, expenses and net income. Damage/received compares totals from battles where both values are known."
+  },
+  "Credits netto = credits − autoRepairCost − autoLoadCost[0] − autoEquipCost[0]. Fehlende Abzüge bleiben unbekannt. Aufgaben/Ereignisse sind bereits im Brutto enthalten. Vergleichswerte ohne Aufgaben oder Reserven sind bereinigte Werte, kein zusätzlicher Gewinn.": {
+    "en": "Net credits = credits − autoRepairCost − autoLoadCost[0] − autoEquipCost[0]. Missing deductions remain unknown. Missions/events are included in gross income. Values excluding missions or reserves are adjusted comparisons, not additional profit."
+  },
+  "Ausgaben sind die im Replay ausgewiesenen automatischen Abzüge. Käufe außerhalb des Gefechts und historische Anschaffungskosten von Lagerbeständen sind nicht vollständig erfasst. Gold und Anleihen werden nicht in Credits umgerechnet.": {
+    "en": "Expenses are the automatic deductions recorded in the replay. Purchases outside battle and historical stock costs are not fully covered. Gold and bonds are not converted to credits."
+  },
+  "Verläufe zeigen Tageswerte, keine kumulierte Kontostatistik. Panzerlisten gelten für den ausgewählten Zeitraum.": {
+    "en": "History shows daily values rather than cumulative account statistics. Tank lists use the selected period."
+  },
+  "Noch nicht enthalten: WN8, Dossier-/Ergebnis-Cache-Import, konfigurierbare Widgets und 3D-Trefferanalyse. Vorzeitig verlassene Gefechte können ohne Ergebnis bleiben.": {
+    "en": "Not yet included: WN8, dossier/result-cache import, customizable widgets and 3D hit analysis. Battles left early may have no final result."
+  },
+  "Spieldateien werden nicht verändert. Replay-Dateien werden nur über Replay-Archiv nach vollständiger Archivierung und ausdrücklicher Auswahl gelöscht. Kein XVM und keine Netzwerkabfragen zur Laufzeit.": {
+    "en": "Game files are not modified. Replay files are deleted only through Replay archive after full archival and explicit selection. No XVM and no runtime network requests."
+  },
+  "Aufgeklärte Gegner": {
+    "en": "Spotted opponents"
+  },
+  "Basisverdienst kann Fahrzeugfaktoren und Gefechtsauszeichnungen enthalten. Nicht erklärte Differenzen bleiben als sonstige Boni/Korrekturen sichtbar.": {
+    "en": "Base income may include vehicle factors and battle awards. Unexplained differences remain visible as other bonuses/adjustments."
+  },
+  "Beim Import werden sämtliche JSON-Blöcke einschließlich unbekannter Felder und der vollständige binäre Gefechtsverlauf verlustfrei in der Datenbank archiviert.": {
+    "en": "Import preserves every JSON block, including unknown fields, and the complete binary stream in the separate archive database."
+  },
+  "Das Archiv bewahrt alle Daten. Die Statistikansichten werten bisher nur einen Teil davon aus. Der binäre Verlauf wird noch nicht vollständig dekodiert.": {
+    "en": "The archive preserves all data. Statistics currently interpret only part of it. The binary stream is not yet fully decoded."
+  },
+  "Dieses Replay enthält noch kein Endergebnis. Informationen zum Gefechtsbeginn findest du unter „Gefecht & Teilnehmer“.": {
+    "en": "This replay has no final result yet. Battle-start information is available under Battle and participants."
+  },
+  "Direkte Gegnertreffer gemäß WoT. Summen und Durchschnitte nutzen nur Endergebnisse mit allen drei Zählern.": {
+    "en": "Direct hits on opponents as recorded by WoT. Totals and averages include only final results with all three counters."
+  },
+  "Dort sind Schaden, Verdienst, Erfahrung und Fortschritt thematisch gruppiert. Teilnehmerdaten und vollständige Originaldaten haben eigene Bereiche.": {
+    "en": "Damage, earnings, experience and progress are grouped by topic. Participants and complete raw data have separate sections."
+  },
+  "Grün: mindestens dein Klassenmittel im Filter. Orange: darunter. Keine Bewertung der statistischen Signifikanz.": {
+    "en": "Green: at least your class average within the filter. Orange: below it. Statistical significance is not assessed."
+  },
+  "Jeder Punkt ist ein Spieltag; Tage ohne Daten werden ausgelassen. Maus über einen Punkt für die Werte.": {
+    "en": "Each point represents a playing day; days without data are omitted. Hover over a point for its values."
+  },
+  "Nation, Klasse, Tierstufe und Fahrzeugrolle auswählen": {
+    "en": "Select nation, class, tier and vehicle role"
+  },
+  "Noch kein Panzer erreicht die Mindestzahl vollständiger Abrechnungen. Minimum senken oder Filter erweitern.": {
+    "en": "No tank meets the minimum number of complete financial results. Lower the minimum or broaden the filters."
+  },
+  "Trefferquote = Treffer / Schüsse. Durchschläge/Treffer und Durchschläge/Schüsse werden getrennt gezeigt. Kein Mittelwert einzelner Gefechtsquoten.": {
+    "en": "Hit rate = hits / shots. Penetrations/hits and penetrations/shots are shown separately. These are not averages of individual battle rates."
+  },
+  "Unbekannte Felder, leere Listen und Nullwerte bleiben vollständig erhalten. Noch nicht geprüfte Bedeutungen sind gekennzeichnet.": {
+    "en": "Unknown fields, empty lists and nulls are fully preserved. Unverified meanings are marked."
+  },
+  "{deleted} Originaldateien gelöscht ({:.1} MB). Alle Daten bleiben archiviert. {} Dateien wegen Fehlern beibehalten.{}": {
+    "en": "{deleted} original files deleted ({:.1} MB). All data remains archived. {} files retained due to errors.{}"
+  },
+  "Ø Verbrauch": {
+    "en": "Average consumables"
+  },
+  "★ markiert einen Favoriten. Ein Klick auf den Panzernamen öffnet seine Gefechte. Spaltenköpfe sortieren.": {
+    "en": "★ marks a favorite. Click a tank name to open its battles. Click column headings to sort."
+  },
+  "Das Gefechtsdatum im Replay entscheidet. Unterordner werden berücksichtigt; Verknüpfungen sowie temp.wotreplay und replay_last_battle.wotreplay werden ausgelassen.": {
+    "en": "The battle date in the replay is used. Subfolders are included; links, temp.wotreplay and replay_last_battle.wotreplay are excluded."
+  },
+  "Die Originaldateien werden endgültig gelöscht, ihre Daten bleiben vollständig im Archiv. Da der Gefechtsverlauf bereits komprimiert ist, spart die Archivierung insgesamt wenig Speicherplatz.": {
+    "en": "Original files are permanently deleted, but all data remains in the archive. Since the battle stream is already compressed, archiving saves little total storage."
+  },
+  "Daten werden vollständig bewahrt. Archivierung spart insgesamt nicht automatisch Speicherplatz.": {
+    "en": "All data is preserved. Archiving does not automatically save total storage space."
+  },
+  "Account-ID": {
+    "en": "Account ID"
+  },
+  "Aufgabenfortschritt": {
+    "en": "Mission progress"
+  },
+  "Weitere Angaben": {
+    "en": "Additional information"
+  },
+  "Aufgaben und Boni sind bereits im Brutto enthalten. Abzüge: im Replay gemeldete automatische Reparatur und Wiederauffüllung. Spätere manuelle Käufe und Lagerbestände sind keine vollständige Geldbeutelbilanz.": {
+    "en": "Missions and bonuses are already included in gross income. Deductions cover automatic repair and resupply recorded in the replay. Later manual purchases and inventory stock are not a complete account balance."
+  },
+  "Boni können eine abweichende Zahl bekannter Gefechte haben. Aufgabencredits werden vom Replay gemeinsam gemeldet; Tagesaufgaben und andere Missionen sind hier nicht getrennt.": {
+    "en": "Bonuses may have a different number of known battles. Mission credits are reported together; daily tasks and other missions are not separated here."
+  },
+  "Dieser Bereich enthält den unveränderten binären Rest der Replaydatei, einschließlich seiner Format-/Kompressionsdaten. Positionen, Kamera, Chat und Ereignisse werden daraus bisher nicht vollständig dekodiert. Die Bytes sind vollständig erhalten; eine inhaltliche Erklärung jedes Pakets ist derzeit noch nicht möglich.": {
+    "en": "This section contains the unchanged binary remainder of the replay, including format and compression data. Positions, camera, chat and events are not yet fully decoded. All bytes are preserved; individual packet contents cannot yet be fully explained."
+  },
+  "Food = Verpflegung für die Besatzung; Medikit = Erste-Hilfe-Kasten; Reparaturset = Reparatur von Modulen im Gefecht. Fahrzeugreparatur ist die separate Reparatur nach dem Gefecht. autoEquipCost enthält keine Kosten je Einzelartikel.": {
+    "en": "Food supplies the crew; first aid kits heal crew members; repair kits repair modules in battle. Vehicle repair is the separate post-battle repair. autoEquipCost does not provide costs per individual item."
+  },
+  "Schaden: Summen je Gefecht und Gegenfahrzeug. Munitionstyp und eingehende Durchschläge/Explosionstreffer sind nicht belegt und bleiben NULL. Explosionstreffer allein belegen keinen HE-Munitionstyp.": {
+    "en": "Damage totals per battle and opposing vehicle. Ammunition type and incoming penetration/explosion counts are not available and remain NULL. Explosion hits alone do not identify HE ammunition."
+  },
+  "Sprengwirkungstreffer sind separat in den Gefechtsdetails zu sehen. Fehlende Werte und Quoten ohne Nenner bleiben „–“. Mehrfachtreffer können Zählerverhältnisse über 100 % erzeugen.": {
+    "en": "Explosion hits are shown separately in battle details. Missing values and rates without a denominator remain –. Multiple hits may produce ratios above 100%."
+  },
+  "Panzerfilter ({active})": {
+    "en": "Tank filter ({active})",
+    "es": "Filtro de tanques ({active})",
+    "pl": "Filtr czołgów ({active})",
+    "fr": "Filtre des chars ({active})",
+    "cs": "Filtr tanků ({active})",
+    "uk": "Фільтр танків ({active})",
+    "ru": "Фильтр танков ({active})",
+    "it": "Filtro carri ({active})",
+    "tr": "Tank filtresi ({active})",
+    "pt": "Filtro de tanques ({active})",
+    "hu": "Harckocsiszűrő ({active})",
+    "ro": "Filtru de tancuri ({active})"
+  },
+  "{}  /  LOKALE STATISTIK": {
+    "en": "{}  /  LOCAL STATISTICS",
+    "es": "{}  /  ESTADÍSTICAS LOCALES",
+    "pl": "{}  /  STATYSTYKI LOKALNE",
+    "fr": "{}  /  STATISTIQUES LOCALES",
+    "cs": "{}  /  MÍSTNÍ STATISTIKY",
+    "uk": "{}  /  ЛОКАЛЬНА СТАТИСТИКА",
+    "ru": "{}  /  ЛОКАЛЬНАЯ СТАТИСТИКА",
+    "it": "{}  /  STATISTICHE LOCALI",
+    "tr": "{}  /  YEREL İSTATİSTİKLER",
+    "pt": "{}  /  ESTATÍSTICAS LOCAIS",
+    "hu": "{}  /  HELYI STATISZTIKÁK",
+    "ro": "{}  /  STATISTICI LOCALE"
+  },
+  "Info": {
+    "en": "About",
+    "es": "Información",
+    "pl": "Informacje",
+    "fr": "À propos",
+    "cs": "Informace",
+    "uk": "Інформація",
+    "ru": "Информация",
+    "it": "Informazioni",
+    "tr": "Hakkında",
+    "pt": "Sobre",
+    "hu": "Névjegy",
+    "ro": "Despre"
+  },
+  "Ersteller": {
+    "en": "Created by",
+    "es": "Creado por",
+    "pl": "Autor",
+    "fr": "Créé par",
+    "cs": "Autor",
+    "uk": "Автор",
+    "ru": "Автор",
+    "it": "Creato da",
+    "tr": "Geliştiren",
+    "pt": "Criado por",
+    "hu": "Készítő",
+    "ro": "Creat de"
+  },
+  "Version {}": {
+    "en": "Version {}",
+    "es": "Versión {}",
+    "pl": "Wersja {}",
+    "fr": "Version {}",
+    "cs": "Verze {}",
+    "uk": "Версія {}",
+    "ru": "Версия {}",
+    "it": "Versione {}",
+    "tr": "Sürüm {}",
+    "pt": "Versão {}",
+    "hu": "Verzió {}",
+    "ro": "Versiunea {}"
+  },
+  "Wird nach Veröffentlichung ergänzt.": {
+    "en": "Will be added after publication.",
+    "es": "Se añadirá tras la publicación.",
+    "pl": "Zostanie dodany po publikacji.",
+    "fr": "Sera ajouté après publication.",
+    "cs": "Bude doplněno po zveřejnění.",
+    "uk": "Буде додано після публікації.",
+    "ru": "Будет добавлено после публикации.",
+    "it": "Verrà aggiunto dopo la pubblicazione.",
+    "tr": "Yayımlandıktan sonra eklenecek.",
+    "pt": "Será adicionado após a publicação.",
+    "hu": "Közzététel után kerül ide.",
+    "ro": "Va fi adăugat după publicare."
+  },
+  "Quellcode, Updates und Rückmeldungen": {
+    "en": "Source code, updates and feedback",
+    "es": "Código fuente, actualizaciones y comentarios",
+    "pl": "Kod źródłowy, aktualizacje i opinie",
+    "fr": "Code source, mises à jour et retours",
+    "cs": "Zdrojový kód, aktualizace a zpětná vazba",
+    "uk": "Вихідний код, оновлення та відгуки",
+    "ru": "Исходный код, обновления и отзывы",
+    "it": "Codice sorgente, aggiornamenti e feedback",
+    "tr": "Kaynak kodu, güncellemeler ve geri bildirim",
+    "pt": "Código-fonte, atualizações e comentários",
+    "hu": "Forráskód, frissítések és visszajelzés",
+    "ro": "Cod sursă, actualizări și feedback"
+  },
+  "Lokale Auswertung deiner World-of-Tanks-Replays: Gefechtsstatistiken, Karten, Verdienst, Schaden und Begegnungen mit anderen Spielern.": {
+    "en": "Local analysis of your World of Tanks replays: battle statistics, maps, earnings, damage and encounters with other players.",
+    "es": "Análisis local de tus repeticiones de World of Tanks: estadísticas, mapas, ganancias, daño y encuentros con otros jugadores.",
+    "pl": "Lokalna analiza powtórek World of Tanks: statystyki bitew, mapy, zarobki, uszkodzenia i spotkania z innymi graczami.",
+    "fr": "Analyse locale de vos replays World of Tanks : statistiques, cartes, gains, dégâts et rencontres avec les autres joueurs.",
+    "cs": "Místní analýza záznamů World of Tanks: statistiky bitev, mapy, výdělky, poškození a setkání s ostatními hráči.",
+    "uk": "Локальний аналіз реплеїв World of Tanks: статистика боїв, мапи, заробіток, шкода та зустрічі з іншими гравцями.",
+    "ru": "Локальный анализ реплеев World of Tanks: статистика боёв, карты, доходы, урон и встречи с другими игроками.",
+    "it": "Analisi locale dei replay di World of Tanks: statistiche, mappe, guadagni, danni e incontri con altri giocatori.",
+    "tr": "World of Tanks tekrarlarının yerel analizi: savaş istatistikleri, haritalar, kazanç, hasar ve diğer oyuncularla karşılaşmalar.",
+    "pt": "Análise local dos seus replays de World of Tanks: estatísticas, mapas, ganhos, dano e encontros com outros jogadores.",
+    "hu": "A World of Tanks visszajátszások helyi elemzése: csatastatisztikák, pályák, bevétel, sebzés és találkozások más játékosokkal.",
+    "ro": "Analiza locală a reluărilor World of Tanks: statistici, hărți, câștiguri, daune și întâlniri cu alți jucători."
+  },
+  "Deine Daten bleiben lokal gespeichert. Für die Replay-Auswertung sind weder Login noch Cloud erforderlich.": {
+    "en": "Your data stays on your computer. Replay analysis requires no login or cloud service.",
+    "es": "Tus datos se guardan localmente. El análisis no requiere inicio de sesión ni servicios en la nube.",
+    "pl": "Twoje dane pozostają na komputerze. Analiza nie wymaga logowania ani chmury.",
+    "fr": "Vos données restent sur votre ordinateur. Aucune connexion ni aucun cloud requis pour analyser les replays.",
+    "cs": "Vaše data zůstávají na počítači. Analýza nevyžaduje přihlášení ani cloud.",
+    "uk": "Ваші дані зберігаються локально. Для аналізу не потрібні вхід до акаунта чи хмарні сервіси.",
+    "ru": "Ваши данные хранятся локально. Для анализа не нужны вход в аккаунт или облачные сервисы.",
+    "it": "I tuoi dati restano sul computer. L’analisi non richiede accesso o servizi cloud.",
+    "tr": "Verileriniz bilgisayarınızda kalır. Tekrar analizi için oturum açma veya bulut hizmeti gerekmez.",
+    "pt": "Os seus dados ficam no computador. A análise não exige início de sessão nem serviços na nuvem.",
+    "hu": "Az adatok a számítógépeden maradnak. Az elemzéshez nem szükséges bejelentkezés vagy felhőszolgáltatás.",
+    "ro": "Datele tale rămân pe calculator. Analiza nu necesită autentificare sau servicii cloud."
+  },
+  "Darstellung": {
+    "en": "Appearance",
+    "es": "Apariencia",
+    "pl": "Wygląd",
+    "fr": "Apparence",
+    "cs": "Vzhled",
+    "uk": "Вигляд",
+    "ru": "Оформление",
+    "it": "Aspetto",
+    "tr": "Görünüm",
+    "pt": "Aparência",
+    "hu": "Megjelenés",
+    "ro": "Aspect"
+  },
+  "Schriftgröße": {
+    "en": "Font size",
+    "es": "Tamaño de letra",
+    "pl": "Rozmiar czcionki",
+    "fr": "Taille du texte",
+    "cs": "Velikost písma",
+    "uk": "Розмір шрифту",
+    "ru": "Размер шрифта",
+    "it": "Dimensione carattere",
+    "tr": "Yazı boyutu",
+    "pt": "Tamanho da letra",
+    "hu": "Betűméret",
+    "ro": "Dimensiunea fontului"
+  }
+}
