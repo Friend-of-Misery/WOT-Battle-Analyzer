@@ -137,6 +137,38 @@ pub fn load(game: &Path) -> Result<Catalog> {
     Ok(catalog)
 }
 
+/// Resolve internal vehicle IDs to the client's official localization references.
+pub fn name_references(game: &Path) -> Result<HashMap<String, String>> {
+    let mut archive = zip::ZipArchive::new(File::open(game.join("res/packages/scripts.pkg"))?)?;
+    let mut refs = HashMap::new();
+    for index in 0..archive.len() {
+        let mut entry = archive.by_index(index)?;
+        let name = entry.name().to_owned();
+        let parts: Vec<_> = name.split('/').collect();
+        if parts.len() != 5
+            || parts[..3] != ["scripts", "item_defs", "vehicles"]
+            || parts[4] != "list.xml"
+        {
+            continue;
+        }
+        ensure!(entry.size() < 16 * 1024 * 1024, "Vehicle list too large");
+        let mut bytes = Vec::new();
+        entry.read_to_end(&mut bytes)?;
+        let Node::Children(tanks) = packed_xml(&bytes)? else {
+            continue;
+        };
+        for (tank, node) in tanks {
+            let Node::Children(fields) = node else {
+                continue;
+            };
+            if let Some(Node::Text(reference)) = fields.get("userString") {
+                refs.insert(format!("{}-{tank}", parts[3]), reference.clone());
+            }
+        }
+    }
+    Ok(refs)
+}
+
 pub fn class_label(class: &str) -> &str {
     match class {
         "lightTank" => "Light",

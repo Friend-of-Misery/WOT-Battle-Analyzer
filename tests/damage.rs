@@ -8,7 +8,7 @@ use wot_insights::{
 fn capture(db: &Connection, path: &std::path::Path, date: &str, real: &str, complete: bool) {
     let h = json!({"dateTime":date,"playerID":42,"playerName":"Me","playerVehicle":"usa-A07_T20","mapName":"map","mapDisplayName":"Testkarte","battleType":1,
     "vehicles":{"10":{"name":"Me","vehicleType":"usa:A07_T20","team":1},"20":{"name":"Alias","fakeName":"Alias","vehicleType":"sweden:S13_Leo","team":2},"30":{"name":"Friend","vehicleType":"usa:A07_T20","team":1}}});
-    let mut result = json!([{"players":{"42":{"name":"Me","realName":"Me","team":1},"77":{"name":"Alias","realName":real,"team":2},"88":{"name":"Friend","realName":"Friend","team":1}},"vehicles":{"10":[{"accountDBID":42}],"20":[{"accountDBID":77,"damageDealt":1800,"shots":10,"directEnemyHits":7,"piercingEnemyHits":5,"damageAssistedRadio":321,"damageAssistedTrack":0,"damageAssistedStun":123}],"30":[{"accountDBID":88}]},"personal":{"1569":{"killerID":20,"details":{"(20, 0)":{"damageReceived":500,"damageDealt":125,"directHitsReceived":2,"directHits":3,"piercings":1,"explosionHits":1,"damageBlockedByArmor":250}}}},"future":{"everything":[null,0,"test"]}}]);
+    let mut result = json!([{"players":{"42":{"name":"Me","realName":"Me","team":1},"77":{"name":"Alias","realName":real,"team":2},"88":{"name":"Friend","realName":"Friend","team":1}},"vehicles":{"10":[{"accountDBID":42}],"20":[{"accountDBID":77,"health":0,"mileage":1234,"damageDealt":1800,"shots":10,"directEnemyHits":7,"piercingEnemyHits":5,"damageAssistedRadio":321,"damageAssistedTrack":0,"damageAssistedStun":123}],"30":[{"accountDBID":88,"health":250,"mileage":0}]},"personal":{"1569":{"killerID":20,"details":{"(20, 0)":{"damageReceived":500,"damageDealt":125,"directHitsReceived":2,"directHits":3,"piercings":1,"explosionHits":1,"damageBlockedByArmor":250}}}},"future":{"everything":[null,0,"test"]}}]);
     if !complete {
         result = Value::Null;
     }
@@ -34,6 +34,39 @@ fn damage_players_aliases_and_archived_only_backfill() {
     capture(&db, &path, "10.11.2026 19:00:00", "RealAccount", true);
     fs::remove_file(&path).unwrap();
     assert!(damage::backfill(&db, &Catalog::new()).unwrap().1.is_empty());
+    let mileage = |id| {
+        db.query_row(
+            "SELECT mileage FROM battle_participants WHERE player_id=?1",
+            [id],
+            |r| r.get::<_, Option<i64>>(0),
+        )
+        .unwrap()
+    };
+    let survived = |id| {
+        db.query_row(
+            "SELECT survived FROM battle_participants WHERE player_id=?1",
+            [id],
+            |r| r.get::<_, Option<bool>>(0),
+        )
+        .unwrap()
+    };
+    assert_eq!(survived(77), Some(false));
+    assert_eq!(survived(88), Some(true));
+    assert_eq!(survived(42), None);
+    assert_eq!(mileage(77), Some(1234));
+    assert_eq!(mileage(88), Some(0));
+    assert_eq!(mileage(42), None);
+    db.execute("UPDATE projection_index SET version=3", [])
+        .unwrap();
+    db.execute(
+        "UPDATE battle_participants SET mileage=NULL,survived=NULL",
+        [],
+    )
+    .unwrap();
+    assert!(damage::backfill(&db, &Catalog::new()).unwrap().1.is_empty());
+    assert_eq!(mileage(77), Some(1234));
+    assert_eq!(survived(77), Some(false));
+    assert_eq!(survived(88), Some(true));
     let totals: Vec<Option<i64>>=db.query_row("SELECT gesamt_schaden,schuesse,treffer,durchschlaege,assist_aufklaerung,assist_kette,assist_betaeubung FROM v_spieler_gefechte WHERE spieler_id=77",[],|r|(0..7).map(|i|r.get(i)).collect()).unwrap();
     assert_eq!(
         totals,
@@ -175,5 +208,57 @@ fn damage_players_aliases_and_archived_only_backfill() {
         )
         .unwrap(),
         "RealAccount"
+    );
+}
+
+#[test]
+fn projection_upgrade_uses_database_json_without_opening_replay_archive() {
+    let temp = tempfile::tempdir().unwrap();
+    let db = Connection::open_in_memory().unwrap();
+    damage::initialize(&db).unwrap();
+    let path = temp.path().join("battle.wotreplay");
+    capture(&db, &path, "10.11.2026 19:00:00", "Real", true);
+    damage::backfill(&db, &Catalog::new()).unwrap();
+    fs::remove_file(&path).unwrap();
+    // Make the archive unreadable: an upgrade must use the existing JSON instead.
+    db.execute_batch("UPDATE archive_store.replay_blobs SET payload=X'00'; UPDATE projection_index SET version=3; UPDATE battle_participants SET survived=NULL,mileage=NULL;").unwrap();
+    let (changed, errors) = damage::backfill(&db, &Catalog::new()).unwrap();
+    assert!(errors.is_empty());
+    assert_eq!(changed.len(), 1);
+    assert_eq!(
+        db.query_row(
+            "SELECT mileage,survived FROM battle_participants WHERE player_id=77",
+            [],
+            |r| Ok((r.get::<_, i64>(0)?, r.get::<_, bool>(1)?))
+        )
+        .unwrap(),
+        (1234, false)
+    );
+    assert!(damage::backfill(&db, &Catalog::new()).unwrap().0.is_empty());
+}
+
+#[test]
+fn newer_archive_does_not_reuse_json_from_previous_capture() {
+    let temp = tempfile::tempdir().unwrap();
+    let db = Connection::open_in_memory().unwrap();
+    damage::initialize(&db).unwrap();
+    let path = temp.path().join("battle.wotreplay");
+    capture(&db, &path, "10.11.2026 19:00:00", "Before", true);
+    damage::backfill(&db, &Catalog::new()).unwrap();
+    capture(&db, &path, "10.11.2026 19:00:00", "After", true);
+    // Deterministic revision mismatch independent of clock resolution.
+    db.execute("UPDATE replay_archives SET captured_at='new-capture'", [])
+        .unwrap();
+    let (changed, errors) = damage::backfill(&db, &Catalog::new()).unwrap();
+    assert!(errors.is_empty());
+    assert_eq!(changed.len(), 1);
+    assert_eq!(
+        db.query_row(
+            "SELECT real_name FROM battle_participants WHERE player_id=77",
+            [],
+            |r| r.get::<_, String>(0)
+        )
+        .unwrap(),
+        "After"
     );
 }

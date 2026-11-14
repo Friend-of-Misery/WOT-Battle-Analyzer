@@ -5,7 +5,7 @@ use std::{
     path::{Path, PathBuf},
     time::{Duration, SystemTime, UNIX_EPOCH},
 };
-const VERSION: i64 = 11;
+const VERSION: i64 = 13;
 pub fn archive_path(path: &Path) -> PathBuf {
     path.with_file_name(format!(
         "{}.archive.db",
@@ -163,6 +163,20 @@ pub fn initialize(db: &Connection) -> Result<()> {
     }
     db.execute_batch(crate::battle_record::TABLE)?;
     db.execute_batch(include_str!("schema.sql"))?;
+    if !columns(db, "battle_participants")?
+        .iter()
+        .any(|c| c == "mileage")
+    {
+        db.execute_batch("ALTER TABLE battle_participants ADD COLUMN mileage INTEGER")?;
+    }
+    if !columns(db, "battle_participants")?
+        .iter()
+        .any(|c| c == "survived")
+    {
+        db.execute_batch(
+            "ALTER TABLE battle_participants ADD COLUMN survived INTEGER CHECK(survived IN (0,1))",
+        )?;
+    }
     if legacy {
         let mut q = db.prepare("SELECT payload FROM legacy_battles")?;
         for value in q.query_map([], |r| r.get::<_, String>(0))? {

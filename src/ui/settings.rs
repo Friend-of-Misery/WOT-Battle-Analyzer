@@ -14,6 +14,11 @@ impl App {
                 for (code,name) in crate::i18n::LANGUAGES {if ui.selectable_value(&mut self.preferences.language,code.to_string(),*name).changed(){crate::i18n::set_language(code);}}
             });
             ui.separator();
+            if let Some(source)=wot_insights::vehicle_names::source_language(&self.preferences.language) {
+                let name=crate::i18n::LANGUAGES.iter().find(|(code,_)|*code==source).map(|(_,name)|*name).unwrap_or(&source);
+                ui.label(wot_insights::tr_format!("Fahrzeugnamen: {name}"));
+                if source!=self.preferences.language {ui.weak(crate::i18n::rich("Für die gewählte App-Sprache fehlt ein Fahrzeugnamen-Katalog. Die angezeigte Ersatzsprache wird verwendet."));}
+            }
             ui.heading(crate::i18n::rich("Datenquelle & Erfassung"));
             ui.checkbox(&mut self.preferences.sql_enabled,crate::i18n::widget("SQL-Reiter für eigene Abfragen anzeigen"));
             ui.label(crate::i18n::widget("WoT-Installationsordner"));ui.text_edit_singleline(&mut self.preferences.game_folder);

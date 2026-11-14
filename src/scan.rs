@@ -34,7 +34,10 @@ impl Worker {
             self.loaded = false;
         }
         let store = self.store.as_mut().expect("store initialized");
-        let report = if import {
+        let names_error = crate::vehicle_names::refresh(game)
+            .err()
+            .map(|e| format!("Fahrzeugnamen: {e:#}"));
+        let mut report = if import {
             match vehicles::load_cached(game) {
                 Ok(catalog) => match store.import(folder, &catalog) {
                     Ok(report) => report,
@@ -51,6 +54,9 @@ impl Worker {
         } else {
             ImportReport::default()
         };
+        if let Some(error) = names_error {
+            report.errors.push(error);
+        }
         let replace_all = !self.loaded;
         let battles = if replace_all {
             store.battles()?

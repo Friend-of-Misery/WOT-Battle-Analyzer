@@ -1,6 +1,6 @@
 [package]
 name = "wot-battle-analyzer"
-version = "0.6.3"
+version = "0.6.4"
 edition = "2024"
 license = "GPL-3.0-only"
 repository = "https://github.com/Friend-of-Misery/WOT-Battle-Analyzer"

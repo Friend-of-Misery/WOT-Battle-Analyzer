@@ -31,3 +31,17 @@ cargo run --release --offline --example scan_benchmark -- <test-database> <game-
 ```
 
 Use a copy when benchmarking migration. Tests cover old schemas, byte-preserved archives, unknown fields, missing archives, rollback, catalog invalidation, incremental updates, localized placeholders, persisted language settings and all views at both supported window sizes in all 13 languages.
+
+### Fahrstrecke der Teilnehmer
+
+`battle_participants.mileage` übernimmt den Ergebniszähler `mileage` je Fahrzeug. Mehrere Ergebnisdatensätze werden nur bei vollständig vorhandenen, nicht negativen Werten summiert. Fehlende Werte bleiben NULL; null gefahrene Strecke bleibt 0. Die Einheit ist noch nicht verifiziert, daher zeigt die Oberfläche ausdrücklich die Originaleinheit und keine Kilometer an. Schema 12 und Projektionsversion 3 ergänzen bestehende Datenbanken beim nächsten Import aus den vorhandenen Archiven.
+
+Schema 13 ergänzt `battle_participants.survived` (NULL/0/1). Projektionsversion 4 liest die Archive erneut. Überlebt wird aus den verbleibenden Lebenspunkten im Endergebnis ermittelt (`health > 0`). Fehlende Lebenspunkte oder mehrere Ergebnisdatensätze (etwa Respawns) bleiben unbekannt. Der Teilnehmerreiter zeigt ausschließlich eine durchsuchbare Tabelle beider Teams; Rohdaten stehen unter Originaldaten.
+
+Bei einer neuen Projektionsversion werden die bereits dekodierten JSON-Blöcke aus `replay_documents` verwendet, sofern der Erfassungszeitpunkt in `projection_index` zum aktuellen Archiv passt. Die vorhandenen JSON-Blöcke werden dabei nicht neu geschrieben. Nur neue/geänderte Archive oder fehlende bzw. beschädigte JSON-Blöcke benötigen die Archivdekodierung. Der Programmstart lädt zuerst die gespeicherten Gefechte und startet anschließend die automatische Prüfung im Hintergrund.
+
+### Offizielle Fahrzeugnamen
+
+`vehicle_names` löst interne Kennungen zentral auf, sodass Tabellen, Filter, Übersichten und Überschriften dieselben Namen und Sortierschlüssel verwenden. Der mitgelieferte Offline-Katalog `src/locales/vehicle_names.json` enthält aktuell 1269 deutsche Namen aus dem WoT-EU-Client 2.4.1. Die Zuordnung verwendet `userString` aus `scripts.pkg` und den zugehörigen gettext-MO-Eintrag, keine aus der Kennung geratenen Namen. Weitere Sprachkataloge lassen sich mit `cargo run --example export_vehicle_names -- <WoT-Ordner> src/locales/vehicle_names.json` ergänzen.
+
+Die Sprache wird nach App-Sprache, Englisch und Deutsch gewählt. In den Einstellungen steht die verwendete Sprache; ein fehlender Katalog wird ausdrücklich angezeigt. Der lokale Client kann zusätzlich seine installierte Sprache liefern. Änderungen an Sprachdateien oder scripts.pkg aktualisieren den Laufzeitkatalog automatisch ohne erneuten Replayimport. Ohne passende Namenszuordnung bleibt die bisherige Kennungsdarstellung als letzter Fallback erhalten. Die gespeicherten Panzerkennungen werden nicht geändert.

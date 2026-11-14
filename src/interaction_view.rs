@@ -74,8 +74,10 @@ fn load(db: &Connection, filter: &Filter, damage: bool) -> anyhow::Result<Report
             "Assist Aufklärung",
             "Assist Kette",
             "Assist Betäubung",
+            "Fahrstrecke (Originaleinheit)",
+            "Überlebt",
         ]);
-        "t.gesamt_schaden,t.schuesse,t.treffer,t.durchschlaege,t.assist_aufklaerung,t.assist_kette,t.assist_betaeubung"
+        "t.gesamt_schaden,t.schuesse,t.treffer,t.durchschlaege,t.assist_aufklaerung,t.assist_kette,t.assist_betaeubung,t.fahrstrecke,CASE t.ueberlebt WHEN 1 THEN 'Ja' WHEN 0 THEN 'Nein' END"
     };
     let mut stmt=db.prepare(&format!("SELECT t.gefechts_id,t.spieler_id,t.datum,t.karte,coalesce(t.echter_name,t.angezeigter_name,'unbekannt'),coalesce(t.alias,t.angezeigter_name,'–'),t.zuordnung,t.panzer,t.stufe,{stats} FROM {from} WHERE {condition} ORDER BY t.datum DESC,t.gefechts_id,t.fahrzeug_id{} LIMIT ?4 OFFSET ?5",if damage {",s.eigenes_fahrzeug,s.leben_index"} else {""}))?;
     let count = stmt.column_count();
@@ -360,7 +362,7 @@ mod tests {
         assert_eq!(report.rows[0].cells[2], "NewName");
         assert_eq!(
             &report.rows[0].cells[7..],
-            &["3000", "15", "11", "9", "0", "400", "100"]
+            &["3000", "15", "11", "9", "0", "400", "100", "–", "–"]
         );
         assert_eq!(report.headings.len(), report.rows[0].cells.len() + 1);
         f.relation = "Mitspieler".into();

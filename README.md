@@ -41,7 +41,7 @@ cargo test
 cargo build --release
 ```
 
-GitHub Actions tests and builds every push to `main`. To publish a release, push a tag matching the version in `Cargo.toml` (for example, `v0.6.3`). The release includes the Windows x64 executable, a ZIP, and SHA-256 checksums.
+GitHub Actions tests and builds every push to `main`. To publish a release, push a tag matching the version in `Cargo.toml` (for example, `v0.6.4`). The release includes the Windows x64 executable, a ZIP, and SHA-256 checksums.
 
 Technical details: [Architecture](docs/architecture.md) (in German).
 

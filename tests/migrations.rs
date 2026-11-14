@@ -155,3 +155,37 @@ fn missing_archive_file_is_reported_without_creating_an_empty_replacement() {
     assert!(!archive.exists());
     assert!(retained.exists());
 }
+
+#[test]
+fn version_11_gains_nullable_mileage_and_survival_without_losing_participants() {
+    let db = Connection::open_in_memory().unwrap();
+    wot_insights::migrations::initialize(&db).unwrap();
+    db.execute_batch("INSERT INTO battles(battle_id) VALUES ('a');
+        INSERT INTO battle_participants(battle_id,vehicle_id,display_name,total_damage) VALUES ('a',1,'Player',900);
+        DROP VIEW v_schaden_eingehend; DROP VIEW v_schaden_ausgehend; DROP VIEW v_spieler_gefechte; DROP VIEW gefecht_teilnehmer;
+        ALTER TABLE battle_participants DROP COLUMN mileage;
+        ALTER TABLE battle_participants DROP COLUMN survived;
+        PRAGMA user_version=11;").unwrap();
+    wot_insights::migrations::initialize(&db).unwrap();
+    assert_eq!(
+        db.query_row("SELECT survived FROM battle_participants", [], |r| r
+            .get::<_, Option<bool>>(0))
+            .unwrap(),
+        None
+    );
+    let row = db
+        .query_row(
+            "SELECT display_name,total_damage,mileage FROM battle_participants",
+            [],
+            |r| {
+                Ok((
+                    r.get::<_, String>(0)?,
+                    r.get::<_, i64>(1)?,
+                    r.get::<_, Option<i64>>(2)?,
+                ))
+            },
+        )
+        .unwrap();
+    assert_eq!(row, ("Player".into(), 900, None));
+    wot_insights::migrations::initialize(&db).unwrap();
+}

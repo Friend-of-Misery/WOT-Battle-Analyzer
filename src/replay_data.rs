@@ -12,6 +12,17 @@ pub struct Document {
     pub original_size: usize,
 }
 
+/// Survival of a single vehicle result, based on its final hit points.
+/// Multiple records may represent respawns; their final order is not assumed.
+pub fn survived(records: &Value) -> Option<bool> {
+    let record = match records.as_array() {
+        Some(rows) if rows.len() == 1 => &rows[0],
+        Some(_) => return None,
+        None => records,
+    };
+    record["health"].as_i64().map(|health| health > 0)
+}
+
 pub fn identity(header: &Value) -> Result<String> {
     let date = NaiveDateTime::parse_from_str(
         header["dateTime"].as_str().context("Gefechtsdatum fehlt")?,
@@ -414,5 +425,20 @@ mod tests {
         assert_eq!(document.blocks[0]["unknown"]["zero"], 0);
         assert_eq!(document.stream, [0, 255, 17]);
         assert!(explanation("unknown_new_field").contains("nicht geprüft"));
+    }
+}
+
+#[cfg(test)]
+mod survival_tests {
+    use super::*;
+    use serde_json::json;
+    #[test]
+    fn final_health_distinguishes_alive_destroyed_and_unknown() {
+        assert_eq!(survived(&json!([{"health":123}])), Some(true));
+        assert_eq!(survived(&json!({"health":0})), Some(false));
+        assert_eq!(survived(&json!({"health":-20})), Some(false));
+        assert_eq!(survived(&json!({"lifeTime":100})), None);
+        assert_eq!(survived(&json!([])), None);
+        assert_eq!(survived(&json!([{"health":0},{"health":100}])), None);
     }
 }

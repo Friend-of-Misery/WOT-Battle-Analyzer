@@ -27,6 +27,9 @@ fn catalog() -> &'static Catalog {
 pub fn valid_language(code: &str) -> bool {
     LANGUAGES.iter().any(|(c, _)| *c == code)
 }
+pub fn language() -> String {
+    LANGUAGE.with(|v| v.borrow().clone())
+}
 pub fn set_language(code: &str) {
     LANGUAGE.with(|v| {
         if v.borrow().as_str() != code {

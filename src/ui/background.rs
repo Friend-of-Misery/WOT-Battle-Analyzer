@@ -9,7 +9,12 @@ impl App {
         }
         let (sender, receiver) = mpsc::channel();
         self.receiver = Some(receiver);
-        self.message = "Replay-Ordner wird geprüft …".into();
+        self.message = if import {
+            "Replay-Ordner wird geprüft …"
+        } else {
+            "Datenbank wird geladen …"
+        }
+        .into();
         let (game, folder, db) = (
             PathBuf::from(&self.preferences.game_folder),
             PathBuf::from(&self.preferences.replay_folder),
@@ -62,6 +67,10 @@ impl App {
                             || loaded.projections_changed;
                         if loaded.replace_all {
                             self.battles = loaded.battles;
+                            if self.preferences.automatic {
+                                // Schedule background import after publishing the saved battles.
+                                self.last_scan = Instant::now() - Duration::from_secs(31);
+                            }
                         } else if !loaded.battles.is_empty() {
                             let mut positions: std::collections::HashMap<_, _> = self
                                 .battles

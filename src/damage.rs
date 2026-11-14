@@ -154,10 +154,11 @@ fn project(db: &Connection, doc: &replay_data::Document, catalog: &Catalog) -> R
                 if rows.is_empty() {
                     return None;
                 }
-                rows.iter()
-                    .try_fold(0i64, |sum, row| sum.checked_add(number(row, field)?))
+                rows.iter().try_fold(0i64, |sum, row| {
+                    sum.checked_add(number(row, field).filter(|v| field != "mileage" || *v >= 0)?)
+                })
             };
-            db.execute("UPDATE battle_participants SET total_damage=?3,shots=?4,hits=?5,penetrations=?6,spotting_assist=?7,tracking_assist=?8,stun_assist=?9 WHERE battle_id=?1 AND vehicle_id=?2",params![key,id,total("damageDealt"),total("shots"),total("directEnemyHits"),total("piercingEnemyHits"),total("damageAssistedRadio"),total("damageAssistedTrack"),total("damageAssistedStun")])?;
+            db.execute("UPDATE battle_participants SET total_damage=?3,shots=?4,hits=?5,penetrations=?6,spotting_assist=?7,tracking_assist=?8,stun_assist=?9,mileage=?10,survived=?11 WHERE battle_id=?1 AND vehicle_id=?2",params![key,id,total("damageDealt"),total("shots"),total("directEnemyHits"),total("piercingEnemyHits"),total("damageAssistedRadio"),total("damageAssistedTrack"),total("damageAssistedStun"),total("mileage").filter(|v| *v >= 0),replay_data::survived(records)])?;
         }
     }
     if let Some(personal) = result["personal"].as_object() {
@@ -208,11 +209,43 @@ fn project(db: &Connection, doc: &replay_data::Document, catalog: &Catalog) -> R
     }
     Ok(())
 }
-/// Backfill archives including deleted original replays. One archive per savepoint.
+// Reuse the decoded JSON only when it belongs to the current archive revision.
+// The projection version may be old; the capture timestamp must still match.
+fn indexed_document(
+    db: &Connection,
+    path: &str,
+    captured: &str,
+) -> Result<Option<replay_data::Document>> {
+    let mut query = db.prepare("SELECT d.block_index,d.payload FROM replay_documents d JOIN projection_index i ON i.replay_path=d.replay_path WHERE d.replay_path=?1 AND i.captured_at=?2 ORDER BY d.block_index")?;
+    let mut rows = query.query(params![path, captured])?;
+    let mut blocks = Vec::new();
+    while let Some(row) = rows.next()? {
+        if row.get::<_, i64>(0)? != blocks.len() as i64 {
+            return Ok(None);
+        }
+        let payload: String = row.get(1)?;
+        let Ok(block) = serde_json::from_str(&payload) else {
+            return Ok(None);
+        };
+        blocks.push(block);
+    }
+    if blocks.is_empty() {
+        return Ok(None);
+    }
+    Ok(Some(replay_data::Document {
+        source: path.into(),
+        blocks,
+        stream: Vec::new(),
+        original_size: 0,
+    }))
+}
+
+/// Update projections from stored JSON, falling back to archives when needed.
+/// One source per savepoint; original replay files are never read here.
 pub fn backfill(db: &Connection, catalog: &Catalog) -> Result<(Vec<String>, Vec<String>)> {
     let transaction = db.unchecked_transaction()?;
     let pending = {
-        let mut stmt=db.prepare("SELECT a.path,a.captured_at FROM replay_archives a LEFT JOIN projection_index i ON i.replay_path=a.path WHERE i.version IS NULL OR i.version<>2 OR i.captured_at<>a.captured_at")?;
+        let mut stmt=db.prepare("SELECT a.path,a.captured_at FROM replay_archives a LEFT JOIN projection_index i ON i.replay_path=a.path WHERE i.version IS NULL OR i.version<>4 OR i.captured_at<>a.captured_at")?;
         stmt.query_map([], |r| Ok((r.get::<_, String>(0)?, r.get::<_, String>(1)?)))?
             .collect::<rusqlite::Result<Vec<_>>>()?
     };
@@ -221,33 +254,38 @@ pub fn backfill(db: &Connection, catalog: &Catalog) -> Result<(Vec<String>, Vec<
     for (path, captured) in pending {
         db.execute_batch("SAVEPOINT replay_projection")?;
         let result = (|| -> Result<()> {
-            let payload: Vec<u8> = db.query_row(
-                "SELECT payload FROM archive_store.replay_blobs WHERE path=?1",
-                [&path],
-                |r| r.get(0),
-            )?;
-            let doc = match archive::document(&payload, path.clone()) {
-                Ok(doc) => doc,
-                Err(_) => {
-                    // The original bytes remain archived even for unreadable formats.
-                    db.execute("INSERT INTO projection_index VALUES (?1,?2,2) ON CONFLICT(replay_path) DO UPDATE SET captured_at=excluded.captured_at,version=excluded.version",params![path,captured])?;
-                    return Ok(());
-                }
-            };
-            db.execute("DELETE FROM replay_documents WHERE replay_path=?1", [&path])?;
-            for (i, block) in doc.blocks.iter().enumerate() {
-                db.execute(
-                    "INSERT INTO replay_documents VALUES (?1,?2,?3)",
-                    params![path, i as i64, serde_json::to_string(block)?],
+            let doc = if let Some(doc) = indexed_document(db, &path, &captured)? {
+                doc
+            } else {
+                let payload: Vec<u8> = db.query_row(
+                    "SELECT payload FROM archive_store.replay_blobs WHERE path=?1",
+                    [&path],
+                    |r| r.get(0),
                 )?;
-            }
+                let doc = match archive::document(&payload, path.clone()) {
+                    Ok(doc) => doc,
+                    Err(_) => {
+                        // The original bytes remain archived even for unreadable formats.
+                        db.execute("INSERT INTO projection_index VALUES (?1,?2,4) ON CONFLICT(replay_path) DO UPDATE SET captured_at=excluded.captured_at,version=excluded.version",params![path,captured])?;
+                        return Ok(());
+                    }
+                };
+                db.execute("DELETE FROM replay_documents WHERE replay_path=?1", [&path])?;
+                for (i, block) in doc.blocks.iter().enumerate() {
+                    db.execute(
+                        "INSERT INTO replay_documents VALUES (?1,?2,?3)",
+                        params![path, i as i64, serde_json::to_string(block)?],
+                    )?;
+                }
+                doc
+            };
             project(db, &doc, catalog)?;
             if let Some(h) = doc.blocks.first() {
                 if let Ok(key) = replay_data::identity(h) {
                     changed.push(key);
                 }
             }
-            db.execute("INSERT INTO projection_index VALUES (?1,?2,2) ON CONFLICT(replay_path) DO UPDATE SET captured_at=excluded.captured_at,version=excluded.version",params![path,captured])?;
+            db.execute("INSERT INTO projection_index VALUES (?1,?2,4) ON CONFLICT(replay_path) DO UPDATE SET captured_at=excluded.captured_at,version=excluded.version",params![path,captured])?;
             Ok(())
         })();
         if let Err(e) = result {

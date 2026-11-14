@@ -107,6 +107,7 @@ fn integer(n: Option<i64>) -> String {
         .unwrap_or_else(|| "–".into())
 }
 pub(super) fn tank_name(tank: &str) -> String {
+    if let Some(name)=wot_insights::vehicle_names::display(tank,&crate::i18n::language()) {return name;}
     let tank = tank.split_once('-').map(|(_, t)| t).unwrap_or(tank);
     let tank = tank
         .split_once('_')
@@ -268,8 +269,8 @@ impl App {
                 .map(|b| b.player.clone())
                 .unwrap_or_default();
         }
-        // Loading a saved database works even when automatic import is paused.
-        app.scan_with_import(app.preferences.automatic);
+        // Show persisted battles before checking files or updating archive projections.
+        app.scan_with_import(false);
         app
     }
     fn render(&mut self, ctx: &egui::Context) {
@@ -312,7 +313,7 @@ impl App {
                 let (label, color) = if self.import_failed {
                     ("● Importfehler", RED)
                 } else if self.receiver.is_some() {
-                    ("● Lese ein …", ACCENT)
+                    ("● Aktualisiere …", ACCENT)
                 } else if self.preferences.automatic {
                     ("● Import aktiv", GREEN)
                 } else {

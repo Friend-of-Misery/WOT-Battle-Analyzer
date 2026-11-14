@@ -19,6 +19,7 @@ pub struct State {
     tab: usize,
     hide_explanations: bool,
     technical_names: bool,
+    participant_sort: ParticipantSort,
 }
 
 impl State {
@@ -117,7 +118,11 @@ impl State {
         ui.horizontal_wrapped(|ui| {
             ui.add(
                 egui::TextEdit::singleline(&mut self.search)
-                    .hint_text(crate::i18n::widget("Feldname, Wert oder Bedeutung …"))
+                    .hint_text(crate::i18n::widget(if self.tab == 2 {
+                        "Spieler / Panzer"
+                    } else {
+                        "Feldname, Wert oder Bedeutung …"
+                    }))
                     .desired_width(330.),
             );
             if ui.button(crate::i18n::widget("Suche leeren")).clicked() {
@@ -128,6 +133,15 @@ impl State {
                     .copy_text(serde_json::to_string_pretty(&document.blocks).unwrap_or_default());
             }
         });
+        if self.tab == 2 {
+            participant_table(
+                ui,
+                document,
+                &self.search.trim().to_lowercase(),
+                &mut self.participant_sort,
+            );
+            return;
+        }
         ui.horizontal_wrapped(|ui| {
             let mut explanations = !self.hide_explanations;
             ui.checkbox(
@@ -343,6 +357,285 @@ fn overview(ui: &mut egui::Ui, battle: &Battle) {
         "Alle weiteren Werte findest du unter „Eigene Werte“.",
     ));
     ui.weak(crate::i18n::rich("Dort sind Schaden, Verdienst, Erfahrung und Fortschritt thematisch gruppiert. Teilnehmerdaten und vollständige Originaldaten haben eigene Bereiche."));
+}
+
+#[derive(Default)]
+struct ParticipantSort {
+    column: usize,
+    descending: bool,
+}
+impl ParticipantSort {
+    fn select(&mut self, column: usize) {
+        if self.column == column {
+            self.descending = !self.descending;
+        } else {
+            self.column = column;
+            self.descending = (4..=8).contains(&column);
+        }
+    }
+}
+fn participant_table(
+    ui: &mut egui::Ui,
+    document: &Document,
+    search: &str,
+    sorting: &mut ParticipantSort,
+) {
+    let Some(header) = document.blocks.first() else {
+        return;
+    };
+    let result = document
+        .blocks
+        .get(1)
+        .map(|v| v.as_array().and_then(|a| a.first()).unwrap_or(v));
+    let vehicles = header["vehicles"].as_object();
+    let results = result.and_then(|r| r["vehicles"].as_object());
+    let mut ids = std::collections::BTreeSet::new();
+    for source in [vehicles, results].into_iter().flatten() {
+        ids.extend(source.keys());
+    }
+    let own_team = vehicles
+        .and_then(|vehicles| {
+            vehicles
+                .values()
+                .find(|v| v["name"] == header["playerName"])
+        })
+        .and_then(|v| v["team"].as_i64());
+    let mut ids: Vec<_> = ids.into_iter().collect();
+    ids.sort_by_key(|id| {
+        let team = header["vehicles"][*id]["team"].as_i64();
+        (team != own_team, team, (*id).clone())
+    });
+    struct Row {
+        shown: String,
+        real: String,
+        relation: &'static str,
+        tank: String,
+        values: [Option<i64>; 4],
+        survived: Option<bool>,
+        own: bool,
+        group: usize,
+        fill: egui::Color32,
+    }
+    let text = |v: &Value, field: &str| {
+        v[field]
+            .as_str()
+            .filter(|s| !s.is_empty())
+            .map(str::to_owned)
+    };
+    let mut visible = Vec::new();
+    let mut stripes = [0usize; 3];
+    for id in ids {
+        let h = &header["vehicles"][id];
+        let records = results.and_then(|r| r.get(id)).unwrap_or(&Value::Null);
+        let rows: Vec<&Value> = match records.as_array() {
+            Some(rows) => rows.iter().collect(),
+            None if records.is_object() => vec![records],
+            _ => Vec::new(),
+        };
+        let total = |field: &str| -> Option<i64> {
+            if rows.is_empty() {
+                return None;
+            }
+            rows.iter().try_fold(0i64, |sum, row| {
+                sum.checked_add(row[field].as_i64().filter(|v| *v >= 0)?)
+            })
+        };
+        let player = rows
+            .first()
+            .and_then(|r| r["accountDBID"].as_i64())
+            .and_then(|id| result.map(|r| &r["players"][id.to_string()]));
+        let shown = player
+            .and_then(|p| text(p, "name"))
+            .or_else(|| text(h, "fakeName"))
+            .or_else(|| text(h, "name"))
+            .unwrap_or_else(|| "–".into());
+        let real = player
+            .and_then(|p| text(p, "realName"))
+            .unwrap_or_else(|| "–".into());
+        let team = h["team"]
+            .as_i64()
+            .or_else(|| rows.first().and_then(|r| r["team"].as_i64()))
+            .or_else(|| player.and_then(|p| p["team"].as_i64()));
+        let (relation, group) = match (own_team, team) {
+            (Some(own), Some(team)) if own == team => ("Mitspieler", 0),
+            (Some(_), Some(_)) => ("Gegner", 1),
+            _ => ("–", 2),
+        };
+        let tank_id = h["vehicleType"]
+            .as_str()
+            .unwrap_or("–")
+            .replacen(':', "-", 1);
+        let tank = crate::ui::tank_name(&tank_id);
+        let searchable = format!("{shown} {real} {tank_id} {tank} {relation}").to_lowercase();
+        if !search.is_empty() && !searchable.contains(search) {
+            continue;
+        }
+        let darker = stripes[group] % 2 == 1;
+        stripes[group] += 1;
+        let fill = participant_fill(group, darker);
+        let assist = total("damageAssistedRadio")
+            .and_then(|radio| radio.checked_add(total("damageAssistedTrack")?))
+            .and_then(|assist| assist.checked_add(total("damageAssistedStun")?));
+        visible.push(Row {
+            shown,
+            real,
+            relation,
+            tank,
+            values: [
+                total("damageDealt"),
+                assist,
+                total("kills"),
+                total("mileage"),
+            ],
+            survived: replay_data::survived(records),
+            own: h["name"] == header["playerName"],
+            group,
+            fill,
+        });
+    }
+    // Team grouping is independent of the chosen column and sort direction.
+    visible.sort_by(|a, b| {
+        let order = match sorting.column {
+            0 => a.shown.to_lowercase().cmp(&b.shown.to_lowercase()),
+            1 => a.real.to_lowercase().cmp(&b.real.to_lowercase()),
+            2 => a.relation.cmp(b.relation),
+            3 => a.tank.to_lowercase().cmp(&b.tank.to_lowercase()),
+            4..=7 => compare_optional(
+                a.values[sorting.column - 4],
+                b.values[sorting.column - 4],
+                sorting.descending,
+            ),
+            8 => compare_optional(a.survived, b.survived, sorting.descending),
+            _ => std::cmp::Ordering::Equal,
+        };
+        let order = if sorting.descending && sorting.column < 4 {
+            order.reverse()
+        } else {
+            order
+        };
+        a.group
+            .cmp(&b.group)
+            .then(order)
+            .then_with(|| a.shown.cmp(&b.shown))
+    });
+    let mut stripes = [0usize; 3];
+    for row in &mut visible {
+        row.fill = participant_fill(row.group, stripes[row.group] % 2 == 1);
+        stripes[row.group] += 1;
+    }
+    ui.strong(crate::i18n::rich("Teilnehmervergleich"));
+    ui.weak(crate::i18n::rich(
+        "Fahrstrecke laut Ergebnisdaten. Einheit noch nicht bestätigt; fehlende Werte: –.",
+    ));
+    let row_colors: Vec<_> = visible.iter().map(|row| row.fill).collect();
+    let heading_color = egui::Color32::WHITE;
+    let mut clicked_column = None;
+    egui::ScrollArea::horizontal()
+        .id_salt("participant_comparison_scroll")
+        .show(ui, |ui| {
+            egui::Grid::new("participant_comparison")
+                .num_columns(9)
+                .min_row_height(30.)
+                .spacing([16., 8.])
+                .with_row_color(move |row, _| {
+                    if row == 0 {
+                        Some(egui::Color32::from_rgb(52, 60, 71))
+                    } else {
+                        row_colors.get(row - 1).copied()
+                    }
+                })
+                .show(ui, |ui| {
+                    ui.spacing_mut().button_padding = egui::vec2(5., 4.);
+                    for (column, title) in [
+                        "Name im Gefecht",
+                        "Klartextname",
+                        "Team",
+                        "Panzer",
+                        "Schaden",
+                        "Assist",
+                        "Abschüsse",
+                        "Fahrstrecke",
+                        "Überlebt",
+                    ]
+                    .into_iter()
+                    .enumerate()
+                    {
+                        let arrow = if sorting.column == column {
+                            if sorting.descending { " ▼" } else { " ▲" }
+                        } else {
+                            ""
+                        };
+                        let label = format!("{}{arrow}", crate::i18n::text(title));
+                        if ui
+                            .add(
+                                egui::Button::new(
+                                    RichText::new(label).strong().color(heading_color),
+                                )
+                                .fill(egui::Color32::from_rgb(40, 49, 61)),
+                            )
+                            .clicked()
+                        {
+                            clicked_column = Some(column);
+                        }
+                    }
+                    ui.end_row();
+                    ui.visuals_mut().override_text_color =
+                        Some(egui::Color32::from_rgb(31, 42, 38));
+                    for row in visible {
+                        ui.label(if row.own {
+                            RichText::new(&row.shown).strong().underline()
+                        } else {
+                            RichText::new(&row.shown)
+                        });
+                        ui.label(&row.real);
+                        ui.label(crate::i18n::widget(row.relation));
+                        ui.label(row.tank);
+                        for value in row.values {
+                            ui.label(
+                                value
+                                    .map(|v| grouped(&v.to_string()))
+                                    .unwrap_or_else(|| "–".into()),
+                            );
+                        }
+                        ui.label(crate::i18n::widget(match row.survived {
+                            Some(true) => "Ja",
+                            Some(false) => "Nein",
+                            None => "–",
+                        }));
+                        ui.end_row();
+                    }
+                });
+        });
+    if let Some(column) = clicked_column {
+        sorting.select(column);
+        ui.ctx().request_repaint();
+    }
+    ui.add_space(12.);
+}
+
+fn compare_optional<T: Ord>(a: Option<T>, b: Option<T>, descending: bool) -> std::cmp::Ordering {
+    match (a, b) {
+        (Some(a), Some(b)) => {
+            if descending {
+                b.cmp(&a)
+            } else {
+                a.cmp(&b)
+            }
+        }
+        (Some(_), None) => std::cmp::Ordering::Less,
+        (None, Some(_)) => std::cmp::Ordering::Greater,
+        (None, None) => std::cmp::Ordering::Equal,
+    }
+}
+fn participant_fill(group: usize, darker: bool) -> egui::Color32 {
+    match (group, darker) {
+        (0, false) => egui::Color32::from_rgb(222, 245, 226),
+        (0, true) => egui::Color32::from_rgb(199, 231, 205),
+        (1, false) => egui::Color32::from_rgb(252, 227, 227),
+        (1, true) => egui::Color32::from_rgb(241, 204, 204),
+        (_, false) => egui::Color32::from_rgb(237, 239, 242),
+        (_, true) => egui::Color32::from_rgb(217, 221, 227),
+    }
 }
 
 fn category(key: &str) -> usize {
@@ -732,6 +1025,165 @@ fn tree(
 #[cfg(test)]
 mod tests {
     use super::*;
+    #[test]
+    fn participant_tab_renders_table_and_filters_without_raw_tree() {
+        let header = serde_json::json!({"dateTime":"10.11.2026 19:00:00","playerID":42,"playerName":"Me","playerVehicle":"usa-A07_T20","mapName":"map","mapDisplayName":"Map","battleType":1,"vehicles":{"10":{"name":"Me","team":1,"vehicleType":"usa:A07_T20"},"20":{"name":"HiddenFox","fakeName":"HiddenFox","team":2,"vehicleType":"usa:A07_T20"},"30":{"name":"Friend","team":1,"vehicleType":"usa:A07_T20"},"40":{"name":"EnemyTwo","team":2,"vehicleType":"usa:A07_T20"}}});
+        let result = serde_json::json!([{"vehicles":{"10":[{"health":123,"damageDealt":500,"kills":1,"mileage":300}],"20":[{"accountDBID":77,"health":0,"damageDealt":200,"kills":0,"mileage":600}]},"players":{"77":{"name":"HiddenFox","realName":"Enemy","team":2}},"internalOnly":"raw-secret"}]);
+        let battle = wot_insights::replay::from_json(
+            &header,
+            Some(&result),
+            &wot_insights::vehicles::Catalog::new(),
+        )
+        .unwrap();
+        for size in [egui::vec2(1000., 620.), egui::vec2(1280., 820.)] {
+            for search in ["", "enemy", "hiddenfox"] {
+                let mut state = State {
+                    tab: 2,
+                    search: search.into(),
+                    document: Some(Document {
+                        source: "test".into(),
+                        blocks: vec![header.clone(), result.clone()],
+                        stream: vec![],
+                        original_size: 0,
+                    }),
+                    ..Default::default()
+                };
+                let ctx = egui::Context::default();
+                crate::ui::configure(&ctx);
+                let output = ctx.run(
+                    egui::RawInput {
+                        screen_rect: Some(egui::Rect::from_min_size(egui::Pos2::ZERO, size)),
+                        ..Default::default()
+                    },
+                    |ctx| {
+                        egui::CentralPanel::default().show(ctx, |ui| state.show(ui, &battle));
+                    },
+                );
+                let text = output
+                    .shapes
+                    .iter()
+                    .filter_map(|s| match &s.shape {
+                        egui::epaint::Shape::Text(t) => Some(t.galley.job.text.as_str()),
+                        _ => None,
+                    })
+                    .collect::<Vec<_>>()
+                    .join(" ");
+                assert!(text.contains("Überlebt"));
+                assert!(text.contains("Enemy"));
+                assert!(text.contains("HiddenFox"));
+                assert!(text.contains("Klartextname"));
+                if search.is_empty() {
+                    let fills = output
+                        .shapes
+                        .iter()
+                        .filter_map(|s| match &s.shape {
+                            egui::epaint::Shape::Rect(r) => Some(r.fill),
+                            _ => None,
+                        })
+                        .collect::<Vec<_>>();
+                    for rgb in [
+                        [222, 245, 226],
+                        [199, 231, 205],
+                        [252, 227, 227],
+                        [241, 204, 204],
+                    ] {
+                        assert!(fills.contains(&egui::Color32::from_rgb(rgb[0], rgb[1], rgb[2])));
+                    }
+                }
+                assert!(!text.contains("raw-secret"));
+                assert!(!text.contains("Technische Feldnamen"));
+                assert!(output.shapes.iter().all(|s| s.clip_rect.is_finite()));
+            }
+        }
+    }
+    #[test]
+    fn all_columns_sort_inside_teams_and_keep_unknown_numbers_last() {
+        let document = Document {
+            source: "test".into(),
+            stream: vec![],
+            original_size: 0,
+            blocks: vec![
+                serde_json::json!({"playerName":"Me","vehicles":{"1":{"name":"Me","team":1,"vehicleType":"usa:A07_T20"},"2":{"name":"Friend","team":1,"vehicleType":"usa:A07_T20"},"3":{"name":"EnemyA","team":2,"vehicleType":"usa:A07_T20"},"4":{"name":"EnemyB","team":2,"vehicleType":"usa:A07_T20"}}}),
+                serde_json::json!([{"vehicles":{"1":[{"damageDealt":500,"health":100}],"2":[{"damageDealt":50,"health":0}],"3":[{"damageDealt":200,"health":0}],"4":[{"damageDealt":900,"health":100}]}}]),
+            ],
+        };
+        for column in 0..9 {
+            for descending in [false, true] {
+                let mut sorting = ParticipantSort { column, descending };
+                let ctx = egui::Context::default();
+                crate::ui::configure(&ctx);
+                let mut output = None;
+                // A second frame also verifies the header after grid layout caching.
+                for _ in 0..2 {
+                    output = Some(ctx.run(
+                        egui::RawInput {
+                            screen_rect: Some(egui::Rect::from_min_size(
+                                egui::Pos2::ZERO,
+                                egui::vec2(1600., 800.),
+                            )),
+                            ..Default::default()
+                        },
+                        |ctx| {
+                            egui::CentralPanel::default()
+                                .show(ctx, |ui| participant_table(ui, &document, "", &mut sorting));
+                        },
+                    ));
+                }
+                let output = output.unwrap();
+                let texts: Vec<_> = output
+                    .shapes
+                    .iter()
+                    .filter_map(|s| match &s.shape {
+                        egui::epaint::Shape::Text(t) => Some(t),
+                        _ => None,
+                    })
+                    .collect();
+                let names: Vec<_> = texts
+                    .iter()
+                    .map(|t| t.galley.job.text.as_str())
+                    .filter(|t| ["Me", "Friend", "EnemyA", "EnemyB"].contains(t))
+                    .collect();
+                assert_eq!(names.len(), 4);
+                assert!(names[..2].iter().all(|n| ["Me", "Friend"].contains(n)));
+                assert!(names[2..].iter().all(|n| ["EnemyA", "EnemyB"].contains(n)));
+                if column == 4 {
+                    assert_eq!(
+                        names,
+                        if descending {
+                            vec!["Me", "Friend", "EnemyB", "EnemyA"]
+                        } else {
+                            vec!["Friend", "Me", "EnemyA", "EnemyB"]
+                        }
+                    );
+                }
+                let heading = texts
+                    .iter()
+                    .find(|t| t.galley.job.text.starts_with("Schaden"))
+                    .unwrap();
+                assert!(
+                    heading
+                        .galley
+                        .job
+                        .sections
+                        .iter()
+                        .all(|s| s.format.color == egui::Color32::WHITE)
+                );
+            }
+        }
+        assert_eq!(
+            compare_optional(Some(1), None, true),
+            std::cmp::Ordering::Less
+        );
+        assert_eq!(
+            compare_optional(Some(1), None, false),
+            std::cmp::Ordering::Less
+        );
+        let mut sorting = ParticipantSort::default();
+        sorting.select(4);
+        assert!(sorting.descending);
+        sorting.select(4);
+        assert!(!sorting.descending);
+    }
     #[test]
     fn large_ids_remain_exact_and_search_reaches_nested_fields() {
         assert_eq!(

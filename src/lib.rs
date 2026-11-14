@@ -15,3 +15,5 @@ pub mod brand;
 pub mod i18n;
 pub mod migrations;
 pub mod scan;
+
+pub mod vehicle_names;
